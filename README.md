@@ -1,5 +1,3 @@
-Hi there 👋
-
 ### About Me
 
 - 🌱 I’m currently learning Deep Learning & Computer Vision.
@@ -11,8 +9,6 @@ Hi there 👋
 - I fell in love with Linux (& the UNIX philosophy) in 2011, as a highschool student.
 - My type of English handwriting for daily use is roundhand.
 - My MBTI personality type is INTJ.
-
-#### Examples
 
 <!--
 **cdluminate/cdluminate** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
