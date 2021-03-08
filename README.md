@@ -1,7 +1,7 @@
 ### About Me
 
-- 🌱 I’m currently learning Deep Learning & Computer Vision.
-- 🔭 I’m working on Debian GNU/Linux as an official Debian Developer (self-motivated volunteer), and I like the UNIX philosophy.
+- 🌱 I’m currently learning Deep Learning & Computer Vision. [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
+- 🔭 I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as an official [Debian Developer](https://nm.debian.org/person/lumin/) (self-motivated volunteer), and I like the UNIX philosophy.
 - 😄 I enjoy music, Japanese anime, fitness, artistic video games, and tea.
 
 <!--
