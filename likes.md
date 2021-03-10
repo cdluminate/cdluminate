@@ -5,13 +5,23 @@ Let me expand a little bit on things I like.
 
 ## Music
 
-* Genre: Jazz Hip-hop, Death metal, Electronic, 
+Favorate Artists:
+* Nomak (Jazz Hip-hop)
+* Aosaki (Jazz Hip-hop)
+
+Favorate Albums:
 
 ## Japanese anime
+
+Sorted by ranking.
+
+* Nichijou
 
 ## Fitness
 
 ## Artistic video games
+
+* CrossCode
 
 ## Tea
 
