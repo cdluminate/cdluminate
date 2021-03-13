@@ -1,16 +1,21 @@
 <!-- ### About Me -->
 
 <a href="https://github.com/cdluminate">
-  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?theme=radical&username=cdluminate&show_icons=true&include_all_commits=true" />
+  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=cdluminate&show_icons=true&include_all_commits=true" />
 </a>
 <a href="https://github.com/cdluminate">
-  <img align="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?theme=radical&username=cdluminate&layout=compact" />
+  <img align="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cdluminate&layout=compact" />
 </a>
+
+<p></p>
 
 - 🌱 I’m currently learning Deep Learning & Computer Vision. [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
 - 🔭 I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as an official [Debian Developer](https://nm.debian.org/person/lumin/), and I like the UNIX philosophy.
 - 😄 I enjoy [music, Japanese anime, fitness, artistic video games, and tea.](./likes.md)
 
+<p></p>
+
+[![Github Activity Graph](https://activity-graph.herokuapp.com/graph?username=cdluminate&bg_color=ffffff0a&color=3080ed&line=5094f0&point=4d72f2&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <!--
 **cdluminate/cdluminate** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
