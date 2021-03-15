@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning Deep Learning & Computer Vision. See [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
 - 🔭 Owing to appreciation of the UNIX philosophy, I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as a voluntary [Debian Developer](https://nm.debian.org/person/lumin/).
-- 😄 I enjoy [music, Japanese anime, fitness, artistic video games, and tea.](./likes.md)
+- 😄 I enjoy music, Japanese anime, fitness, artistic video games, and tea. Here are [some examples](./likes.md).
 
 <p></p>
 
