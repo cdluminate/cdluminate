@@ -9,8 +9,8 @@
 
 <p></p>
 
-- 🌱 I’m currently learning Deep Learning & Computer Vision. [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
-- 🔭 I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as an official [Debian Developer](https://nm.debian.org/person/lumin/), and I like the UNIX philosophy.
+- 🌱 I’m currently learning Deep Learning & Computer Vision. See [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
+- 🔭 Owing to appreciation of the UNIX philosophy, I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as a voluntary [Debian Developer](https://nm.debian.org/person/lumin/).
 - 😄 I enjoy [music, Japanese anime, fitness, artistic video games, and tea.](./likes.md)
 
 <p></p>
