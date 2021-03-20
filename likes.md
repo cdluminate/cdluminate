@@ -1,7 +1,7 @@
 Example of Things I Like
 ===
 
-Let me expand a little bit on things I like.
+Let me expand a little bit on things I like. They make my life more enjoyable.
 
 ## Music
 
@@ -26,6 +26,8 @@ Sorted by ranking.
 ## Tea
 
 # Personal Preferences
+
+## GNU/Linux & Freesoftware
 
 ## Caligraphy and Fonts
 
