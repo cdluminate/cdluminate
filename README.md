@@ -13,9 +13,10 @@
 - 🔭 Owing to appreciation of the [UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & [softwarefreedom](https://www.gnu.org/philosophy/free-sw.en.html), I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as a voluntary [Debian Developer](https://nm.debian.org/person/lumin/).
 - 😄 I enjoy music, Japanese anime, fitness, artistic video games, tea, and software freedom. Here are [some examples](./likes.md).
 
-<p></p>
+<!--
 
 [![Github Activity Graph](https://activity-graph.herokuapp.com/graph?username=cdluminate&bg_color=ffffff0a&color=3080ed&line=5094f0&point=4d72f2&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+-->
 
 <!--
 **cdluminate/cdluminate** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
