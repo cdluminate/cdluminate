@@ -10,7 +10,7 @@
 <p></p>
 
 - 🌱 I’m currently learning Deep Learning & Computer Vision. See [[My Google Scholar Page]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
-- 🔭 Owing to appreciation of the [UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & [softwarefreedom](https://www.gnu.org/philosophy/free-sw.en.html), I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as a voluntary [Debian Developer](https://nm.debian.org/person/lumin/).
+- 🔭 Owing to appreciation of the [UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & [software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I’m [working on Debian GNU/Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
 - 😄 I enjoy music, Japanese anime, fitness, artistic video games, tea, and software freedom. Here are [some examples](./likes.md).
 
 <!--
