@@ -52,5 +52,6 @@ Weightlifting (want to try)
 
 ## Caligraphy and Fonts
 
-* Mono-spaced Font: Fira Code, Monaco, Cascadia code.
+* Mono-spaced Font (for programming): Fira Code, Monaco, Cascadia code, Operator Mono Book.
+* Serief Font: Minion Pro, Times New Roman.
 * Handwriting: roundhand.
