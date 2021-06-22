@@ -25,8 +25,8 @@
 - Research / [LadderLoss](https://github.com/cdluminate/ladderloss): "Ladder Loss for Coherent Visual-Semantic Embedding", AAAI, 2020.
 - Utility / [Tasque](https://github.com/cdluminate/tasque): Single-node workload manager.
 - Utility / [GPU-load-watcher](https://github.com/cdluminate/gpu-load-watcher): Recording and plotting GPU usage of a deep learning server.
-- Documentation / [ProdL (WIP)](https://github.com/cdluminate/ProdL): Productive Deep Learner.
-- Documentation / [LiSG (WIP)](https://github.com/cdluminate/LiSG): Linux Survival Guide.
+- Documentation / [ProdL](https://github.com/cdluminate/ProdL): Productive Deep Learner. (WIP)
+- Documentation / [LiSG](https://github.com/cdluminate/LiSG): Linux Survival Guide. (WIP)
 - Educational / [Leicht](https://github.com/cdluminate/leicht): Deep Learning Framework (static graph) from scratch in C++.
 
 Some of these repositories are also mirrored to [my personal Git server (Shanghai, China)](https://42.192.50.99:3000/).
