@@ -40,6 +40,8 @@ Git repositories of my Debian-related works are hosted on [salsa.debian.org](htt
 
 ### Publications
 
+### Resume
+
 <!--
 
 [![Github Activity Graph](https://activity-graph.herokuapp.com/graph?username=cdluminate&bg_color=ffffff0a&color=3080ed&line=5094f0&point=4d72f2&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
