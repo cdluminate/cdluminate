@@ -19,6 +19,8 @@
 
 ### Github Projects
 
+Some of these repositories are also mirrored to [my personal Git server (Shanghai, China)](https://42.192.50.99:3000/).
+
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
 - Research / [AdvOrder](https://github.com/cdluminate/advorder): arXiv, 2021.
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
@@ -29,13 +31,12 @@
 - Documentation / [LiSG](https://github.com/cdluminate/LiSG): Linux Survival Guide. (WIP)
 - Educational / [Leicht](https://github.com/cdluminate/leicht): Deep Learning Framework (static graph) from scratch in C++.
 
-Some of these repositories are also mirrored to [my personal Git server (Shanghai, China)](https://42.192.50.99:3000/).
-
 ### Salsa Projects
 
 Git repositories of my Debian-related works are hosted on [salsa.debian.org](https://salsa.debian.org/lumin) instead of Github.
 
 - Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
+- Documentation / [ML-Policy](https://salsa.debian.org/deeplearning-team/ml-policy): Machine Learning Policy for Debian.
 
 ### Publications
 
