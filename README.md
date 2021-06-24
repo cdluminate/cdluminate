@@ -27,11 +27,15 @@
 - Utility / [GPU-load-watcher](https://github.com/cdluminate/gpu-load-watcher): Recording and plotting GPU usage of a deep learning server.
 - Documentation / [ProdL](https://github.com/cdluminate/ProdL): Productive Deep Learner. (WIP)
 - Documentation / [LiSG](https://github.com/cdluminate/LiSG): Linux Survival Guide. (WIP)
-- Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
 - Educational / [Leicht](https://github.com/cdluminate/leicht): Deep Learning Framework (static graph) from scratch in C++.
 
 Some of these repositories are also mirrored to [my personal Git server (Shanghai, China)](https://42.192.50.99:3000/).
+
+### Salsa Projects
+
 Git repositories of my Debian-related works are hosted on [salsa.debian.org](https://salsa.debian.org/lumin) instead of Github.
+
+- Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
 
 ### Publications
 
