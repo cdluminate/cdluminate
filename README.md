@@ -38,9 +38,10 @@ Git repositories of my Debian-related works are hosted on [salsa.debian.org](htt
 - Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
 - Documentation / [ML-Policy](https://salsa.debian.org/deeplearning-team/ml-policy): Machine Learning Policy for Debian.
 
-### Publications
+### Other Information
 
-### Resume
+Resume: TODO  
+GPG Key: 638BC75EC1E5C589067E35DE62645EB35F686A8A  
 
 <!--
 
