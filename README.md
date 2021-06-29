@@ -32,30 +32,29 @@ Some of these repositories are also mirrored to [my personal Git server (Shangha
 Git repositories of my Debian-related works are hosted on [salsa.debian.org](https://salsa.debian.org/lumin) instead of Github.
 
 - Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
-- Documentation / [ML-Policy](https://salsa.debian.org/deeplearning-team/ml-policy): Machine Learning Policy for Debian. [PDF Version](https://salsa.debian.org/lumin/ml-policy/blob/master/ML-Policy.pdf){.badge .badge-pill .badge-primary} [RST Source](https://salsa.debian.org/lumin/ml-policy/raw/master/ML-Policy.rst){.badge .badge-pill .badge-primary}  
+- Documentation / [ML-Policy](https://salsa.debian.org/deeplearning-team/ml-policy): Machine Learning Policy for Debian. [[PDF Version]](https://salsa.debian.org/lumin/ml-policy/blob/master/ML-Policy.pdf) [[RST Source]](https://salsa.debian.org/lumin/ml-policy/raw/master/ML-Policy.rst)  
 - Documentation / Debian\'s Linear Algebra Libraries (WIP)
-- GSoC'2019 / [BLAS/LAPACK Runtime Switching Mechanism for Gentoo](https://wiki.gentoo.org/wiki/Blas-lapack-switch) [GSoC2019](https://summerofcode.withgoogle.com/projects/#6268942782300160){.badge .badge-pill .badge-info}  
+- [GSoC2019](https://summerofcode.withgoogle.com/projects/#6268942782300160) / [BLAS/LAPACK Runtime Switching Mechanism for Gentoo](https://wiki.gentoo.org/wiki/Blas-lapack-switch)   
 - Deprecated / [LibAWSL: Improving Human Efficiency in debian/copyright Review Process](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md)  
 - Deprecated / [DUPR: Debian User Recipe Toolkit / Debian User Repository](https://github.com/dupr/duprkit)  
 - Deprecated / [SIMDebian: Debian GNU/Linux Fork with Increased ISA Baseline](https://github.com/SIMDebian/SIMDebian)  
 
-### Selected Publications
+### Publications
 
-- Mo Zhou, Zhenxing Niu, Le Wang, Qilin Zhang, Gang Hua, *"Adversarial
-Ranking Attack and Defense,"* in Proc. European Conf. on Computer
-Vision (ECCV'2020), Glasgo, Scotland, UK, August 2020.
+- *"Adversarial Ranking Attack and Defense,"* ECCV'2020.
 [[PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
 [[arXiv]](https://arxiv.org/abs/2002.11293)
-[[Github]](https://github.com/cdluminate/advrank)
-- Mo Zhou, Zhenxing Niu, Le Wang, Zhanning Gao, Qilin Zhang, Gang Hua,
-*"Ladder Loss for Coherent Visual-Semantic Embedding,"* in Proc.
-The Thirty-Fourth AAAI Conf. on Artificial Intelligence
-(AAAI'2020), New York City, NY, February 2020.
+[[Github]](https://github.com/cdluminate/advrank)  
+- *"Ladder Loss for Coherent Visual-Semantic Embedding,"* AAAI'2020.
 [[PDF]](https://ojs.aaai.org//index.php/AAAI/article/view/7006)
 [[arXiv]](https://arxiv.org/abs/1911.07528)
-[[Github]](https://github.com/cdluminate/ladderloss)
+[[Github]](https://github.com/cdluminate/ladderloss)  
+- *"Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding,"* ICCV'2017,
+[[PDF]](https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html)  
+- *"Ordinal Regression with Multiple Output CNN for Age Estimation,"* CVPR'2016.
+[[PDF]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html)  
 
 ### Other Information
 
-Resume: TODO
+Resume: TODO  
 GPG Key: 638BC75EC1E5C589067E35DE62645EB35F686A8A  
