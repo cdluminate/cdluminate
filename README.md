@@ -35,9 +35,9 @@ Git repositories of my Debian-related works are hosted on [salsa.debian.org](htt
 - Documentation / [ML-Policy](https://salsa.debian.org/deeplearning-team/ml-policy): Machine Learning Policy for Debian. [[PDF Version]](https://salsa.debian.org/lumin/ml-policy/blob/master/ML-Policy.pdf) [[RST Source]](https://salsa.debian.org/lumin/ml-policy/raw/master/ML-Policy.rst)  
 - Documentation / Debian\'s Linear Algebra Libraries (WIP)
 - [GSoC2019](https://summerofcode.withgoogle.com/projects/#6268942782300160) / [BLAS/LAPACK Runtime Switching Mechanism for Gentoo](https://wiki.gentoo.org/wiki/Blas-lapack-switch)   
-- Deprecated / [LibAWSL: Improving Human Efficiency in debian/copyright Review Process](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md)  
-- Deprecated / [DUPR: Debian User Recipe Toolkit / Debian User Repository](https://github.com/dupr/duprkit)  
-- Deprecated / [SIMDebian: Debian GNU/Linux Fork with Increased ISA Baseline](https://github.com/SIMDebian/SIMDebian)  
+- Deprecated / [LibAWSL](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md): Improving Human Efficiency in debian/copyright Review Process
+- Deprecated / [DUPR](https://github.com/dupr/duprkit): Debian User Recipe Toolkit / Debian User Repository
+- Deprecated / [SIMDebian](https://github.com/SIMDebian/SIMDebian): Debian GNU/Linux Fork with Increased ISA Baseline
 
 ### Publications
 
