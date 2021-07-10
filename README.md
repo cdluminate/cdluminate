@@ -12,6 +12,8 @@
 - 🍀 Currently learning 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision). See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [work on 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
 - 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [Here are examples](./likes.md).
+- GPG Key: 638BC75EC1E5C589067E35DE62645EB35F686A8A
+- Resume: TODO
 
 ### Github Projects / Research Works
 
@@ -34,7 +36,3 @@ Git repositories of my Debian-related works are hosted on [salsa.debian.org](htt
 - [GSoC2019](https://summerofcode.withgoogle.com/projects/#6268942782300160) / [BLAS/LAPACK Runtime Switching Mechanism for Gentoo](https://wiki.gentoo.org/wiki/Blas-lapack-switch)   
 - Deprecated / [LibAWSL](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md), [DUPR](https://github.com/dupr/duprkit), [SIMDebian](https://github.com/SIMDebian/SIMDebian)
 
-### Other Information
-
-Resume: TODO  
-GPG Key: 638BC75EC1E5C589067E35DE62645EB35F686A8A  
