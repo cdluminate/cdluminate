@@ -37,6 +37,10 @@ Weightlifting (want to try)
 
 * Jasmine
 
+## Cooking
+
+* Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c549f
+
 # Personal Preferences
 
 ## GNU/Linux & Freesoftware
