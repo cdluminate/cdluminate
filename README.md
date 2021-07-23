@@ -18,7 +18,7 @@
 ### Public Works
 
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
-- Research / [AdvOrder](https://github.com/cdluminate/advorder): arXiv, 2021.
+- Research / [AdvOrder](https://github.com/cdluminate/advorder): Practical Relative Order Attack in Deep Ranking, ICCV, 2021.
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
 - Research / [LadderLoss](https://github.com/cdluminate/ladderloss): "Ladder Loss for Coherent Visual-Semantic Embedding", AAAI, 2020.
 - Documentation / [ProdL](https://github.com/cdluminate/ProdL): Productive Deep Learner. (WIP)
