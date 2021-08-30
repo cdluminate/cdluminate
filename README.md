@@ -11,7 +11,7 @@
 
 - 🍀 Currently learning 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for further details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [work on 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
-- 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [Here are my blog articles](blog/index.md).
+- 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [See my BLOG articles](blog/index.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
 
 ### Public Works
