@@ -19,7 +19,17 @@
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
 - Research / [AdvOrder](https://github.com/cdluminate/advorder): Practical Relative Order Attack in Deep Ranking, ICCV, 2021.
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
+[[Springer-PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
+[[arXiv]](https://arxiv.org/abs/2002.11293)
+[[Github]](https://github.com/cdluminate/advrank)  
 - Research / [LadderLoss](https://github.com/cdluminate/ladderloss): "Ladder Loss for Coherent Visual-Semantic Embedding", AAAI, 2020.
+[[AAAI-PDF]](https://ojs.aaai.org//index.php/AAAI/article/view/7006)
+[[arXiv]](https://arxiv.org/abs/1911.07528)
+[[Github]](https://github.com/cdluminate/ladderloss)  
+- Research / "Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding," ICCV'2017,
+[[PDF]](https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html) 
+- Research / "Ordinal Regression with Multiple Output CNN for Age Estimation," CVPR'2016.
+[[PDF]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html)  
 - Documentation / [ProdL](https://github.com/cdluminate/ProdL): Productive Deep Learner. (WIP)
 - Documentation / [LiSG](https://github.com/cdluminate/LiSG): Linux Survival Guide. (WIP)
 - Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
