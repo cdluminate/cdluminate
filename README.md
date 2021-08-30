@@ -11,7 +11,7 @@
 
 - 🍀 Currently learning 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for further details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [work on 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
-- 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [Here are examples](./likes.md).
+- 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [Here are examples](./likes.md) and [my blog](blog/index.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
 
 ### Public Works
@@ -23,15 +23,13 @@
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
 [[Springer-PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
 [[arXiv]](https://arxiv.org/abs/2002.11293)
-[[Github]](https://github.com/cdluminate/advrank)  
 - Research / [LadderLoss](https://github.com/cdluminate/ladderloss): "Ladder Loss for Coherent Visual-Semantic Embedding", AAAI, 2020.
 [[AAAI-PDF]](https://ojs.aaai.org//index.php/AAAI/article/view/7006)
 [[arXiv]](https://arxiv.org/abs/1911.07528)
-[[Github]](https://github.com/cdluminate/ladderloss)  
 - Research / "Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding," ICCV'2017,
-[[PDF]](https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html) 
+[[CVF-PDF]](https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html) 
 - Research / "Ordinal Regression with Multiple Output CNN for Age Estimation," CVPR'2016.
-[[PDF]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html)  
+[[CVF-PDF]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html)  
 - Documentation / [ProdL](https://github.com/cdluminate/ProdL): Productive Deep Learner. (WIP)
 - Documentation / [LiSG](https://github.com/cdluminate/LiSG): Linux Survival Guide. (WIP)
 - Documentation / [Debian-DL](https://github.com/cdluminate/debian-dl): Debian Development & Deep Learning. [[HTML Version]](https://people.debian.org/~lumin/debian-dl.html)
