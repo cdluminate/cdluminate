@@ -9,7 +9,7 @@
 
 ### About Me
 
-- 🍀 Currently learning 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision). See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for details.
+- 🍀 Currently learning 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for further details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [work on 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
 - 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [Here are examples](./likes.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
@@ -17,7 +17,9 @@
 ### Public Works
 
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
+[[arXiv]](https://arxiv.org/abs/2106.03614)
 - Research / [AdvOrder](https://github.com/cdluminate/advorder): Practical Relative Order Attack in Deep Ranking, ICCV, 2021.
+[[arXiv]](https://arxiv.org/abs/2103.05248)  
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
 [[Springer-PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
 [[arXiv]](https://arxiv.org/abs/2002.11293)
