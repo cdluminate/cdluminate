@@ -14,6 +14,8 @@
 - 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [See my BLOG articles](blog/index.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
 
+- 🌝 My friend [YH Zhai](https://www.yhzhai.com/) is looking for a girlfriend. So do I.
+
 ### Public Works
 
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
