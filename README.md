@@ -14,6 +14,7 @@
 - 🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. [See my BLOG articles](blog/index.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
 - 🌝 My friend [YH Zhai](https://www.yhzhai.com/) is looking for a girlfriend. So do I.
+- 软件自由是我一切故事的开始，吾愿称其为本源。
 
 ### Public Works
 
