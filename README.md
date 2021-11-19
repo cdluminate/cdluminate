@@ -22,6 +22,7 @@
 - Research / [RobRank](https://cdluminate.github.io/robrank/): "Adversarial Attack and Defense in Deep Ranking", arXiv, 2021.
 [[arXiv]](https://arxiv.org/abs/2106.03614)
 - Research / [AdvOrder](https://github.com/cdluminate/advorder): Practical Relative Order Attack in Deep Ranking, ICCV, 2021.
+[[CVF-PDF]](https://openaccess.thecvf.com/content/ICCV2021/html/Zhou_Practical_Relative_Order_Attack_in_Deep_Ranking_ICCV_2021_paper.html)
 [[arXiv]](https://arxiv.org/abs/2103.05248)  
 - Research / [AdvRank](https://cdluminate.github.io/advrank/): "Adversarial Ranking Attack and Defense", ECCV, 2020.
 [[Springer-PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
