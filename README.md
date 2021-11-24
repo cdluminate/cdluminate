@@ -9,7 +9,7 @@
 
 ### About Me
 
-软件自由是我一切故事的开始，吾愿称其为"本源"。(All of my stories start from software freedom.)
+软件自由乃吾之起源 -- 我的故事从这里开始。(All of my stories start from software freedom.)
 
 - 🍀 Studying 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for further details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [develop 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
