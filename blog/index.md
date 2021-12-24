@@ -14,35 +14,14 @@
 
 ## 事物评价 / Reviews of Things
 
-1. Music  
+1. [音乐 / Music](music.md)
 1. [日本动漫 / Japanese Anime](anime.md)
+1. [第九艺术 / Artistic Video Games](games.md)
 1. [料理艺术 / Cooking](cooking.md)
-
-Let me expand a little bit on things I like. They make my life more enjoyable.
-
-## Music
-
-Favorate Artists:
-* Nomak (Jazz Hip-hop)
-* Aosaki (Jazz Hip-hop)
-
-Favorate Albums:
 
 ## Fitness
 
 Weightlifting (want to try)
-
-## Artistic video games
-
-* CrossCode (9.5/10)
-* Celeste (9/10)
-* Divinity: Origin Sin 2 (10/10)
-* Borderlands 3 (8/10)
-* Dyson Sphere Program (7/10)
-* Hollow Knight (9/10)
-* StarBound (9/10)
-* Limbo (8/10)
-* OneShot (8.5/10)
 
 ## Tea
 
