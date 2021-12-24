@@ -6,24 +6,27 @@
 
 ## I: 厨房常备物资
 
-### 锅碗瓢盆
+### 必要锅碗瓢盆
 
 1. 8 Qt 大锅 / Deep pot
 2. 炒锅，锅铲 Chinese wok
 3. 刀叉碗(陶瓷)筷勺盘盆
-4. 2 Qt 小锅
 5. 微波炉玻璃大碗
-6. 蒸架和漏勺
-7. 煎锅 / Frying Pan
 8. 量杯量勺 / Measuring Cup and Measuring Teaspoon (standard tsp)
 9. 砧板（竹）
 10. 切片刀（中式）
+16. 电饭锅
+
+### 可选锅碗瓢盆
+
+4. 2 Qt 小锅
+7. 煎锅 / Frying Pan
+6. 蒸架和漏勺
+15. 手动压面机 / Manual Noodle Machine
+14. 搅拌机 / Blender
+13. 手动打蛋器
 11. 斩骨刀（中式） / Heavyduty
 12. 厨房剪 / Heavyduty kitchen shear
-13. 手动打蛋器
-14. 搅拌机 / Blender
-15. 手动压面机 / Manual Noodle Machine
-16. 电饭锅
 
 ### 必备柴米油盐 / Must-haves
 
