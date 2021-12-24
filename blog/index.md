@@ -15,7 +15,7 @@
 ## 事物评价 / Reviews of Things
 
 1. Music  
-1. Japanese Anime  
+1. [日本动漫 / Japanese Anime](anime.md)
 
 Let me expand a little bit on things I like. They make my life more enjoyable.
 
@@ -26,12 +26,6 @@ Favorate Artists:
 * Aosaki (Jazz Hip-hop)
 
 Favorate Albums:
-
-## Japanese anime
-
-Sorted by my rating.
-
-* Nichijou / 日常 (10/10)
 
 ## Fitness
 
