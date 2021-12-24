@@ -16,6 +16,7 @@
 
 1. Music  
 1. [日本动漫 / Japanese Anime](anime.md)
+1. [料理艺术 / Cooking](cooking.md)
 
 Let me expand a little bit on things I like. They make my life more enjoyable.
 
@@ -46,10 +47,6 @@ Weightlifting (want to try)
 ## Tea
 
 * Jasmine
-
-## Cooking
-
-* Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c549f
 
 # Personal Preferences
 
