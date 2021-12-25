@@ -4,12 +4,9 @@
 我这个人真的非常懒。静态博客是会搭的，但是无耻地满足于Github的markdown渲染，
 失去了动力做任何进一步版面上的调整。相应的，我希望这样能够更加聚焦与我所写的内容，而非前端相关代码上。
 
-## 重大事件 / Things that Matters a Lot
-
-1. 成为Official Debian Developer的道路 (todo)
-
 ## 经历感想 / Experience and Thoughts
 
+1. [成为Official Debian Developer](2018-08-dd.md)
 1. [2021-08 巴尔的摩的第一印象](2021-08-baltimore.md)
 
 ## 事物评价 / Reviews of Things
@@ -18,31 +15,12 @@
 1. [日本动漫 / Japanese Anime](anime.md)
 1. [第九艺术 / Artistic Video Games](games.md)
 1. [料理艺术 / Cooking](cooking.md)
+1. [开源/自由软件 / Free and Open Source Software](foss.md)
+1. [书法与字体 / Caligraphy and Fonts](fonts.md)
 
-## Fitness
+## Reference Articles/Documents Related to Debian/FOSS
 
-Weightlifting (want to try)
-
-## Tea
-
-* Jasmine
-
-# Personal Preferences
-
-## GNU/Linux & Freesoftware
-
-* Terminal: `tilix` > *
-* Shell: `fish` > `zsh` > `bash`
-* Terminal Multiplexer: `tmux` > `screen`
-* Editor: `vim`
-* Graphical Environment: `Gnome 3` > `dwm` (suckless.org) > *
-* Drawing: `inkscape`, `gimp`
-* Chinese Input Method: `fcitx5`
-* Web Browser: `firefox-esr` > `firefox` > *
-
-## Caligraphy and Fonts
-
-* Mono-spaced Font (for programming): Operator Mono > Monaco > Fira Code > *
-* Serief Font: Minion Pro, Times New Roman.
-* Handwriting: roundhand.
-
+- [(LWN) Deep Learning and Free Software](https://lwn.net/Articles/760142/)
+- [Debian Science / Linear Algebra Libraries](https://wiki.debian.org/DebianScience/LinearAlgebraLibraries)
+- CDDL & GPL Incompatibility [Ref\#1](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html) [Ref\#2](https://sfconservancy.org/blog/2016/feb/25/zfs-and-linux/)
+- [HowToGetABacktrace](https://wiki.debian.org/HowToGetABacktrace)
