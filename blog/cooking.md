@@ -14,6 +14,8 @@ III：个人食谱。
 
 料理是理解食材组合与变化的艺术。 -- MZ 2021Q4
 
+美食和睡觉可是最纯粹的两大快乐。 -- MZ 2012Q4
+
 ## I: 厨房常备物资
 
 ### I.1: 必要锅碗瓢盆
@@ -86,6 +88,9 @@ III：个人食谱。
 1. 高筋面粉 / Organic bread powder
 1. 全麦面粉 / Organic whole wheat powder
 
+在美国可以买到进口的四川花椒和四川辣椒（比如亚马逊），味道很正。我基本上是
+靠四川花椒四川辣椒活下去的。
+
 ### I.5: 次要香料干货 / Recommended
 
 1. 特级初榨橄榄油
@@ -114,6 +119,12 @@ III：个人食谱。
 1. 烟熏肉 / Beacon
 1. 香油(芝麻油) / Sesame oil
 1. 黄油 Butter
+1. 单山蘸水（云南特产）
+
+小苏打可以和面和煮豆子用。对于拉面而言，盐是筋，碱是骨。
+
+单山蘸水是用花椒粉，辣椒粉和盐之类的调料调配出来的干粉蘸料，是云南特色。
+进口的家乡味道～ 很惊讶也很惊喜美国也能买到。
 
 ### I.6 常驻生鲜 / Always-available Raw food
 
@@ -214,11 +225,20 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 1. 大蒜 Garlic
 1. 雨衣甘蓝 Kale：微苦味的，做熟可以消除大部分苦味。但是美国人好像会生吃。
 1. 孢子甘蓝 Sprouts：苦味的。如果不喜欢苦瓜就别考虑了。
+1. 韭葱 Leek: 看似青蒜的葱。可以当大葱使，味道差不多。在美国超市里这个比大葱容易买到。大葱往往可能要跑到亚洲超市。青蒜貌似只有中国人吃，只在华人超市有。
+1. 洋ji Artichoke
+1. 小萝卜头 Raddish
+1. 卷心菜 Cabbage：在冰箱里超耐放。是不可多得的耐储绿菜
+1. 菜花 Cauliflower：好像也很耐放
+1. 生菜 Romaine Lettuce：相比生菜心，大叶子也带了。
+1. 紫卷心菜 Red Cabbage
+1. 小葱 Green Onion
+1. 生姜 Ginger root
 
-
-[根物 Roots]
-
-1. 生姜 Ginger
+我是云南人。云南是野生动植物王国，食物多样性自然也是非常强悍。
+别说是在美国，即便是在西安，也能非常明显的感受到植物食材的种类大幅减少。
+回想在云南老家的时候，餐桌上甚至还可能会出现叫不上名字从来没吃过的野菜 --
+它们的味道都独特且唯一 -- 更刺激的是有些食材本身有毒，需要正确处理。
 
 **[蘑菇 Mushrooms]**
 
@@ -226,6 +246,9 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 1. Crimini mushroom (美国): 翻译不来，还行，比白蘑菇好吃一点，也贵一点
 1. 杏鲍菇
 1. 金针菇
+1. 香菇
+
+野生蘑菇是云南人的快乐。
 
 [水果 Fruit]
 
@@ -234,7 +257,7 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 1. 金奇异果（猕猴桃） Golden Kiwi
 1. 梨 Pear
 1. 蓝莓 Blueberries
-1. 苹果 Apples: (1) Gala apple; (2) Envy apple; (3) honey crisp apple
+1. 苹果 Apples: (1) Gala apple; (2) Envy apple; (3) honey crisp apple; (4) Fuji apple 应该是富士
 1. 柠檬 Lemons
 1. 西瓜 Watermelon
 1. 哈密瓜 Cantaloupe
@@ -244,6 +267,9 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 1. 石榴 Pomegranates: 美国的石榴真的太大了
 1. 甜瓜 Honeydew Melon
 1. 葡萄 Grape
+1. 牛油果 Avocado
+1. 木瓜 Papaya
+1. 芒果 Mango
 
 ### II.5 乳制品和蛋 Diary and Eggs
 
@@ -261,7 +287,12 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 
 ### III.2 中国白案 / Chinese White Board
 
-### III.3 泛美式 / American
+白案和核心出发点是和面。和面有问题后续所有流程都会比较难受。
+拉面的典型配比：500克面粉，3克盐，1克碱。
+
+### III.3 国际通用 / International
+
+Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c549f
 
 ### III.4 饮料 / Drinks
 
@@ -273,9 +304,11 @@ Turky听说不好吃，没吃过。正常的鸡不香吗？ Organic的鸡肉细�
 
 ### III.6 日式 / Japanese
 
-### III.7 其他 / Others
+不想做刺身，不过日式料理的熟食想试试。
 
-Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c549f
+### III.7 泛美式 / American
+
+以后看看有没有什么想学的。
 
 ## 参考资料 | References
 
