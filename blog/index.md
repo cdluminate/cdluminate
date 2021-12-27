@@ -18,9 +18,16 @@
 1. [开源/自由软件 / Free and Open Source Software](foss.md)
 1. [书法与字体 / Caligraphy and Fonts](fonts.md)
 
+## Public works -- Deprecated Attempts
+
+- [LibAWSL](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md)
+- [DUPR](https://github.com/dupr/duprkit)
+- [SIMDebian](https://github.com/SIMDebian/SIMDebian)
+
 ## Reference Articles/Documents Related to Debian/FOSS
 
 - [(LWN) Deep Learning and Free Software](https://lwn.net/Articles/760142/)
 - [Debian Science / Linear Algebra Libraries](https://wiki.debian.org/DebianScience/LinearAlgebraLibraries)
 - CDDL & GPL Incompatibility [Ref\#1](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html) [Ref\#2](https://sfconservancy.org/blog/2016/feb/25/zfs-and-linux/)
 - [HowToGetABacktrace](https://wiki.debian.org/HowToGetABacktrace)
+
