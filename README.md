@@ -9,11 +9,11 @@
 
 ### About Me
 
-软件自由乃吾之起源 -- 我的故事从这里开始。(All of my stories start from software freedom.)
+软件自由乃吾之起源。(Software freedom is my origin.)
 
-- 🍀 Studying 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for further details.
+- 🍀 Studying 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) at JHU. See [my Google Scholar Page](https://scholar.google.com/citations?user=BVIO95UAAAAJ) for more details.
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [develop 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
-- 🐬 I enjoy 🎧[music](blog/music.md), ⛩[Japanese anime](blog/anime.md), 🏃🏻[workout](blog/workout.md), 🎨[video games](blog/games.md), 🧑‍🍳[Cooking](blog/cooking.md), and ⚖️ [freesoftware](blog/foss.md). [See My BLOGs.](blog/index.md).
+- 🐬 I enjoy 🎧[Music](blog/music.md), ⛩[Japanese Anime](blog/anime.md), 🏃🏻[Workout](blog/workout.md), 🎨[video games](blog/games.md), 🧑‍🍳[Cooking](blog/cooking.md), and ⚖️ [FreeSoftware](blog/foss.md). [See My BLOGs.](blog/index.md).
 - 🗺️ Resume: [[PDF]](assets/cv.pdf) | 🔑 GPG Key: `638BC75EC1E5C589067E35DE62645EB35F686A8A`
 
 ### Research
