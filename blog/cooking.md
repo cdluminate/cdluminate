@@ -305,17 +305,45 @@ TODO
 白案和核心出发点是和面。和面有问题后续所有流程都会比较难受。
 拉面的典型配比：500克面粉，3克盐，1克碱。
 
+* 拉面/拉条子
+
+[1] https://www.bilibili.com/video/BV1rJ411v7uj?share_source=copy_web
+[2] https://www.bilibili.com/video/BV1qC4y147Qc?share_source=copy_web
+[3] https://www.bilibili.com/video/BV1eL411J7F5?share_source=copy_web
+
+* 扯面
+
+* 手擀面
+
+* 面片
+
+* 祖传手工面
+
+* 馒头
+
+* 花卷
+
+* 包子
+
+* 韭菜盒子
+
 ### III.3 国际通用 / International
 
 Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c549f
 
 ### III.4 饮料 / Drinks
 
-豆浆
+* 牛奶
 
-牛奶
+* 豆浆
 
 ### III.5 甜点 / Sweets
+
+* 戚风蛋糕 | Chiffon Cake
+
+* 焦糖布丁
+
+* 果冻 | Jelly
 
 ### III.6 日式 / Japanese
 

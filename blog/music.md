@@ -1,4 +1,4 @@
-音乐 | Music
+音乐与乐器 | Music and Instruments
 ===
 
 I shall list my favorite albums in this document. Most of them are primarily
@@ -340,3 +340,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 ### Rock [2.5/5]
 
 * Linkin Park
+
+## Instruments
+
+* Harmonica
