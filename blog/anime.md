@@ -74,14 +74,6 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * 俺の彼女と幼なじみが修羅場すぎる | 我女友与青梅竹马的惨烈修罗场 (2013)
 * Sword Art Online (SAO) | 刀剑神域 
 
-### Wildcard Comments | 野卡评论/泛谈
-
-* 京阿尼
-
-* 飞碟社
-
-* 节操社
-
 ## Anime Movies
 
 * 宫崎骏系列
@@ -100,6 +92,20 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 -- 画风非常萌；声优山新的演出水平实在令人印象深刻。
 * 天书奇谈
 -- 这让我联想到了"开源"
+
+## Wildcard Comments | 野卡评论/泛谈
+
+### Male Protagonists
+
+### Female Protagonists
+
+### Producers
+
+* 京阿尼
+
+* 飞碟社
+
+* 节操社
 
 ## My TODO list
 

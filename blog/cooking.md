@@ -7,14 +7,18 @@ This material is released under the CC-BY-SA-4.0 license.
 
 本文档记载了一些纯粹的个人在美国的烹饪喜好以及个人经验。
 其中提供了一些中英文对照，方便(我自己)在美国对照购买。
-主要内容按照以下三大个模块安排：
-I: 厨房常备物资。
-II: 食材注释。
-III：个人食谱。
+主要内容按照以下三大个模块安排： I: 厨房常备物资。
+II: 食材注释。 III：个人食谱。
+
+This document contains my personal preference and cooking experience
+when I stay in the US. It is partly written in Chinese-English bilingual
+mode, in favor of (my own) convenience when creating purchasing checklists.
+The contents are arranged into three modules: (I) must-have's in the kitchen;
+(II) annotations on the ingredients; (III) personal recipies.
 
 料理是理解食材组合与变化的艺术。 -- MZ 2021Q4
 
-美食和睡觉可是最纯粹的两大快乐。 -- MZ 2012Q4
+Cooking is an art of combination and conversion. -- MZ, New England Journal of Culinary, 2021Q4
 
 ## I: 厨房常备物资
 
@@ -68,6 +72,14 @@ III：个人食谱。
 1. 保鲜膜
 1. 锡纸
 1. 烤盘
+
+Blender 其实是一个非常划算的投资，可以买个好一点的。Blender首先可以自己将
+各种香料打粉（辣椒，花椒，八角等），比如将四川辣椒干和辣椒粉的购买列表简化
+为辣椒干。因为香料的使用量并不大，用Blender按需求取适量辣椒干打粉也可以避免
+短期购入过量香料而导致浪费。其次，有Blender也可以解锁果汁冷饮，注意Blender
+需要有碎冰模式。如果不怕清洗麻烦，还可以用Blender来绞肉做馅。相对便宜的Blender
+可能功能繁多，然而功率往往不太高，对八角和冰块之类的硬物可能还是不够高效。
+我买的100刀左右的Blender功率有1000w, 个人感觉碎冰这种事情功率不能再低了。
 
 ### I.3: 清洁用品
 
