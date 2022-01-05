@@ -1,7 +1,7 @@
 Anime (Japanese) List / 动漫列表
 ===
 
-## My Top-Ranked Ones | 个人新番排名
+## My Fav Animes | 个人新番排名
 
 This is not an exhaustive list and it does not include all my watched animes.
 My ranking standard here is very tough. A score of 3/5 is already very high
@@ -17,9 +17,10 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 [★★★★★] 5/5
 
 * Nichijou | 日常 (2011)
--- 毫无疑问日常番的天花板，作画质量优秀。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
+-- 毫无疑问日常番的天花板，作画质量优秀，角色性格鲜明。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
 * Kimetsu no Yaiba | 鬼灭之刃
-* Kimetsu no Yaiba: Mugen | 鬼灭之刃：无限列车
+* Kimetsu no Yaiba: Mugen Ressha | 鬼灭之刃：无限列车
+* Kimetsu no Yaiba: Yuukaku | 鬼灭之刃：游郭/花街
 * Kaguya-sama wa Kokurasetai | 辉夜大小姐想让我告白
 * Violet Evergarden | 紫罗兰的永恒花园
 
@@ -37,6 +38,14 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * Vinland Saga | 冰海战记
 * FULLMETAL ALCHEMIST | 钢之炼金术士 (2009)
 
+[★★★★☆] 3.5/5
+
+* 弱キャラ友崎くん | 弱势角色友崎君
+* ダンベル何キロ持てる？ | 流汗吧！健身少女
+* Hinamatsuri | 黑社会的超能力女儿
+* 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
+* Sound!Euphonium | 吹响吧！上低音号
+
 [★★★] 3/5
 
 * Fate/Stay Night | 命运之夜 (2014)
@@ -44,14 +53,9 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * A Certain Scientific Railgun | 某科学的超电磁炮 (2009)
 * A Certain Scientific Railgun | 某科学的超电磁炮S
 * A Certain Scientific Railgun | 某科学的超电磁炮T
-* A Certain Magical Index | 魔法禁书目录 (2008)
 * Vivy-fluorite eye's song | 薇薇 -萤石眼之歌
-* 弱キャラ友崎くん | 弱势角色友崎君
 * Laid-Back Camp | 摇曳露营
-* ダンベル何キロ持てる？ | 流汗吧！健身少女
 * 王様ランキング | 国王排名 (2021)
-* Hinamatsuri | 黑社会的超能力女儿
-* 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
 * Alice & Zouroku | 爱丽丝与藏六
 * NEW GAME! | 新游戏
 * ふらいんぐうぃっち | 飞翔的魔女
@@ -64,7 +68,6 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * The Demon Girl Next Door | 街角魔族
 * Gamers! | GAMERS! 电玩咖
 * 私に天使が舞い降りた！ | 天使降临到我身边
-* Sound!Euphonium | 吹响吧！上低音号
 
 [★★☆] 2.5/5
 
@@ -73,6 +76,8 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * My Girlfriend is Shobitch | 我的女友是个过度认真的
 * 俺の彼女と幼なじみが修羅場すぎる | 我女友与青梅竹马的惨烈修罗场 (2013)
 * Sword Art Online (SAO) | 刀剑神域 
+* 86 | 86-不存在的战区 (2021)
+* A Certain Magical Index | 魔法禁书目录 (2008)
 
 ## Anime Movies
 
@@ -109,9 +114,10 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 
 ## My TODO list
 
-1. 86-不存在的战区 (2021)
 
 ## References
 
 1. [萌娘百科: 日本动画总导航 | Moegirl Wiki](https://zh.moegirl.org.cn/Template:%E6%97%A5%E6%9C%AC%E5%8A%A8%E7%94%BB%E6%80%BB%E5%AF%BC%E8%88%AA)
 2. [Bilibili 番剧索引 | Bilibili Anime Index]
+3. Crunchyroll Anime Index
+4. GoGoAnime Anime List
