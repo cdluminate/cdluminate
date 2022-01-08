@@ -26,6 +26,7 @@ to both Chinese and non-Chinese friends.
 1. [书法与字体 | Caligraphy and Fonts](fonts.md)
 1. [电子产品 | Reviews on Electronics](electronics.md)
 1. [日用杂物 | Reviews on Sundries](sundires.md)
+1. [编程语言 | Comments on Programming Languages](program.md)
 
 ## Public works -- Deprecated Attempts
 
