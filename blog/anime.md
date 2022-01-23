@@ -79,6 +79,8 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * 86 | 86-不存在的战区 (2021)
 * A Certain Magical Index | 魔法禁书目录 (2008)
 
+[☆] 0.5/5
+
 ## Anime Movies
 
 * 宫崎骏系列
@@ -116,6 +118,8 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 
 ## My TODO list
 
+* Sono Bisque Doll wa Koi wo Suru
+
 
 ## References
 
@@ -123,3 +127,5 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 2. [Bilibili 番剧索引 | Bilibili Anime Index]
 3. Crunchyroll Anime Index
 4. GoGoAnime Anime List
+5. [MyAnimeList](https://myanimelist.net/topanime.php)
+6. [LiveCharts](https://www.livechart.me/)
