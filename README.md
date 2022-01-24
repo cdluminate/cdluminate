@@ -1,4 +1,5 @@
-软件自由乃吾之起源。(Software freedom is my origin.)
+软件自由乃吾之起源，一种贯彻独立与自由一致性的信念。  
+(Software freedom is my origin -- a belief to carry through the consistency of independence and freedom.)  
 
 - 🍀 PhD@JHU studying 🧠[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) & 👀[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision). [[Publications]](blog/pubs.md) [[Google Scholar]](https://scholar.google.com/citations?user=BVIO95UAAAAJ)
 - 💻 Owing to appreciation of 🪐[UNIX philosophy](http://catb.org/%7Eesr/writings/taoup/) & ⚖️[software freedom](https://www.gnu.org/philosophy/free-sw.en.html), I [develop 🍥Debian 🐂GNU/🐧Linux](https://qa.debian.org/developer.php?login=lumin) as a volunteer.
