@@ -1,19 +1,6 @@
 ### Research
 
 
-* Adversarial Ranking Attack and Defense, ECCV, 2020.
-[[PDF]](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46)
-[[arXiv]](https://arxiv.org/abs/2002.11293)
-[[Github]](https://cdluminate.github.io/advrank/)
-* Ladder Loss for Coherent Visual-Semantic Embedding, AAAI, 2020.
-[[PDF]](https://ojs.aaai.org//index.php/AAAI/article/view/7006)
-[[arXiv]](https://arxiv.org/abs/1911.07528)
-[[Github]](https://github.com/cdluminate/ladderloss)
-* Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding, ICCV, 2017.
-[[PDF]](https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html) 
-* Ordinal Regression with Multiple Output CNN for Age Estimation, CVPR, 2016.
-[[PDF]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html)  
-
 <table>
   <tr>
     <td><b>Title</b></td>
@@ -39,5 +26,36 @@
     <td><a href="https://github.com/cdluminate/advorder">AdvOrder</a></td>
   </tr>
   
+  <tr>
+    <td>Adversarial Ranking Attack and Defense</td>
+    <td>ECCV 2020</td>
+    <td><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46">Springer</a></td>
+    <td><a href="https://arxiv.org/abs/2002.11293">arXiv:2002.11293</a></td>
+    <td><a href="https://cdluminate.github.io/advrank/">AdvRank</a></td>
+  </tr>
+
+  <tr>
+    <td>Ladder Loss for Coherent Visual-Semantic Embedding</td>
+    <td>AAAI 2020</td>
+    <td><a href="https://ojs.aaai.org//index.php/AAAI/article/view/7006">AAAI</a></td>
+    <td><a href="https://arxiv.org/abs/1911.07528">arXiv:1911.07528</a></td>
+    <td><a href="https://github.com/cdluminate/ladderloss">Ladderloss</a></td>
+  </tr>
   
+  <tr>
+    <td>Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding</td>
+    <td>ICCV 2017</td>
+    <td><a href="https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html">OpenAccess</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td>Ordinal Regression with Multiple Output CNN for Age Estimation</td>
+    <td>CVPR 2016</td>
+    <td><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html">OpenAccess</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+
 </table>
