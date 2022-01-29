@@ -27,6 +27,14 @@
   </tr>
   
   <tr>
+    <td>SGCN: Sparse Graph Convolution Network for Pedestrian Trajectory Prediction</td>
+    <td>CVPR 2021</td>
+    <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_SGCN_Sparse_Graph_Convolution_Network_for_Pedestrian_Trajectory_Prediction_CVPR_2021_paper.pdf">OpenAccess</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
     <td>Adversarial Ranking Attack and Defense</td>
     <td>ECCV 2020</td>
     <td><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46">Springer</a></td>
