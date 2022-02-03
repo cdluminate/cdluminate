@@ -31,8 +31,8 @@ The following table is continuously synchronized with my [Google Scholar Profile
     <td>SGCN: Sparse Graph Convolution Network for Pedestrian Trajectory Prediction</td>
     <td>CVPR 2021</td>
     <td><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_SGCN_Sparse_Graph_Convolution_Network_for_Pedestrian_Trajectory_Prediction_CVPR_2021_paper.pdf">OpenAccess</a></td>
-    <td></td>
-    <td></td>
+    <td><a href="https://arxiv.org/abs/2104.01528">arXiv:2104.01528</a></td>
+    <td><a href="https://github.com/shuaishiliu/SGCN">SGCN</a></td>
   </tr>
   
   <tr>
