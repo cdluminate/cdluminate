@@ -1,5 +1,6 @@
 ### Research
 
+The following table is continuously synchronized with my [Google Scholar Profile](https://scholar.google.com/citations?user=BVIO95UAAAAJ).
 
 <table>
   <tr>
