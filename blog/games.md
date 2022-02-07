@@ -48,7 +48,7 @@ consumes brain.
 
 区间/Range [10/10]
 
-* 神界原罪2 | Divinity: Origin Sin 2 (10/10) -- 我心目中最好的游戏。
+* 神界原罪2 | Divinity: Origin Sin 2 (10/10) -- 我心目中最好的游戏。遇到宝箱没有钥匙可以砸，遇到门没有钥匙可以砸...。
 
 区间/Range [9/10, 10/10)
 
@@ -57,6 +57,8 @@ consumes brain.
 * 星界边境 | StarBound (9/10)
 * 空洞骑士 | Hollow Knight (9/10)
 * 博得之门 | Baldur's Gate 3 (9/10)
+* 塞尔达传说：荒野之息 | Zelda: Breath of the Wild (9/10) -- 眼见之处均可及的自由，所有墙都可以爬，这很重要。
+* 原神 | Genshin Impact (9/10) -- 继承了BoW的特性，又增添了大量其没有的新内容。角色好看，部分角色形象塑造令人印象深刻。
 
 [8/10, 9/10)
 
