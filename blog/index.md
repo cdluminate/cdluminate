@@ -11,12 +11,13 @@ content instead of writing some front-end code. Some materials are
 written in the mixture of Chinese and English because they are shared
 to both Chinese and non-Chinese friends.
 
-## 经历感想 / Experience and Thoughts
+## 经历感想与评价 / Experience, Thoughts, and Reviews
 
-1. [成为官方Debian开发者 | Becoming Official Debian Developer](2018-08-dd.md)
+1. [2021-12 游戏预览与论文审稿 | Game Trailer and Paper Review](game-trailer-and-paper-review.md)
 1. [2021-08 巴尔的摩的第一印象](2021-08-baltimore.md)
+1. [2018 成为官方Debian开发者 | Becoming Official Debian Developer](2018-08-dd.md)
 
-## 事物评价 / Reviews of Things
+## 个人列表 | Personal Listings
 
 1. [音乐和乐器 | Music and Instruments](music.md)
 1. [日本动漫 | Japanese Anime](anime.md)
@@ -40,7 +41,7 @@ to both Chinese and non-Chinese friends.
 - Project for Fun: [GPU-load-watcher](https://github.com/cdluminate/gpu-load-watcher)
 - [GSoC2019](https://summerofcode.withgoogle.com/projects/#6268942782300160) / [BLAS/LAPACK Runtime Switching Mechanism for Gentoo](https://wiki.gentoo.org/wiki/Blas-lapack-switch)
 
-# Deprecated Attempts
+## Deprecated Attempts
 
 - [LibAWSL](https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md)
 - [DUPR](https://github.com/dupr/duprkit)
