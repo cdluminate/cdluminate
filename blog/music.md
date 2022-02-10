@@ -95,6 +95,9 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 
 ### Japanese Anime OSTs [4.5/5]
 
+* Tate no Yūsha no Nariagari | 盾之勇者成名录 OST [https://www.bilibili.com/video/BV1At411j7UT/]
+  - Autoroll [5/5]
+
 * Vinland Saga OST | 冰海战记OST
   - ED: Aimer, Torches [4.5/5] | Aimer的嗓音非常完美，很符合这部动漫的意境。是我少数不舍的跳过的动漫ED。
 
