@@ -23,6 +23,7 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 * Kimetsu no Yaiba: Yuukaku | 鬼灭之刃：游郭/花街
 * Kaguya-sama wa Kokurasetai | 辉夜大小姐想让我告白
 * Violet Evergarden | 紫罗兰的永恒花园
+* Hinamatsuri | 黑社会的超能力女儿
 
 [★★★★☆] 4.5/5
 
@@ -43,7 +44,6 @@ Covering animes till (时间线覆盖至): *2021-Q4*
 
 * 弱キャラ友崎くん | 弱势角色友崎君
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
-* Hinamatsuri | 黑社会的超能力女儿
 * 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
 * Sound!Euphonium | 吹响吧！上低音号
 
