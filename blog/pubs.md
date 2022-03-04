@@ -13,6 +13,15 @@ The following table is continuously synchronized with my [Google Scholar Profile
   </tr>
   
   <tr>
+    <td>C07</td>
+    <td><div>Enhancing Adversarial Robustness for Deep Metric Learning</div></td>
+    <td>CVPR 2022</td>
+    <td></td>
+    <td><a href="https://arxiv.org/abs/2203.01439">arXiv:2203.01439</a></td>
+    <td><a href="https://github.com/cdluminate/robdml">RobDML</a></td>
+  </tr>
+  
+  <tr>
     <td>X01</td>
     <td><div>Adversarial Attack and Defense in Deep Ranking</div></td>
     <td>arXiv 2021</td>
