@@ -16,7 +16,7 @@ to both Chinese and non-Chinese friends.
 时间相关。
 
 1. [2021-08 巴尔的摩的第一印象](2021-08-baltimore.md)
-1. [2018 成为官方Debian开发者 | Becoming Official Debian Developer](2018-08-dd.md)
+1. [2018-08 成为官方Debian开发者 | Becoming Official Debian Developer](2018-08-dd.md)
 
 ## 个人经验 | Personal Listings
 
@@ -26,6 +26,8 @@ to both Chinese and non-Chinese friends.
 1. [日本动漫 | Japanese Anime](anime.md)
 1. [第九艺术 | Artistic Video Games](games.md)
     1. [游戏预览与论文审稿 | Game Trailer and Paper Review](game-trailer-and-paper-review.md)
+    1. [原神 | Genshin Impact] TODO
+    1. [艾尔登法环 | Elden Ring](elden-ring.md)
 1. [料理艺术 | Cooking](cooking.md)
     1. [个人食谱 | Personal Recipe](recipe.md)
 1. [开源/自由软件 | Free and Open Source Software](foss.md)
