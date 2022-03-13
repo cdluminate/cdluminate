@@ -29,6 +29,14 @@ The following table is continuously synchronized with my [Google Scholar Profile
     <td><a href="https://arxiv.org/abs/2106.03614">arXiv:2106.03614</a></td>
     <td><a href="https://cdluminate.github.io/robrank/">RobRank</a></td>
   </tr>
+
+  <tr>
+    <td>J01</td>
+    <td>Adaptive Ladder Loss for Learning Coherent Visual-Semantic Embedding</td>
+    <td><a href="https://ieeexplore.ieee.org/abstract/document/9665378">IEEE Xplore</a></td>
+    <td></td>
+    <td></td>
+  </tr>
   
   <tr>
     <td>C06</td>
