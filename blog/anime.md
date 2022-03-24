@@ -16,21 +16,17 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 
 [★★★★★] 5/5
 
-* Nichijou | 日常 (2011)
--- 毫无疑问日常番的天花板，作画质量优秀，角色性格鲜明。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
-* Kimetsu no Yaiba | 鬼灭之刃
-* Kimetsu no Yaiba: Mugen Ressha | 鬼灭之刃：无限列车
-* Kimetsu no Yaiba: Yuukaku | 鬼灭之刃：游郭/花街
-* Kaguya-sama wa Kokurasetai | 辉夜大小姐想让我告白
-* Violet Evergarden | 紫罗兰的永恒花园
+* Nichijou | 日常 (2011) -- 毫无疑问日常番的天花板，作画质量优秀，角色性格鲜明。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
+* Kimetsu no Yaiba | 鬼灭之刃 -- 这里也包括了无限列车和花街篇。近几年少有的质量过硬的热血动漫，尤其是在我的英雄学院作者不当人的事实被揭露之后。
+* Kaguya-sama wa Kokurasetai | 辉夜大小姐想让我告白 -- 是初恋的感觉，甜而不腻。
+* Violet Evergarden | 紫罗兰的永恒花园 -- 感受到爱的存在。Felt the existence of love.
 * Hinamatsuri | 黑社会的超能力女儿
 
 [★★★★☆] 4.5/5
 
 * Miss Kobayashi's Dragon Maid | 小林家的龙女仆
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
-* Mushoku Tensei (Season I and II) | 无职转生 (I，II季)
--- 各方面肉眼可见的制作精良，剧情引人入胜。期待第III季。
+* Mushoku Tensei (Season I and II) | 无职转生 (I，II季) -- 各方面肉眼可见的制作精良，剧情引人入胜。期待第III季。
 * Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 
 [★★★★] 4/5
@@ -56,7 +52,6 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 * A Certain Scientific Railgun | 某科学的超电磁炮T
 * Vivy-fluorite eye's song | 薇薇 -萤石眼之歌
 * Laid-Back Camp | 摇曳露营
-* 王様ランキング | 国王排名 (2021)
 * Alice & Zouroku | 爱丽丝与藏六
 * NEW GAME! | 新游戏
 * ふらいんぐうぃっち | 飞翔的魔女
@@ -79,6 +74,7 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 * Sword Art Online (SAO) | 刀剑神域 
 * 86 | 86-不存在的战区 (2021)
 * A Certain Magical Index | 魔法禁书目录 (2008)
+* 王様ランキング | 国王排名 (2021) -- 开场不错，但是从前三分之一就开始剧情质量逐渐下滑到影响观感的程度，最终大幅拉低了给分，并让人后悔追番。
 
 [☆] 0.5/5
 
