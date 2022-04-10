@@ -1,9 +1,12 @@
 Caligraphy and Fonts
 ===
 
-### 钢笔
+* Mono-spaced Font (for programming): Operator Mono > Monaco > IBM Plex > Fira Code > *
 
-* Mono-spaced Font (for programming): Operator Mono > Monaco > Fira Code > *
 * Serief Font: Minion Pro, Times New Roman.
+
+
 * Handwriting: roundhand.
+
+* Fountain Pens: LAMY AL-Star > ...
 
