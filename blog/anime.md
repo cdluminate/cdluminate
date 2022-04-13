@@ -42,6 +42,7 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
 * 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
 * Sound!Euphonium | 吹响吧！上低音号
+* Masamune-kun no Revenge
 
 [★★★] 3/5
 
