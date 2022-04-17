@@ -28,6 +28,7 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
 * Mushoku Tensei (Season I and II) | 无职转生 (I，II季) -- 各方面肉眼可见的制作精良，剧情引人入胜。期待第III季。
 * Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
+* SPY×FAMILY | 间谍过家家 -- 非常精彩的设定，演出效果极佳。评分完结后再固定。
 
 [★★★★] 4/5
 
