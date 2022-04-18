@@ -12,26 +12,26 @@ in some way.
 该列表的评分标准非常残酷，其实3/5分已经非常高了。任何被我给予大于3/5分评价
 的动漫作品都已经至少在某一方面令我印象深刻。
 
-Covering animes till (时间线覆盖至): *2022-Q1*
+Covering animes till (时间线覆盖至): *2022-Q2*
 
 [★★★★★] 5/5
 
 * Nichijou | 日常 (2011) -- 毫无疑问日常番的天花板，作画质量优秀，角色性格鲜明。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
 * Kimetsu no Yaiba | 鬼灭之刃 -- 这里也包括了无限列车和花街篇。近几年少有的质量过硬的热血动漫，尤其是在我的英雄学院作者不当人的事实被揭露之后。
 * Kaguya-sama wa Kokurasetai | 辉夜大小姐想让我告白 -- 是初恋的感觉，甜而不腻。
-* Violet Evergarden | 紫罗兰的永恒花园 -- 感受到爱的存在。Felt the existence of love.
-* Hinamatsuri | 黑社会的超能力女儿
 
 [★★★★☆] 4.5/5
 
+* Violet Evergarden | 紫罗兰的永恒花园 -- 感受到爱的存在。Felt the existence of love.
+* Hinamatsuri | 黑社会的超能力女儿
 * Miss Kobayashi's Dragon Maid | 小林家的龙女仆
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
 * Mushoku Tensei (Season I and II) | 无职转生 (I，II季) -- 各方面肉眼可见的制作精良，剧情引人入胜。期待第III季。
-* Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 * SPY×FAMILY | 间谍过家家 -- 非常精彩的设定，演出效果极佳。评分完结后再固定。
 
 [★★★★] 4/5
 
+* Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 * Fate/Zero (2011)
 * Astro Boy | 铁壁阿童木 (2003)
 * Vinland Saga | 冰海战记
@@ -43,7 +43,7 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
 * 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
 * Sound!Euphonium | 吹响吧！上低音号
-* Masamune-kun no Revenge
+* Masamune-kun no Revenge | 政宗君的复仇
 
 [★★★] 3/5
 
@@ -94,30 +94,18 @@ Covering animes till (时间线覆盖至): *2022-Q1*
 ## Chinese Anime
 
 * 仙王的日常生活
-* 罗小黑战记
--- 画风非常萌；声优山新的演出水平实在令人印象深刻。
-* 天书奇谈
--- 这让我联想到了"开源"
+* 罗小黑战记 -- 画风非常萌；声优山新的演出水平实在令人印象深刻。
+* 天书奇谈 -- 这让我联想到了"开源"
 * 风灵玉秀
+* 凡人修仙传
 
-## Wildcard Comments | 野卡评论/泛谈
+## Random Comments | 野卡评论/泛谈
 
-### Male Protagonists
+## Male Protagonists
 
-### Female Protagonists
+## Female Protagonists
 
-### Producers
-
-* 京阿尼
-
-* 飞碟社
-
-* 节操社
-
-### 透过作品看观众
-
-## My TODO list
-
+## See Audiences through Animes | 透过作品看观众
 
 
 ## References
