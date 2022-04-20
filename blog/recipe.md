@@ -65,14 +65,31 @@ I insist in the simplest ways for cooking, and pursue the pure and natural flavo
 7. 小火炖的最后15分钟左右放入适量盐，使肉汤有偏淡的底味。
 8. 出锅前再放一次盐，将汤味补正。准备小碗，放香菜或者葱花等，将肉汤乘出。
 
+### I.2.3. 炒番茄吊汤
+
+材料：西红柿，姜
+
+步骤：
+1. 姜切末，西红柿切片或者切丁
+2. 炒锅热锅下油，油温升高之后将姜末爆香
+3. 下西红柿炒，并加入酱油和盐
+4. 西红柿出水后锅里加水，酌情加醋
+
+这份汤可以继续放入其他材料，做成比如蛋花汤，或者煮白菜或者排骨。
+注意，炒制的部分油放少一些，否则最后的汤可能会很油。
+
 ## I.3. 中等
+
+### I.3.1. 白菜豆腐煲
 
 ## I.4. 复杂
 
-### II. 中国白案 / Chinese White Board
+# II. 中国白案 / Chinese White Board
 
 白案和核心出发点是和面。和面有问题后续所有流程都会比较难受。
 拉面的典型配比：500克面粉，3克盐，1克碱。
+
+## II.1. 面条类
 
 * 拉面/拉条子
 
@@ -88,13 +105,23 @@ I insist in the simplest ways for cooking, and pursue the pure and natural flavo
 
 * 祖传手工面
 
+## II.2. 蒸糕类
+
 * 馒头
 
 * 花卷
 
 * 包子
 
-* 韭菜盒子
+## II.3. 饼类
+
+### II.3.1. 韭菜盒子
+
+### II.3.2. 油酥饼
+
+![yousubing](photos/shrink-20211031_124952.jpg)
+
+###
 
 ### III. 国际通用 / International
 
