@@ -11,6 +11,15 @@ The following table is continuously synchronized with my [Google Scholar Profile
     <td><b>arXiv</b></td>
     <td><b>Github</b></td>
   </tr>
+
+  <tr>
+    <td>X02</td>
+    <td><div>On Trace of PGD-Like Adversarial Attacks</div></td>
+    <td>arXiv 2022</td>
+    <td></td>
+    <td><a href="https://arxiv.org/abs/2205.09586">arXiv:2205.09586</a></td>
+    <td></td>
+  </tr>
   
   <tr>
     <td>C07</td>
