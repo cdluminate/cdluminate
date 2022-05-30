@@ -4,14 +4,12 @@
 游戏是第九艺术，它集成了美术，音乐，剧本，还有玩家交互。
 好的影视作品也可以集成前三者，但是能让玩家参与到故事中的只有游戏。
 从小到大我玩过非常多的游戏，在steam上也浏览过上千款游戏。
-我会在本文档中列出部分我玩过的游戏，并对它们做出一些简短的评价。
 
 Game is the ninth art, integrating painting, music, scripts, as well
 player interaction all toghther. Good films and television shows can also
 integrate the former three, but only games can involve the players into
 to story telling process. In the past I have played many games, and browsed
-the trailers for thousands of games. In this document, I will list some
-games I have played in the past, and make some brief comments accordingly.
+the trailers for thousands of games.
 
 游戏的预告片实际上就像一篇论文的摘要。游戏需要用有限的时间在预告片里
 向潜在玩家展示作品里最吸引人的地方，比如展示游戏的创新性，以及美术，音乐等
