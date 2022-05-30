@@ -9,6 +9,8 @@ Software Freedom | 软件自由
 * Free software gives you the power to let it shut up and stop poping up any information to you, interrupting your focus.  
 * Free software comes without warranty. It is not guaranteed to be easy to use, especially when compared to paied proprietary software.  
 * Free software forms a helpful community -- we work together towards a common belief, just for fun.  
+* Free software accurately executes your commands -- it neither does a bit more, nor a bit less. It is not naughty.  
+* Free software might be buggy and out of enough maintenance crew to fix it.
 
 ### Appendix: Official explaination
 
