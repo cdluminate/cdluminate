@@ -25,7 +25,7 @@ The following table is continuously synchronized with my [Google Scholar Profile
     <td>C07</td>
     <td><div>Enhancing Adversarial Robustness for Deep Metric Learning</div></td>
     <td>CVPR 2022</td>
-    <td></td>
+    <td><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Zhou_Enhancing_Adversarial_Robustness_for_Deep_Metric_Learning_CVPR_2022_paper.html">OpenAccess</a></td>
     <td><a href="https://arxiv.org/abs/2203.01439">arXiv:2203.01439</a></td>
     <td><a href="https://github.com/cdluminate/robdml">RobDML</a></td>
   </tr>
