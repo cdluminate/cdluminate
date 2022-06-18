@@ -14,7 +14,7 @@ in some way.
 
 Covering animes till (时间线覆盖至): *2022-Q2*
 
-[★★★★★] 5/5 Exceptional | 优秀到简直离谱
+[★★★★★] 5/5 Epic | 传说
 
 * Nichijou | 日常 (2011) -- 毫无疑问日常番的天花板，作画质量优秀，角色性格鲜明。京阿尼用不同寻常的方式表现了柔和而又平静的日常。我们所经历的每一个日常，或许就是一个又一个的奇迹。
 * Kimetsu no Yaiba I | 鬼灭之刃 I -- 近几年少有的质量过硬的热血动漫，人物塑造非常深刻。
@@ -23,26 +23,27 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Kaguya-sama wa Kokurasetai I | 辉夜大小姐想让我告白 I -- 是初恋的感觉，甜而不腻。
 * Kaguya-sama wa Kokurasetai II | 辉夜大小姐想让我告白 II -- 那种温馨感觉已经照耀到我了。
 
-[★★★★☆] 4.5/5 Outstanding | 杰出作品
+[★★★★☆] 4.5/5 Outstanding | 杰出
 
 * Violet Evergarden | 紫罗兰的永恒花园 -- 感受到爱的存在。Felt the existence of love.
 * Hinamatsuri | 黑社会的超能力女儿 -- 反差萌？
 * Miss Kobayashi's Dragon Maid | 小林家的龙女仆 -- 也是类似温馨的感觉。
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
-* Mushoku Tensei (Season I and II) | 无职转生 (I，II季) -- 各方面肉眼可见的制作精良，剧情引人入胜，不过我个人感觉有些细节处理上的小问题。期待第III季。
+* Mushoku Tensei (Season I) | 无职转生 (I季) -- 各方面肉眼可见的制作精良，剧情引人入胜，不过我个人感觉有些细节处理上的小问题。期待第III季。
+* Mushoku Tensei (Season II) | 无职转生 (II季) --
 * SPY×FAMILY | 间谍过家家 -- 非常精彩的设定，演出效果极佳。评分完结后再固定。
-* Kaguya-sama wa Kokurasetai III | 辉夜大小姐想让我告白 III -- 这个番开始整一些奇怪的活了。
+* Kaguya-sama wa Kokurasetai III | 辉夜大小姐想让我告白 III -- 这个番从这一季开始整一些奇怪的活了。
 
 [★★★★] 4/5 Excellent | 有才
 
-* Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
-* Fate/Zero (2011)
-* Astro Boy | 铁壁阿童木 (2003)
+* Fate/Zero (2011) -- Fate系列只喜欢Zero和UBW
+* Astro Boy: Tetsuwan Atom | 铁壁阿童木 (2003) -- 我最喜欢的是 Episode 24 (mind-controlling bear)，因为这一集启发了我对AI的期望。
 * Vinland Saga | 冰海战记 -- 好的故事，好的品质。
-* FULLMETAL ALCHEMIST | 钢之炼金术士 (2009) -- 欧美榜单常年第一，不过好像并不是十环命中我胃口。
 
 [★★★★☆] 3.5/5 Very Good | 相当好
 
+* 夏日重现 | Summer Time Render -- 时间回溯还是很对味的
+* Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 * 弱キャラ友崎くん | 弱势角色友崎君
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
 * 「青春ブタ野郎」シリーズ | 青春猪头少年不会梦到兔女郎学姐
@@ -52,7 +53,7 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 
 [★★★] 3/5 Fairly Good | 很不错
 
-* Fate/Stay Night | 命运之夜 (2014)
+* Fate/Stay Night: UBW | 命运之夜 (2014)
 * Re:Zero | Re:从零开始的异世界生活 (2016)
 * A Certain Scientific Railgun | 某科学的超电磁炮 (2009) -- 我的入宅作之一。
 * A Certain Scientific Railgun | 某科学的超电磁炮S
@@ -71,6 +72,7 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Gamers! | GAMERS! 电玩咖
 * 私に天使が舞い降りた！ | 天使降临到我身边
 * Sword Art Online (SAO) I | 刀剑神域 I
+* FULLMETAL ALCHEMIST | 钢之炼金术士 (2009) -- 欧美榜单常年第一，不过好像并不是十环命中我胃口，主要可能是因为太长了。
 
 [★★☆] 2.5/5 Fair | 还行
 
