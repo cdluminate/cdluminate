@@ -31,18 +31,18 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
 * Mushoku Tensei (Season I) | 无职转生 (I季) -- 各方面肉眼可见的制作精良，剧情引人入胜，不过我个人感觉有些细节处理上的小问题。期待第III季。
 * Mushoku Tensei (Season II) | 无职转生 (II季) --
-* SPY×FAMILY | 间谍过家家 -- 非常精彩的设定，演出效果极佳。评分完结后再固定。
 * Kaguya-sama wa Kokurasetai III | 辉夜大小姐想让我告白 III -- 这个番从这一季开始整一些奇怪的活了。
+* 夏日重现 | Summer Time Render -- 时间回溯还是很对味的。新鲜感，悬念和节奏把握真的很好。
 
 [★★★★] 4/5 Excellent | 有才
 
+* SPY×FAMILY | 间谍过家家 -- 非常精彩的设定，演出效果极佳。评分完结后再固定。
 * Fate/Zero (2011) -- Fate系列只喜欢Zero和UBW
 * Astro Boy: Tetsuwan Atom | 铁壁阿童木 (2003) -- 我最喜欢的是 Episode 24 (March of the Micro Bears)，因为这一集启发了我对AI的期望。
 * Vinland Saga | 冰海战记 -- 好的故事，好的品质。
 
 [★★★★☆] 3.5/5 Very Good | 相当好
 
-* 夏日重现 | Summer Time Render -- 时间回溯还是很对味的
 * Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 * 弱キャラ友崎くん | 弱势角色友崎君
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
