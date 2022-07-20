@@ -43,6 +43,7 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 
 [★★★★☆] 3.5/5 Very Good | 相当好
 
+* Made in Abyss | 来自深渊
 * Sono Bisque Doll wa Koi wo Suru | 更衣人偶坠入爱河
 * 弱キャラ友崎くん | 弱势角色友崎君
 * ダンベル何キロ持てる？ | 流汗吧！健身少女
