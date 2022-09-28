@@ -1,7 +1,7 @@
 Caligraphy and Fonts
 ===
 
-* Mono-spaced Font (for programming): Operator Mono > Monaco > IBM Plex > Fira Code > *
+* Mono-spaced Font (for programming): Operator Mono > Monaco > Monolisa > Fira Code > *
 
 * Serief Font: Minion Pro, Times New Roman.
 
