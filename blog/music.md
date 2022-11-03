@@ -192,6 +192,9 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 
 ### Electronic (Trance/Progressive) [3.5/5]
 
+* Jason Van Wyk
+  - Luminate (in trance we trust 017) [5]
+
 * Oceanlab
   - Sirens of the sea [4.2]
   - On a good day [4]
