@@ -24,6 +24,14 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
   - Blue Straggler
 
 * Genshin Impact OST [5/5]
+  - Forest of Jnana and Vidya (Sumeru) [4/5]
+  - Millelith's Watch [3/5]
+  - Islands of the Lost and Forgotten [3.5/5]
+  - Realm of Tranquil Eternity [3/5]	
+  - Vortex of Legends [5/5]
+  - Jade Moon upon a Sea of Clouds [5/5]
+  - City of Winds and and Idylls [5/5]
+  - The Wind and the Start Traveler [5/5]
 
 * Kan R. Gao / To The Moon
   - To the moon - main theme
@@ -92,6 +100,10 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 * Ori and the will of the wisps | 奥日与精灵意志
 
 * Cross Code | 远星物语
+
+* Undertale OST
+
+* Faster Than Light (FTL)
 
 ### Japanese Anime OSTs [4.5/5]
 
@@ -178,7 +190,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 * Cymophane
   - Tassel
 
-### Americal Anime OSTs [4/5]
+### American Anime OSTs [4/5]
 
 * Jeff Williams RWBY volume 1
   - I burn
