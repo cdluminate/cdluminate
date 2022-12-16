@@ -5,14 +5,16 @@ Anime (Japanese) List / 动漫列表
 
 This is not an exhaustive list and it does not include all my watched animes.
 My ranking standard here is very tough. A score of 3/5 is already very high
-actually.  Any anime with a score higher than 3/5 must have deeply impressed me
-in some way.
+actually. Any anime with a score higher than 3/5 must have deeply impressed me
+in some way. The unnovel animes won't be mentioned, unless they have some
+highlights that attracted me.
 
 这是一个不完全的动漫评分列表，其并不包括所有我看过的动漫作品。
 该列表的评分标准非常残酷，其实3.5/5分已经非常高了。任何被我给予大于3.5/5分评价
 的动漫作品都已经至少在某一方面令我印象极度深刻。
+厕纸番除非有明显吸引我的亮点，不然不作提及。
 
-Covering animes till (时间线覆盖至): *2022-Q2*
+Covering animes till (时间线覆盖至): *2022-Q4*
 
 [★★★★★] 5/5 Epic | 传说
 
@@ -30,7 +32,7 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Miss Kobayashi's Dragon Maid | 小林家的龙女仆 -- 也是类似温馨的感觉。
 * Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法
 * Mushoku Tensei (Season I) | 无职转生 (I季) -- 各方面肉眼可见的制作精良，剧情引人入胜，不过我个人感觉有些细节处理上的小问题。期待第III季。
-* Mushoku Tensei (Season II) | 无职转生 (II季) --
+* Mushoku Tensei (Season II) | 无职转生 (II季) -- 无职没给满分基本上是因为红毛Eris的性格。
 * Kaguya-sama wa Kokurasetai III | 辉夜大小姐想让我告白 III -- 这个番从这一季开始整一些奇怪的活了。
 * 夏日重现 | Summer Time Render -- 时间回溯还是很对味的。新鲜感，悬念和节奏把握真的很好。
 
@@ -51,6 +53,8 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Sound!Euphonium | 吹响吧！上低音号
 * Masamune-kun no Revenge | 政宗君的复仇
 * Asterisk War | 学战都市 -- 制作是非常优秀的。
+* Chainsaw Man | 电锯人 -- 剧情比较神经，很难预测接下来会发生什么。女主和女二都很撩。
+* Domestic Girlfriend | 家有女友
 
 [★★★] 3/5 Fairly Good | 很不错
 
@@ -65,7 +69,7 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * NEW GAME! | 新游戏
 * ふらいんぐうぃっち | 飞翔的魔女
 * Amagi Brilliant Park | 甘城光辉游乐园 (2014)
-* Overlord
+* Overlord I, II, III, IV
 * 男子高中生的日常 (2012)
 * Hanasaku iroha | 花开伊吕波 (2011)
 * To Your Eternity | 致不灭的你
@@ -84,10 +88,11 @@ Covering animes till (时间线覆盖至): *2022-Q2*
 * Sword Art Online (SAO) II | 刀剑神域 II
 * 86 | 86-不存在的战区 (2021)
 * A Certain Magical Index | 魔法禁书目录 (2008)
+* Lycoris Recoil | 石蒜物语
 
 [☆] 0.5/5 Oops | 一言难尽
 
-* Sword Art Online (SAO) III | 刀剑神域 III -- 第三季真的不太行。
+* Sword Art Online (SAO) III | 刀剑神域 III -- 第三季尤其下半段非常差劲。
 * 王様ランキング | 国王排名 (2021) -- 开场不错，但是从前三分之一就开始剧情质量逐渐下滑到影响观感的程度，最终大幅拉低了给分，并让人后悔追番。
 
 ## Anime Movies
