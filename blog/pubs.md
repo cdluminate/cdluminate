@@ -11,6 +11,15 @@ The following table is continuously synchronized with my [Google Scholar Profile
     <td><b>arXiv</b></td>
     <td><b>Github</b></td>
   </tr>
+  
+  <tr>
+    <td>C08</td>
+    <td><div>Resource-Adaptive Federated Learning with All-In-One Neural Composition</div></td>
+    <td>NeurIPS 2022</td>
+    <td><a href="https://openreview.net/forum?id=wfel7CjOYk">Openreview</a></td>
+    <td></td>
+    <td></td>
+  </tr>
 
   <tr>
     <td>X02</td>
