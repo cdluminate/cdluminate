@@ -8,7 +8,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 
 ### Video Game OSTs [5/5]
 
-* Curtis Schweitzer / Starbound OST [5/5]
+* Curtis Schweitzer / Starbound OST (星界边境) [5/5]
   - Mira
   - Europa
   - Atlas
@@ -23,7 +23,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
   - Starbound
   - Blue Straggler
 
-* Genshin Impact OST [5/5]
+* 陈致逸 / Genshin Impact OST (原神) [5/5]
   - Forest of Jnana and Vidya (Sumeru) [4/5]
   - Millelith's Watch [3/5]
   - Islands of the Lost and Forgotten [3.5/5]
@@ -33,12 +33,12 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
   - City of Winds and and Idylls [5/5]
   - The Wind and the Start Traveler [5/5]
 
-* Kan R. Gao / To The Moon
+* Kan R. Gao / To The Moon (去月球)
   - To the moon - main theme
 
 * Silent Hill 2 OST
 
-* 神界原罪
+* Divinity: Original Sin (神界原罪)
   - Guardians of light
   - Myterious guest
   - flutter of a butterfly
@@ -46,7 +46,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
   - power of innocence
   - drowning hope
 
-* 神界原罪2
+* Divinity: Original Sin 2 (神界原罪2)
   - rivellon
 
 * Oneshot OST
@@ -79,7 +79,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 
 * RockmanX 5
 
-* 尼尔：机械纪元
+* Nier: Automata | 尼尔：机械纪元
 
 * Life is strange
   - blackwell academy
@@ -87,11 +87,11 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 * 上古卷轴V
   - Far Horizons
 
-* 空洞骑士
+* Hollow Knight | 空洞骑士
   - Hollow Knight
   - Greenpath
 
-* 空洞骑士：丝之歌
+* Hollow Knight: Silk Song | 空洞骑士：丝之歌
   - Bonebottom
 
 * 蔡志展 / 武林群侠传
@@ -99,9 +99,38 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 
 * Ori and the will of the wisps | 奥日与精灵意志
 
-* Cross Code | 远星物语
+* Deniz Akbulut / CrossCode OST | 远星物语
+  - Welcome to CrossWorlds [4/5]
+  - Rhombus Dungeon [4.5/5]
+  - Lea! [4.5/5]
+  - Temple of the Valley [4/5]
+  - Raid [5/5]
+  - Past Events [4/5]
+  - Temple of the Grand Tree [4/5]
+  - Old Hideout [5/5]
+  - Shizuka [4/5]
+
+* Deniz Akbulut / Cross Code OST EX
+  - Title (Early-Access, 2015) [5/5]
 
 * Undertale OST
+  - Once Upon a Time [4/5]
+  - Ruins [4.5/5]
+  - Enemy Approaching [4/5]
+  - sans. [4/5]
+  - Bonetrousle [3.5/5]
+  - Memory [4/5]
+  - Spooktune [4/5]
+  - Spear of Justice [5/5]
+  - Confession [4/5]
+  - CORE [4.5/5]
+  - Death by Glamour [4.5/5]
+  - Undertale [3.5/5]
+  - ASGORE [3.5/5]
+  - Finale [4/5]
+  - Hopes and Dreams [4/5]
+  - SAVE the World [4/5]
+  - Battle Against A True Hero [4/5]
 
 * Faster Than Light (FTL)
 
