@@ -1,0 +1,458 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{hyperref}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+BLAS/LAPACK Ecosystem Enhancement for Debian
+\end_layout
+
+\begin_layout Author
+Mo Zhou 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+tt <lumin@debian.org>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Dense (numerical) Linear Algebra plays an important role in scientific computing
+, and is typically implemented by the BLAS/LAPACK libraries.
+ In Debian linux, these libraries have been well-organized and integrated
+ into the system, forming a tiny ecosystem with the help of a runtime switching
+ mechanism.
+ To date, there are still many aspects from which this tiny ecosystem can
+ be improved.
+ For example, it lacks documentation and lintian checks; Some state-of-the-art
+ implementations are still not incorporated yet; Deprecated components are
+ still present in the packages.
+ These items altogether requires a considerable amount of time, energy and
+ skill.
+ The goal of the project is to enhance the ecosystem from the mentioned
+ aspects.
+\end_layout
+
+\begin_layout Section
+Synopsis
+\end_layout
+
+\begin_layout Standard
+BLAS/LAPACK are typical dense linear algebra libraries, which play important
+ roles in the field of scientific computing.
+ Based on these libraries, many upper layer libraries and applications have
+ been developed, such as Numpy, Octave and Julia.
+ Within these libraries and applications, BLAS/LAPACK libraries are always
+ one of the performance bottlenecks.
+ To this end, many well-optimized alternative BLAS/LAPACK implementations
+ have been provided by different vendors, while maintaining both the API
+ and ABI compatibility to a large extent.
+ Existence of many BLAS/LAPACK implementations poses challenge to distribution
+ development as the user demand varies greatly across different scenarios.
+ For Debian Linux, these challenges can be appropriately coped with.
+\end_layout
+
+\begin_layout Standard
+The group of BLAS/LAPACK packages provided by Debian archive forms a tiny
+ ecosystem, as these packages have to be well-integrated into the system
+ and be manged in a Debian-specific and united way.
+ However, currently there are still many aspects from which the Debian's
+ BLAS/LAPACK ecosystem can be improved:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Lack of documentation.
+
+\series default
+ Currently the only publically available documentation about Debian's BLAS/LAPAC
+K ecosystem is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{debian-wiki}
+\end_layout
+
+\end_inset
+
+.
+ This documentation only introduces the basic usage of the runtime switching
+ mechanism, but does not explain any implementation detail and the way to
+ maintain the group of packages.
+ As a result, maintanence of such ecosystem is highly dependant on the original
+ Debian maintainers, and an external contributor may have hard time understandin
+g the details in the ecosystem.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Some new state-of-the-art open-source implementations are still not packaged.
+ 
+\series default
+For example the libflame from UT Austin.
+ libflame implements the LAPACK with notable performance improvement over
+ netlib (standard) LAPACK.
+ Currently there are many optimized LAPACK implementations in Debian, but
+ there are only one LAPACK implementation currently.
+ That means, introducing libflame could greatly boost Debian performance
+ from the LAPACK perspective in a free software setup (where Intel MKL is
+ not preferred for some reason).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Convention of BLAS/LAPACK dependencies is undocumented.
+
+\series default
+ Some Debian developers may write a specific implementation in the Depends
+ field of a package and hence fall into the pitfall.
+ We need to document the correct way of writting BLAS/LAPACK dependencies
+ somewhere, for instance in the debian science team policy.
+ Meanwhile, we may contribute some lintian checks to hint developers.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Deprecation process of libcblas.so has not been finished yet.
+
+\series default
+ Debian had decided to merge the ABI (symbols) of libcblas.so into libblas.so.
+ So this fact has to be documented somewhere (e.g.
+ a lintian warning), in order to prevent developers from linking programs
+ against libcblas.so, which leads to poor performance.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Julia package uses an embeded copies of openblas and suitesparse due to
+ the requirement of some special configurations.
+
+\series default
+ Ideally, the embedded copy should be eliminated in order to reduce maintanence
+ difficulty.
+\end_layout
+
+\begin_layout Section
+Deliverables & Timeline
+\end_layout
+
+\begin_layout Standard
+In brief we are proposing to enhance the BLAS/LAPACK ecosystem for the whole
+ Debian family of distributions in the following aspects:
+\end_layout
+
+\begin_layout Enumerate
+Documentation and the Debian Science Team Policy.
+\end_layout
+
+\begin_layout Enumerate
+Introducing NEW meaningful packages.
+\end_layout
+
+\begin_layout Enumerate
+Finishing the pending deprecation process, in order to get rid of libcblas.so.
+\end_layout
+
+\begin_layout Enumerate
+New lintian checks related to BLAS/LAPACK.
+\end_layout
+
+\begin_layout Enumerate
+Removing embedded BLAS/LAPACK code copies to increase maintainability.
+\end_layout
+
+\begin_layout Standard
+The following week-by-week timeline provides a rough guideline of how the
+ project will be done:
+\end_layout
+
+\begin_layout Itemize
+Now - Apr.
+ 27: review the fortran programming language and perl programming language.
+\end_layout
+
+\begin_layout Itemize
+Apr.
+ 27 - May.
+ 18 (3 weeks): investigate into the details of libflame and figure out how
+ it can be properly integrated into Debian's LAPACK alternatives.
+\end_layout
+
+\begin_layout Itemize
+May.
+ 18 - June 1 (2 weeks): prepare the libflame package and upload it to the
+ NEW queue.
+ This may need two weeks because I may need to deal with potential bugs
+ in libflame.
+\end_layout
+
+\begin_layout Itemize
+June.
+ 1 - June.
+ 8 (1 week): build the julia-tailored version of openblas and suitesparse
+ from src:openblas and src:suitesparse, and upload to NEW queue.
+\end_layout
+
+\begin_layout Itemize
+June.
+ 9 - June 15 (1 week): patch existing packages with wrong BLAS/LAPACK dependency
+ information, and existing packages linked against libcblas.so.
+\end_layout
+
+\begin_layout Itemize
+June.
+ 16 - June 22 (1 week): contribute the lintian checks about BLAS/LAPACK
+ dependency information, and the linkage against libcblas.so.
+\end_layout
+
+\begin_layout Itemize
+June.
+ 23 - June 29 (1 week): contribute new science team policy sections about
+ the BLAS/LAPACK dependency information and the problems with libcblas.so.
+\end_layout
+
+\begin_layout Itemize
+June.
+ 30 - July 27 (4 weeks): write a detailed documentation about Debian's BLAS/LAPA
+CK ecosystem, including but not only the usage and the design.
+ I need foure weeks on this task because the details are really complicated,
+ and writting a good documentation about the complication ineed require
+ an amount of time.
+\end_layout
+
+\begin_layout Itemize
+July.
+ 28 - Aug.
+ 3 (1 week): remove the embedded openblas and suitesparse from src:julia.
+ the julia-tailored openblas and suitesparse should have entered the archive
+ by this week.
+ BTW, I can also register the existing nvBLAS library as a BLAS candidate.
+\end_layout
+
+\begin_layout Itemize
+Aug.
+ 4 - Aug.
+ 10 (1 week): revise the documentation should any detail has been changed.
+ This week also works as a buffer if I encountered unexpected delays (such
+ as exams...).
+\end_layout
+
+\begin_layout Section
+Related Works
+\end_layout
+
+\begin_layout Standard
+Debian has a wiki page about the usage of its BLAS/LAPACK ecosystem
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{debian-wiki}
+\end_layout
+
+\end_inset
+
+.
+ There is nearly no technical detail in the wiki.
+\end_layout
+
+\begin_layout Standard
+Gentoo has a similar BLAS/LAPACK runtime switching mechanism
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{gentoo}
+\end_layout
+
+\end_inset
+
+, implemented in a different way.
+ 
+\end_layout
+
+\begin_layout Section
+Biography
+\end_layout
+
+\begin_layout Standard
+The applicant, Mo Zhou is a master student studying Artificial Intelligence,
+ specifically deep learning and computer vision.
+ At the same time, he has been contributing to the Debian project for a
+ long time and has enough enough skillset to finish the proposed project.
+ Particularly, the applicant participated the maintanence of nearly all
+ packages related to this project in the past.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "gentoo"
+literal "false"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{https://wiki.gentoo.org/wiki/Blas-lapack-switch}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "debian-wiki"
+literal "false"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{https://wiki.debian.org/DebianScience/LinearAlgebraLibraries}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

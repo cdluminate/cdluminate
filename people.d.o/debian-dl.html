@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="lib/bootstrap.min.css">
+<script src="lib/jquery-3.3.1.slim.min.js"></script>
+<script src="lib/popper.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<title>M. Zhou / Debian</title>
+
+</head>
+
+<body>
+
+<div class='container'>
+<br><br>
+
+<div class="card">
+<h5 class="card-header">Deep Learning & Debian Development</h5>
+<div class="card-body">
+
+<p> The Artificial Intelligence (AI) trend among this world will soon or later
+impact the free software world	Intelligence. The applications catalyzed by
+this rapidly evolving technology and growing user demand would pose new
+challenges on the traditional linux distribution development and even software
+freedom. In this summary material, we'll discuss the problems and the
+challenges.  Note, we mainly discuss about Deep Learning (DL), a <u>tiny</u>
+subset of AI. For educational material or academic reference please refer other
+resources like wikipedia, open courses, google scholar and arxiv.  </p>
+
+<h5 class="card-title">1. Deep Neural Network</h5>
+
+<p> Deep neural network can be seen as a universal function approximator. It
+could learn very complex mappings to <i>e.g.</i> compute the category (such as
+light bulb) of a given natural image, hence answer questions like "what is the
+object on picture?".  The most commonly used neural networks are Convolutional
+Neural Networks (CNN) and Recurrent Neural Networks (RNN). Generally both of
+them are called Deep Neural Networks (DNN) when they have many network layers
+and complex network architecture. Albeit the form of deep neural networks vary,
+basically all of them are built with a basic set of building blocks: network
+layers (can be further decomposed into fundamental mathematical operations).
+Each network layer takes some inputs (represented in multi-dimentional arrays),
+and do it's own calculation and produce some outputs (samely, multi-dimentional
+arrays). By organizing many same or different layers in different ways, a
+neural network with complex architecture could be made.  </p>
+
+<p> Neural networks are parametric models. A sensible group of network
+parameters must be found in order to approximate our desired mapping
+(functionality), but how do we find it? First we randomly initialize the neural
+network parameters, and define a loss function (or say the cost function) that
+measures the discrepancy between the desired behaviour and the practical
+behaviour. Ideally there should be no such "discrepancy", so finding the best
+network parameter could be formularized as an optimization problem. In
+practice, in order to solve this optimization problem, people often use the
+first-order gradient-based methods (<i>e.g.</i> Stochastic Gradient Descent, or
+SGD) to minimize the ``discrepancy'', which requires us to find the gradient of
+network parameters with respect to the loss function. The way for computing the
+gradient is sometimes called Back-Propagation (BP), but it is actually the
+reverse-mode automatic differentiation (AD). To conduct automatic
+differentiation throughout the neural network, networks are often represented
+in a computation graph, where multi-dimensional arrays (tensors) and operations
+(flows) are organized in a graph structure (tensor+flow). Note, in this
+computation graph, all neural network layers can be represented as a group of
+arrays and operations. Based on these, the optimization algorithm could
+iteratively update the neural network parameters until the network stablized
+(loss function converged). The iterative network prameter updating process is
+exactly called "network training".  </p>
+
+<p>
+So these are the core components for implementing a fundamental (educational) neural network:
+<ul>
+	<li>data loading, e.g. CSV reader, HDF5 reader, JPEG reader.</li>
+	<li>linear operations, e.g. matrix multiplication (fully-connected layer), convolution.</li>
+	<li>non-linear activation functions, e.g. max(x,0), exp(x), ln(x).</li>
+	<li>the computation graph (sort of directed acyclic graph).</li>
+	<li>automatic (or manual) differentiation (computing the gradient).</li>
+	<li>first-order gradient-based optimizer (network training).</li>
+</ul>
+A very fundamental deep learning framework is not
+something too complex to be implemented from scratch by a single person within
+short time.</p>
+
+<p> The typical computational performance bottlenecks in a neural network are
+fully-connected layer and convolution layer. <b>Fully-Connected Layer:</b> The
+most computational intensive network layer is the fully-connected layer. It has
+many aliases, such as affine (Transformation) layer, linear layer, or
+inner-product layer. The main underlying mathematical process is simply a
+linear transformation, or say matrix product.  <b>Convolution Layer:</b>
+Convolution essentially still a linear transformation, and can be seen as a
+special kind of matrix multiplication. In practice, people use specially
+optimized implementations.</p>
+
+<h5 class="card-title">2. Deep Learning Framework</h5>
+
+<p>The fully-connected layers in typical deep neural networks often involve large
+matrix multiplication, which is usually the computational performance
+bottleneck in implementations.</p>
+
+<p>The matrices (or "tensors", a.k.a n-dimentional numerical arrays) are generally
+stored in a continuous chunk of memory. A typical dense linear algebra library
+named BLAS can be used for matrix multiplication in this case. There are many
+typical angles from which its performance could be optimized: (1) SIMD; (2)
+Cache Misses; (3) Parallelization; (4) Hardware Acceleration. For detail please
+refer <a
+		  href="https://github.com/flame/how-to-optimize-gemm">how-to-optimize-gemm</a>.</p>
+
+<p>Apart from traditional performance optimization methods used in the scientific
+computing communities, there are also specific measures for neural networks:
+(1) network compresion, which aims to reduce the number of parameters and keep
+only the most useful ones, hence reduce the amount of computation; (2) network
+quantization, which aims to reduce the precision of commputation from
+single/double precision floating point into half precision (16bit), bfloat16
+(16bit), or even int8 (8bit), hence improve the number of operation per-second
+given a fixed hardware performance.</p>
+
+<p>For distro development, the problematic points are SIMD and hardware
+acceleration.</p>
+
+<h5 class="card-title">2.1. SIMD</h5>
+
+<p>The usage of SIMD instruction sets propably makes no much difference in
+generic programs, but they could often boost scientific computing
+program performance. For example the SSE*, AVX, AVX2, and AVX512 (AVX512 even has
+some subsets for neural networks e.g. AVX512VNNI) on the amd64
+architecture, likewise the Neon for arm64, and VSX for power8/9.</p>
+
+<p>Some important libraries have already been optimized using SIMD code, or even
+JIT compilation. Generaly they could compile the code for different ISA
+baselines, and select the best code branch during runtime according to the
+actual CPU capability. For example the BLAS/LAPACK family: OpenBLAS, Intel-MKL,
+BLIS. Projects such as OpenCV is also developing such features. 
+In most cases, performance of applications that heavily rely on BLAS could be
+boosted by simply switching BLAS backend to implementations such as MKL, see
+<a href="
+https://blog.alookanalytics.com/2018/08/28/whats-the-performance-of-intel-python-vs-anaconda/
+">
+https://blog.alookanalytics.com/2018/08/28/whats-the-performance-of-intel-python-vs-anaconda/</a>
+</p>
+
+<p>However, the performance of unoptimized libraries could would be impacted by
+the linux distribution ISA baselines. For example, in order to keep high
+hardware compatibility, ISA baselines such as AVX2 is not allowed in Debian's
+official binary. A typical example is the header-only linear algebra library
+Eigen. TensorFlow is built on top of it, but it lacks a proper ``runtime
+dispatch'' feature. As a result, TensorFlow's official binary release is
+compiled with a low baseline, and the library would endlessly warn the user to
+recompile if their CPU supports e.g. AVX2.</p>
+
+<p>
+There are several ways to mitigate the performance issue:
+<ul>
+	<li> 1. Bump the ISA baseline for the whole system.</li>
+	<li> 2. Build the software of interest locally with optimization.</li>
+	<li> 3. Patch the code with <a href="https://lwn.net/Articles/691932/">GCC's FMV featrure</a>. </li> 
+	<li> 4. Use the ``Hardware capabilities'' feature of <code>ld.so</code>.</li>
+	</ul>
+
+</p>
+
+<p><a href="https://github.com/SIMDebian/SIMDebian">SIMDebian</a> is an attempt based on the (1.) solution. This
+project is a partial fork of Debian, which changed the default system
+compilation flag (e.g. adding <code>-march=icelake</code>) in <code>dpkg</code>
+source code, so that an official Debian package could be recompiled without
+code change at a bumped ISA baseline.  Packages that are obviously impacted by
+SIMD instruction sets are selectively rebuilt. So it is intentionally a
+``partial'' fork. For packages such as tensorflow (due to its Eigen3 usage)
+this way is the most easy (time-saving) one.</p>
+
+<p>Some linux distributions, however, are not affected by such SIMD problem at
+all. For example the source-based linux distro Gentoo. The whole Gentoo system
+could be easily recompiled with the <code>-march=native</code> flag as the
+users wish. This is exactly solution (2.). Inspired by that, <a
+	href="https://github.com/dupr/duprkit">DUPR</a> is an attempt to mimic the
+AUR plus Gentoo's source distribution style, so Debian users could easily
+define and compile packages locally.  In this way the SIMD build could be made
+easy. Moreover, another advantage of DUPR compared to SIMDebian is that
+maintainers don't have to distribute the binaries for arbitrary ISA baselines
+compared to SIMDebian, which indicates lower maintainence burden.</p>
+
+<p>
+See also
+
+<a href="
+https://clearlinux.org/news-blogs/boosting-python-profile-guided-platform-specific-optimizations
+">
+https://clearlinux.org/news-blogs/boosting-python-profile-guided-platform-specific-optimizations</a>
+
+<a href="
+https://clearlinux.org/news-blogs/transparent-use-library-packages-optimized-intel-architecture
+">
+https://clearlinux.org/news-blogs/transparent-use-library-packages-optimized-intel-architecture</a>
+ for more details about (3.) and (4.)</p>
+
+
+<h5 class="card-title">2.2. Hardware Acceleration</h5>
+
+<p>Conducting matrix multiplication via special hardware could take incredibly
+less clock period than CPU does, especially when the acceleration hardware is
+designed for such purpose. The most widely used hardware accelerators are GPUs
+from Nvidia (CUDA) and AMD (ROCm/HIP). The rest types of accelerators such
+as TPU, NPU, ASIC, or FPGA will not be discussed.</p>
+
+<p><b>CUDA:</b> Possibly dominating the deep learning area. The most important
+CUDA-based library for deep learning is <a
+href="https://developer.nvidia.com/cudnn">cuDNN</a> (I mailed Nvidia using the
+correct mailing address to ask legal advice about redistributing this library
+via Debian, but they <b><u>definitely have ignored the message</u></b>.
+Afterall cooperating with free software distribution sounds literally not
+profitable to NVIDIA).  For linux distributions, it is not easy to deal with
+CUDA related packages, because the whole software stack is basically
+proprietary. Sometimes CUDA compiler's GCC/LLVM support is lagging behind.
+(dominating but non-free) On Debian, maintaining a package tree on top of
+non-free CUDA could be not as convenient as the free ones.</p>
+
+<p><b>ROCm/HIP:</b> The AMD OpenCL counterpart to CUDA, fully open-sourced. It's not used as widely
+as CUDA, but the two main deep learning framework seem to have gained the AMD
+acceleration support: <a href="https://rocm.github.io/dl.html">ROCM/DL</a>.
+(free but
+non-dominating) On the other hand, the ROCm/HIP software stack
+is still not packaged yet in official Debian archive.</p>
+
+<p>See also: 
+<a href="https://docs.nvidia.com/deeplearning/sdk/cudnn-archived/cudnn_764/cudnn-sla/index.html">cuDNN-SLA</a></p>
+
+<h5 class="card-title">2.3. Third-party Software Distributors</h5>
+
+<p>In the python scientific computing community a new software distributing
+ecosystem emerged, i.e. Anaconda/Conda. It has many advantages compared
+to distributing scientific computing software through distributions:
+<ul>
+	<li>1. Distribution-agnostic. Users can keep the software enviroment
+       finely alinged across different machines (Debian XX, Ubuntu YY,
+	   CentOS ZZ, etc.)</li>
+	<li> 2. High-performance non-free library linkage. The distribute
+        prebuilt software linked against performance libraries including
+        intel-mkl and nvidia cudnn. The performance improvement
+		brought by these blobs is indispensable for serious users.</li>
+	<li> 3. Doesn't require root permission to install software. Really
+	convenient in some certain multi-people-single-node scenario.</li>
+	<li> 4. Conda features such as virtual environment.</li>
+</ul></p>
+
+<p>For the 3rd point, at at least users can use Linuxbrew, Gentoo Prefix, etc, but
+for (1) and (2) I cannot think of any comparable resort for Debian.</p>
+
+<p>Currently, the most practical recommendation to serious deep learning
+users are "pip or conda", or upstream binary releases.</p>
+
+<h5 class="card-title">2.4. Deep Learning Framework Implementations</h5>
+
+<p>Deep learning is a rapidly evolging field, as well as deep learning framework
+development. Most of the first generation deep learning frameworks use static computation
+graphs, which means the whole computation graphs are constructed first, and
+the actuall numerical computation is conducted subsequently. Examples of
+the first generation DL frameworks are:
+<ul>
+	<li>Caffe (C++): static computation graph, manual differentiation.
+		High quality C++ code, very valuable for education. Quite mature
+	    but not very convenient to use nowadays.</li>
+	<li>Theano (Python): static computation graph, automatic differentiation.
+		To some extent its symbolic representation of computation graph inspired
+		the design of Tensorflow. Not very easy to debug. Currently EOL.</li>
+	<li>TensorFlow/v1 (Python): static computation graph, automatic differentiation.
+		The v1 (non-eager) design of TensorFlow is based on static graph.</li>
+	<li>Torch (Lua): dynamic computation graph, **manual** differentiation.
+		Very flexible and powerful, but not popular due to the popularity of its base language Lua.
+		Currently EOL.</li>
+</ul>
+Nowadays, a design baseline for deep learning frameworks includes dynamic
+computation graph and automatic differentiation. Examples of such framework
+include:
+<ul>
+	<li>PyTorch (Python): dynamic graph, automatic differentiation.</li>
+	<li>TensorFlow/v2,eager-execution (Python): dynamic graph, automatic differentiation.</li>
+</ul>
+For more detail on the difference between static graph and dynamic graph,
+see <a href="https://pytorch.org/tutorials/beginner/pytorch_with_examples.html#tensorflow-static-graphs">
+	pytorch-doc: static/dynamic graphs</a>
+</p>
+
+<p>Most widely used deep learning frameworks include TensorFlow, PyTorch, and
+MXNet. Maintainers have to confront several issues when packaging any deep
+learning framework:
+<ul>
+	<li> <b>License.</b> The de-facto dominating performance libraries are non-free CUDA
+        binary blobs with a proprietary license. Dealing with such software
+        and a dependency tree upon them in a strict distribution such as Debian
+        is not easy. Of course, these non-free blobs are optional, but the
+        computation could be significantly slower without them. AMD's free
+        ROCm/HIP worths a try but it is still not packaged for Debian official
+		repository.</li>
+	<li> <b>ISA Baseline.</b> Performance of libraries such as Eigen is deeply
+        impacted by the ISA baseline. However, most linux distribution
+        use a low baseline (lacking of enough SIMD instruction sets) in order
+		to keep a high hardware compatibility.</li>
+</ul>
+
+<p>As for TensorFlow, there is another notable problem: <u>Build System.</u>
+Tensorflow's only officially supported build system is Bazel, which is hopeless
+to enter Debian (ITP being stuck for decades). It contains a fragile CMake build
+in its ``contrib'' directory but the upstream keeps claiming that these stuff
+would be removed in the future. It still requires a amount of work to make the
+CMake build work again and be friendly enough to linux distribution packaging.
+Besides, there are also some problems in PyTorch's hybrid build system
+comprising "setup.py", "CMake" and shell scripts. It's very easy to
+understand why these upstream do not refine their build systems: polishing
+build system makes no money, and a fine integration into linux distributions is
+not on the agenda. I've ever wrote a ninja build for tensorflow in a very
+distribution friendly manner, but's it was aborted because the level of
+guarantee is too weak.</p>
+
+<p>Apart from the typical deep learning frameworks, the community of the new
+technical computing language <i>Julia</i> is also trying to explore machine
+learning / deep learning frameworks in Julia language. Compared to the
+python-based frameworks, native Julia deep learning frameworks could greatly
+benefit from Julia's good language features that python lacks. </p>
+
+
+<h5 class="card-title">3. Deep Learning Applications</h5>
+
+<p>Needless to say, deep learning can do many things that traditional algorithms
+cannot even think of.</p>
+
+<h5 class="card-title">3.1 Data & Pretrained Networks</h5>
+
+<p>Data is a vital point for the success of deep learning. For example, a business
+groups spent lots of money, collecting a dataset of human faces. With this
+dataset the business group could train neural networks that identifies facial
+images.  Many existing datasets for various purposes are non-free. They might
+be academic use only, or simply confidential and not accessible. Some of the
+datasets are partially free (e.g. CC-like license for the data
+annotations).  On the other hand, it's very hard for free software community to
+provide free alternative datasets for various purposes. It's just too
+expensive.</p>
+
+<p>Data can be interpreted as ``the prefered form for modification'', or ``a half
+of the source code'' of a pretrained neural network.  Deep learning
+applications don't tend to use GPL license because of its vague definition on
+the ``source'' of a neural network. If somebody released a GPL pretrained
+neural network without distributing the training data, the author themself may
+be violating the GPL. I'm not a lawyer.  Thus, to avoid difficult licensing
+issues, people may tend to release works related to non-free datasets under
+some trouble-free licenses such as MIT/Expat, the BSD family, or simply a
+proprietary license.</p>
+
+<p>A commonly seen phenomenon is that deep learning application upstreams only
+distribute the source code itself, and write download hooks or download helpers
+to download the pretrained neural networks when the users need them. Example:
+PyTorch/vision, Spacy, NLTK.</p>
+
+<h5 class="card-title">3.2 Software Freedom and DFSG</h5>
+
+<p>What if an MIT licensed neural network, pretrained on some unknown or non-free
+dataset is distributed together with some application source code? What if the
+upstream only provide the inferencing code, but the network training code is
+missing? Apart from the questionable legality, software freedom could be
+threatend in these cases. Clauses from commonly used licenses, and DFSG cannot
+accurately describe such situation.</p>
+
+<p><u>Importance of Training Code.</u> Missing of neural network training
+code, completely breaks ``the freedom to study how the program works, and
+modify it''. Reading the training code is the only way to fully understand
+how the neural network is obtained.</p>
+
+<p><u>Importance of Training Data.</u> Missing of training data completely
+breaks ``The freedom to study how the program works, and modify it''. Because a
+neural network is jointly produced by training code and training data. Without
+access to the original data, the user cannot even try to reproduce the original
+work, let along modification.</p>
+
+<p>Releasing a pretrained neural network under permissive licenses such as MIT
+could bypass these issues, and ironically it could result in difficult problems.</p>
+
+<p><a href="https://salsa.debian.org/lumin/ml-policy/"><b>ML-Policy</b></a>
+is a volatile and experimental documentation
+project. It tries to define a set of rules to ensure deep learning software
+sanity in terms of software freedom in various occasions.</p>
+
+
+<p>DUPR is sort of combination of AUR and Gentoo's
+source-based distribution style. If we let the users download pretrained blobs
+from upstream before locally building a deep learning application package, the
+complex licensing issue could be completely circumvented.</p>
+
+<h5 class="card-title">3.3 Neural Network Reproducibility</h5>
+
+TODO.
+
+<h5 class="card-title">3.4 Neural Network Release and Security</h5>
+
+TODO.
+
+<h5 class="card-title">4. Deep Learning in Production</h5>
+
+<p>TODO: training and inference, model deployment, etc</p>
+
+<h5 class="card-title">5. Overview of Software Stack</h5>
+
+<p>from low-level building blocks, to high level frameworks and apps</p>
+
+<h5 class="card-title">6. Ethics</h5>
+
+<p>Although the utmost goal of artificial intelligence is 
+<a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence">
+artificial general
+intelligence (AGI)</a>, currently we are still very far away from
+the goal. Besides, currently a person's soul or mind cannot be represented in a
+mathematical form.  So at this stage it would be pointless to think about the
+sci-fi questions. Nowadays the so-called "human-surpassing" deep learning
+models are nothing more than a pile of digits, soulless.</p>
+
+<p>What may involve ethics problem are the datasets...TODO</p>
+
+<h5 class="card-title">7. Preliminary Conclusions</h5>
+
+<p><u>Note: the conclusions are purely my personal opinions and speculations. Don't take them seriously.</u></p>
+
+<p><ul>
+	<li>1. Whereas nvidia is to some extent the currently dominating
+		hardware acceleration solution provider, it's legally hard for 
+		Debian archive to provide a complete deep learning software stack for serious deep
+		learning users, due to the incooperative nvidia licenses. If
+		we build deep learning frameworks with all NVIDIA options disabled,
+		the resulting package would be only useful for educational purpose,
+		simple assessment or tiny-scale/performance-insensitive usage.
+		That means Debian don't have to package the deep learning frameworks,
+		even if other distributions such as ArchLinux and Gentoo have already
+		provided the full-featured packages/ebuilds.</li>
+	<li>2. There are too many neural network inference engines, which are
+		basically results of business fights. It's not recommended to
+		waste energy to jump into the mess when everything is volatile.</li>
+	<li>3. TODO</li>
+</ul>
+</p>
+
+<h5 class="card-title">A. Related (Previous) Discussions</h5>
+
+<p>
+There was a highly related discussion ``Machine learning threats and
+opportunities for Debian and Free Software''~\cite{dc12} during DebConf12.
+http://penta.debconf.org/dc12_schedule/events/888.en.html
+</p>
+
+<p> In mid-2018, I raised a discussion about <a
+	href="https://lwn.net/Articles/760142/">"Deep learning and free
+	software"</a> on debian devel, revealing the concerns about the new
+conflictions between deep learning and software freedom~\cite{lwn-dl}. We were
+aware of the problems, but we didn't manage to draw any conclusion at that
+time.  </p>
+
+<h5 class="card-title">B. Domain-Specific Interpretation of Software Freedom</h5>
+
+TODO
+
+<h5 class="card-title">Z. Author</h5>
+
+<p>Copyright (C) 2019 Mo Zhou <code>lumin@debian.org</code>. This webpage is released under the <u><b>CC-BY-SA-4.0</b></u> License.</p>
+
+<p>Last-Update: 2019 Oct 9</p>
+
+</div><!--card-->
+</div><!--card-body-->
+
+</div><!--container-->
+
+</body>
+</html>

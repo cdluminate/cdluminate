@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="lib/bootstrap.min.css">
+<script src="lib/jquery-3.3.1.slim.min.js"></script>
+<script src="lib/popper.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<title>M. Zhou / Debian</title>
+
+</head>
+
+
+<body>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+        <a class="p-2 text-dark" href="https://people.debian.org/~lumin/">M. Zhou (lumin@d.o)</a>
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 btn btn-outline-primary" href="https://salsa.debian.org/lumin">Salsa</a>
+        <a class="p-2 text-dark" href="https://github.com/cdluminate">GitHub</a>
+        <a class="p-2 text-dark" href="https://launchpad.net/~lumin0">PPA</a>
+        <a class="p-2 text-dark" href="https://scholar.google.com/citations?hl=en&user=BVIO95UAAAAJ">Scholar</a>
+    </nav>
+    <a class="btn btn-primary" href="https://qa.debian.org/developer.php?login=lumin">DDPO</a>
+</div>
+
+
+<div><br><br></div>
+<div><br><br></div>
+<div><br><br></div>
+
+
+<div class='container text-center'>
+
+    <h1 class="display-4">Let there be light.</h1>
+
+</div>
+
+<div><br><br></div>
+
+
+<div class="container">
+
+    <script language='javascript'>
+    var __tracker = "https://tracker.debian.org/"
+    var __buildd  = "https://buildd.debian.org/"
+    var __ddpo    = "https://qa.debian.org/developer.php?login="
+    var __bts     = "https://bugs.debian.org/"
+    var __uci    = "http://autopkgtest.ubuntu.com/packages/"
+    var __ci      = "https://ci.debian.net/packages/"
+    function quickAccess(type) {
+        var q = document.getElementById("query").value
+        // TODO: any identifier would override the actuall clicked button
+        window.open(eval('__'+type) + q)
+    }
+    function smartQuickAccess(e) {
+        if (e.keyCode == 13) {
+            var q = document.getElementById("query").value;
+            if (!q.includes(':')) {
+                quickAccess('tracker')
+            } else if (q.startsWith('t:')) {
+                window.open(eval('__tracker') + q.replace(/^t:/, ''))
+            } else if (q.startsWith('bd:')) {
+                window.open(eval('__buildd') + q.replace(/^bd:/, ''))
+            } else if (q.startsWith('bug:')) {
+                window.open(eval('__bts') + q.replace(/^bug:/, ''))
+            } else if (q.startsWith('ci:')) {
+                q = q.replace(/^ci:/, '')
+                window.open(eval('__ci') + q.charAt(0) + '/' + q + '/unstable/amd64')
+            } else if (q.startsWith('uci:')) {
+                q = q.replace(/^uci:/, '')
+                window.open(eval('__uci') + q.charAt(0) + '/' + q + '/disco/amd64')
+            } else {
+                return false // XXX: Simply reject the input
+            }
+        } else {
+            return false
+        }
+    }
+    </script>
+
+    <div class="card">
+        <div class="card-header lead"> Quick Access to Debian Services 
+            <a class="badge badge-primary float-right" href="#qaUsage" data-toggle='collapse'>Toggle Usage</a>
+    </div>
+        <div class="card-body">
+            <div class="collapse" id="qaUsage">
+            <p class="card-text">Usage 1: Input your query (e.g. <code>apt</code>) and <b>click a button</b> on the right side.</p>
+            <p class="card-text">Usage 2: Input a <code>IDENTIFIER:QUERY</code> pattern and <b>press Enter</b>, for instance <code>t:apt</code>.
+            Identifier <code>t:</code> stands for tracker, while <code>bd:</code> for buildd, <code>bug:</code> for BTS,
+            <code>ci:</code> for CI, <code>uci:</code> for Ubuntu's CI.
+            When the identifier is omitted, you will be directed to the package tracker.
+            </p>
+            <p class='card-text'>Note, any identifier will override the actuall button you clicked.</p>
+			<br>
+        </div>
+
+            <form class="form">
+                <div class="input-group">
+                    <input type="text" id='query' class="form-control" placeholder="Query" onkeypress="javascript:smartQuickAccess(event)">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary"   type="button" onclick="javascript:quickAccess('tracker')">Tracker</button>
+                        <button class="btn btn-outline-secondary" type="button" onclick="javascript:quickAccess('buildd')">Buildd</button>
+                        <button class="btn btn-outline-secondary" type="button" onclick="javascript:quickAccess('bts')">Bugs</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div><!--container-->
+
+<br> <br> <hr>
+<br>
+
+<div class='container'>
+
+
+
+<!--
+<a href="https://github.com/cdluminate">
+  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=cdluminate&show_icons=true&include_all_commits=true" />
+</a>
+<a href="https://github.com/cdluminate">
+  <img align="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cdluminate&layout=compact" />
+</a>
+-->
+<h3 id="about-me">About Me</h3>
+<ul>
+<li>🍀 Currently learning 🧠<a href="https://en.wikipedia.org/wiki/Deep_learning">Deep Learning</a> &amp; 👀<a href="https://en.wikipedia.org/wiki/Computer_vision">Computer Vision</a> at JHU. See <a href="https://scholar.google.com/citations?user=BVIO95UAAAAJ">my Google Scholar Page</a> for further details.</li>
+<li>💻 Owing to appreciation of 🪐<a href="http://catb.org/%7Eesr/writings/taoup/">UNIX philosophy</a> &amp; ⚖️<a href="https://www.gnu.org/philosophy/free-sw.en.html">software freedom</a>, I <a href="https://qa.debian.org/developer.php?login=lumin">develop 🍥Debian 🐂GNU/🐧Linux</a> as a volunteer.</li>
+<li>🐬 I enjoy 🎧music, ⛩Japanese anime, 🏃🏻fitness, 🎨artistic video games, 🍵tea, and ⚖️software freedom. <a href="blog/index.md">See my BLOG articles</a>.</li>
+<li>🗺️ Resume: <a href="assets/cv.pdf">[PDF]</a> | 🔑 GPG Key: <code>638BC75EC1E5C589067E35DE62645EB35F686A8A</code></li>
+</ul>
+<h3 id="public-works">Public Works</h3>
+<ul>
+<li>Research / <a href="https://cdluminate.github.io/robrank/">RobRank</a>: “Adversarial Attack and Defense in Deep Ranking”, arXiv, 2021. <a href="https://arxiv.org/abs/2106.03614">[arXiv]</a></li>
+<li>Research / <a href="https://github.com/cdluminate/advorder">AdvOrder</a>: Practical Relative Order Attack in Deep Ranking, ICCV, 2021. <a href="https://arxiv.org/abs/2103.05248">[arXiv]</a><br />
+</li>
+<li>Research / <a href="https://cdluminate.github.io/advrank/">AdvRank</a>: “Adversarial Ranking Attack and Defense”, ECCV, 2020. <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_46">[Springer-PDF]</a> <a href="https://arxiv.org/abs/2002.11293">[arXiv]</a></li>
+<li>Research / <a href="https://github.com/cdluminate/ladderloss">LadderLoss</a>: “Ladder Loss for Coherent Visual-Semantic Embedding”, AAAI, 2020. <a href="https://ojs.aaai.org//index.php/AAAI/article/view/7006">[AAAI-PDF]</a> <a href="https://arxiv.org/abs/1911.07528">[arXiv]</a></li>
+<li>Research / “Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding,” ICCV’2017, <a href="https://openaccess.thecvf.com/content_iccv_2017/html/Niu_Hierarchical_Multimodal_LSTM_ICCV_2017_paper.html">[CVF-PDF]</a></li>
+<li>Research / “Ordinal Regression with Multiple Output CNN for Age Estimation,” CVPR’2016. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Niu_Ordinal_Regression_With_CVPR_2016_paper.html">[CVF-PDF]</a><br />
+</li>
+<li>Documentation / <a href="https://github.com/cdluminate/ProdL">ProdL</a>: Productive Deep Learner. (WIP)</li>
+<li>Documentation / <a href="https://github.com/cdluminate/LiSG">LiSG</a>: Linux Survival Guide. (WIP)</li>
+<li>Documentation / <a href="https://github.com/cdluminate/debian-dl">Debian-DL</a>: Debian Development &amp; Deep Learning. <a href="https://people.debian.org/~lumin/debian-dl.html">[HTML Version]</a></li>
+<li>Documentation / <a href="https://salsa.debian.org/deeplearning-team/ml-policy">ML-Policy</a>: Machine Learning Policy for Debian. <a href="https://salsa.debian.org/lumin/ml-policy/blob/master/ML-Policy.pdf">[PDF Version]</a> <a href="https://salsa.debian.org/lumin/ml-policy/raw/master/ML-Policy.rst">[RST Source]</a><br />
+</li>
+<li>Documentation / Debian's Linear Algebra Libraries (WIP)</li>
+<li>Educational / <a href="https://github.com/cdluminate/leicht">Leicht</a>: Deep Learning Framework (static graph) from scratch in C++.</li>
+<li>Utilities / <a href="https://github.com/cdluminate/tasque">Tasque</a>; <a href="https://github.com/cdluminate/gpu-load-watcher">GPU-load-watcher</a>;</li>
+<li><a href="https://summerofcode.withgoogle.com/projects/#6268942782300160">GSoC2019</a> / <a href="https://wiki.gentoo.org/wiki/Blas-lapack-switch">BLAS/LAPACK Runtime Switching Mechanism for Gentoo</a><br />
+</li>
+<li>Deprecated Attempts / <a href="https://salsa.debian.org/lumin/awsl/-/blob/master/specification.md">LibAWSL</a>, <a href="https://github.com/dupr/duprkit">DUPR</a>, <a href="https://github.com/SIMDebian/SIMDebian">SIMDebian</a></li>
+</ul>
+
+
+</div>
+
+<hr>
+
+<div class="container text-center">
+	<div class='text-center'>
+		<pre>GPG: 638BC75EC1E5C589067E35DE62645EB35F686A8A 52ABD6B6026C0EFCC0FE710F6D5E766F9F30BE8A</pre>
+	</div>
+</div>
+
+</body>
+</html>

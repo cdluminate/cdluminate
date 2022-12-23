@@ -1,0 +1,20 @@
+My In-Progress Works Related to Debian
+--------------------------------------
+
+* [blas] CBLAS-reference: patch source for the CBLAS64 support
+* [blas] Julia: remove vendored openblas and suitesparse
+* [blas] libcblas.so removal from src:atlas
+* [blas] lintian warnings about cblas and specific blas impl
+* [blas] policy & lintian about blas and cblas
+
+Stalled/Blocked
+---------------
+
+* [simdebian] SIMDebian and dpkg patch (stalled)
+* [gentoo] gentoo prefix has a "mutual base" feature, maybe we can directly use debian stage3 as the base?
+* [awsl] libawsl for copyright review
+* [dl] LLVM: mlir
+* [hft] reckless debian packaging format
+* [sycl] sycl (intel branch, not yet upstreamed)
+* [dl] LLVM: mlir
+* [dl] ROCm software stack.
