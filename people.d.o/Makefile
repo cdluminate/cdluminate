@@ -1,6 +1,6 @@
 main: upload
 
-upload: conversion
+upload: resume conversion
 	rsync -Pr . people.debian.org:~/public_html/ --exclude=.git
 	$(MAKE) delete
 
@@ -12,6 +12,11 @@ conversion:
 	for I in $$(find blob/main/blog -name '*.md'); do \
 		pandoc -f markdown -t html $$I > $$I.html; done
 	rename 's/\.md\.html$$/.html/' blob/main/blog/*.md.html
+
+resume:
+	$(MAKE) -C ../assets quiet
+	mkdir -p assets
+	cp -v ../assets/cv.pdf assets
 
 delete:
 	$(RM) optimization.html
