@@ -13,6 +13,9 @@
 \usepackage{marginnote}
 \usepackage[colorlinks=true,urlcolor=WildStrawberry]{hyperref}
 
+% new commands
+\newcommand{\email}[1]{\href{mailto:#1}{\tt #1}}
+
 %\topmargin .5in
 %\oddsidemargin -.5in
 %\evensidemargin -.5in
@@ -55,7 +58,7 @@
 \vspace{.05in}
 \begin{tabular}{@{}p{2.2in}p{2.2in}}
 3400 North Charles Street & Tel: (+1) *********** \\
-Baltimore, MD 21218       & Email: \verb+cdluminate@gmail.com+\\
+Baltimore, MD 21218       & Email: \email{cdluminate@gmail.com}\\
 United States	          & Github: \href{https://github.com/cdluminate}{\tt cdluminate}
 \end{tabular}
 
@@ -361,9 +364,8 @@ Le Wang, Zhenxing Niu, Qilin Zhang, Nanning Zheng, Gang Hua,
     \begin{itemize}[noitemsep, leftmargin=*]
         \item[$\circ$] \href{https://nm.debian.org/person/lumin/}{
             \includegraphics[height=1.2\fontcharht\font`\B]{openlogo-nd-100.png}
-            Official Developer} for Debian GNU/Linux
-            \hfill 08/2018 -- Current\\
-			Organization Email: \verb+lumin@debian.org+
+            Official Developer} for Debian GNU/Linux {\footnotesize[\email{lumin@debian.org}]}
+            \hfill 08/2018 -- Current
         \item[$\circ$] \href{https://wiki.gentoo.org/wiki/Blas-lapack-switch}{
             \includegraphics[height=1.2\fontcharht\font`\B]{gentoo-signet.png}
             Contributor} for Gentoo GNU/Linux
