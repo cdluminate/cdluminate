@@ -103,7 +103,7 @@ Covering animes till (时间线覆盖至): *2022-Q4*
 
 ## American Anime
 
-* RWBY
+* 红白黑黄 | RWBY -- 前两季很好，但是Monty走了以后，后续的作品质量下滑严重。
 * 猫和老鼠
 
 ## Chinese Anime
