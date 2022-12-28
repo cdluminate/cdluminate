@@ -210,10 +210,12 @@ Organic鸡蛋味道也比便宜的鸡蛋味道更浓。
 
 [牛 Beef]
 
+美国的牛肉一般会有USDA分级。USDA prime最贵但是一般也是最好吃的。
+
 1. 绞碎的牛肉 Ground beef
 1. 西冷 Sirloin
 1. 肉眼 Ribeye
-1. 炖肉块 Beef Stew
+1. 炖肉块 Beef Stew | Costco 的这个肉实际上脂肪含量太少，无论怎么炖出来都会非常的柴。
 
 ### II.3 水产 Seafood
 
