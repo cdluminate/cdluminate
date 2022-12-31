@@ -42,6 +42,7 @@ Covering animes till (时间线覆盖至): *2022-Q4*
 * Fate/Zero (2011) -- Fate系列只喜欢Zero和UBW
 * Astro Boy: Tetsuwan Atom | 铁壁阿童木 (2003) -- 我最喜欢的是 Episode 24 (March of the Micro Bears)，因为这一集启发了我对AI的期望。
 * Vinland Saga | 冰海战记 -- 好的故事，好的品质。
+* Isekai Ojisan | 异世界舅舅
 
 [★★★★☆] 3.5/5 Very Good | 相当好
 
