@@ -200,6 +200,10 @@ I insist in the simplest ways for cooking, and pursue the pure and natural flavo
 
 ## II.3. 饼类(煎，烙)
 
+* 杂粮煎饼 (应该是本列表里从毫无准备到可以吃速度最快的面食)
+
+三个关键点，面糊配比，平底不沾锅，平整器。
+
 ### II.3.1. 韭菜盒子
 
 ### II.3.2. 油酥饼
