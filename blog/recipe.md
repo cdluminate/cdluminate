@@ -173,6 +173,7 @@ I insist in the simplest ways for cooking, and pursue the pure and natural flavo
 白案和核心出发点是和面。和面有问题后续所有流程都会比较难受。
 拉面的典型配比：500克面粉，3克盐，1克碱。
 发面的典型配料：面粉，酵母，白糖。
+饼类的和面一般选择烫面。
 
 ## II.1. 面条类
 
@@ -243,6 +244,8 @@ Costco有2 lb装，买一袋放冰箱可以解决很长时间的饮料问题。�
 ## V.5 复合饮料
 
 杨枝甘露
+
+小吊梨汤
 
 ### VI. 甜点 / Sweets
 
