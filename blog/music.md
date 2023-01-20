@@ -39,6 +39,7 @@ categorized by genre, then artist. The number in the brackets [] is my rating.
 	- Rapid as Wildfires 疾如猛火 [4/5]
 	- Chasing the Torrents 激流逐浪 [4/5]
 	- Gallant Challenge 鲜衣游侠 [4/5]
+	- Foxes at Play [4/5]
   - City of Winds and and Idylls [5/5]
   - The Wind and the Start Traveler [5/5]
 
