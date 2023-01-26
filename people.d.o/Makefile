@@ -1,8 +1,12 @@
 main: upload
 
-upload: resume conversion
+upload: resume conversion index
 	rsync -Pr . people.debian.org:~/public_html/ --exclude=.git
 	$(MAKE) delete
+
+.PHONY: index
+index:
+	echo the index.html is rendered version of README.md by github
 
 blob-clean:
 	-$(RM) -rf blob
