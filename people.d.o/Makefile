@@ -6,7 +6,9 @@ upload: resume conversion index
 
 .PHONY: index
 index:
-	echo the index.html is rendered version of README.md by github
+	echo 1. the index.html is rendered version of README.md by github
+	echo 2. note, replace cdluminate/cdluminate with ~lumin from the rendered result
+	echo 3. and replace *.md with *.html
 
 blob-clean:
 	-$(RM) -rf blob
