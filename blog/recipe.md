@@ -143,6 +143,8 @@ I insist in the simplest ways for cooking, and pursue the pure and natural flavo
 
 清炖牛肉
 
+碎牛肉。Ground beef.
+
 ## I.21. 豆类
 
 焯水豆芽：油泼面配菜
@@ -218,9 +220,13 @@ Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c5
 
 苹果派
 
-# V. 日式, 韩式 / Japanese, Korean
+# IV. 日式, 韩式 / Japanese, Korean
 
 不想做刺身，不过日式料理的熟食想试试。
+
+## IV.1. 汤
+
+* 味增汤。清水煮沸，加入木鱼片（鲣鱼干）制成高汤汤底。干昆布（海带）和嫩豆腐下锅煮熟，并加入味增酱（可以用黄豆酱代替）。撒入葱花完成。
 
 # V. 饮料 / Drinks
 
