@@ -14,7 +14,7 @@ highlights that attracted me.
 的动漫作品都已经至少在某一方面令我印象极度深刻。
 厕纸番除非有明显吸引我的亮点，不然不作提及。
 
-Covering animes till (时间线覆盖至): *2022-Q4*
+Covering animes till (时间线覆盖至): *2023-Q1*
 
 [★★★★★] 5/5 Epic | 传说
 
@@ -34,7 +34,8 @@ Covering animes till (时间线覆盖至): *2022-Q4*
 * Mushoku Tensei (Season I) | 无职转生 (I季) -- 各方面肉眼可见的制作精良，剧情引人入胜，不过我个人感觉有些细节处理上的小问题。期待第III季。
 * Mushoku Tensei (Season II) | 无职转生 (II季) -- 无职没给满分基本上是因为红毛Eris的性格。
 * Kaguya-sama wa Kokurasetai III | 辉夜大小姐想让我告白 III -- 这个番从这一季开始整一些奇怪的活了。
-* 夏日重现 | Summer Time Render -- 时间回溯还是很对味的。新鲜感，悬念和节奏把握真的很好。
+* Summer Time Render | 夏日重现 -- 时间回溯还是很对味的。新鲜感，悬念和节奏把握真的很好。
+* Ooyukiumi no Kaina | 大雪海的凯纳 -- 故事设定很有意思。
 
 [★★★★] 4/5 Excellent | 有才
 
@@ -90,11 +91,17 @@ Covering animes till (时间线覆盖至): *2022-Q4*
 * 86 | 86-不存在的战区 (2021)
 * A Certain Magical Index | 魔法禁书目录 (2008)
 * Lycoris Recoil | 石蒜物语
+* Isekai Nonbiri Nouka
 
 [☆] 0.5/5 Oops | 一言难尽
 
 * Sword Art Online (SAO) III | 刀剑神域 III -- 第三季尤其下半段非常差劲。
 * 王様ランキング | 国王排名 (2021) -- 开场不错，但是从前三分之一就开始剧情质量逐渐下滑到影响观感的程度，最终大幅拉低了给分，并让人后悔追番。
+
+[?] TODO | 待补
+
+* Vinland Saga Season 2
+* NieR:Automata Ver1.1a
 
 ## Anime Movies
 
