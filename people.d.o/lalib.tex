@@ -1,0 +1,821 @@
+%% LyX 2.3.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[twocolumn,english]{article}
+\usepackage{mathptmx}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2cm,rmargin=2cm}
+\setcounter{tocdepth}{2}
+\usepackage{color}
+\usepackage{babel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{listings}
+\lstset{frame=single,
+basicstyle={\footnotesize\ttfamily},
+breaklines=false,
+numbers=left,
+language=C}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+\title{Debian's Linear Algebra Libraries and Alternatives}
+\author{Mo Zhou \\Debian Science Team\\{\tt\small lumin@debian.org}\\License: {\tt CC-BY-SA-4.0}
+}
+\maketitle
+\begin{abstract}
+Classical numerical linear algebra libraries, \emph{BLAS} and \emph{LAPACK}
+play important roles in the scientific computing field. Varied demand
+on these libraries poses non-trivial challenge on system management
+and linux distribution development, from which some existing linux
+distributions suffer. However, by leveraging dpkg's update-alternatives
+mechanism which enables user to switch BLAS and LAPACK libraries smoothly
+and painlessly, the problems could be properly and decently addressed.
+The mechanism has been validated with several simple experiments,
+which illusrate the advancement of the Debian solution. In the end,
+the underlying principles are revealed, and some pitfalls are pointed
+out.
+\end{abstract}
+\\ \\
+PDF: URL\\
+HTML: URL\\
+Lyx: URL
+\begin{abstract}
+\tableofcontents{}
+\end{abstract}
+
+\section{Introduction}
+
+{\bf BLAS} (Basic Linear Algebra Subroutines)\cite{blas} and {\bf LAPACK}
+(Linear Algebra PACKage)\cite{lapack} are important mathematical
+APIs/ABIs/libraries to performance-critical programs that manipulate
+dense and contiguous numerical arrays. BLAS provides low-level and
+frequently used linear algebra routines for vector and matrix operations;
+LAPACK provides higher-level functionality based on complex call graph
+over BLAS, hence BLAS is the most performance-critical part. These
+libnear algebra libraries are widely used in the scientific computing
+and many other areas, for example: Numpy, Scipy, Julia, Octave, R,
+Sagemath, Matlab, Mathematica and LINPACK \cite{linpack} \footnote{High performance linpack is used to benchmark and rank supercomputers
+for the TOP500 list.}.
+
+In practice, \emph{different} users need \emph{different} BLAS/LAPACK
+implementations with \emph{different} configurations (e.g. threading
+model or index type variants) under \emph{different} scenarios. Such
+extremely diversed and varied BLAS/LAPACK library requirement poses
+a non-trivial challenge to linux distribution developers: No single
+configuration satisfies all user's demand, e.g. when only the OpenMP
+version of OpenBLAS is provided\footnote{This is basically what Archlinux does.},
+people who write pthread programs would complain; It leads to confusion
+and chaos if many alternative libraries co-exists with different SONAMEs,
+e.g. libopenblas, libopenblasp, libopenblaso\footnote{This is actually what Fedora does.};
+It is still not the optimal solution to provide the build-time switch,
+that would result in a rebuild of the whole reverse dependency tree
+when switching \footnote{This is what Gentoo eselect/pkg-config does.};
+Forcing distribution packages to use a specific implemtation on a
+per-package basis, clearly doesn't satisfy the divsersed user demand
+\footnote{This is what BSD/Port does.}.
+
+Taking advantage from the update-alternatives mechanism of dpkg, Debian
+is able to address the aforementioned challenge in a decent way. Such
+that Debian users could switch the underlying BLAS/LAPACK implementations
+without recompiling their applications. At the meantime, many BLAS
+implementations with different configurations could co-exist on the
+system without confliction. As the outcome, users could easily profile
+and benchmark different implementations efficiently, and painlessly
+switch the underlying implementation for different programs under
+different scenarios.
+
+This article will go through some basics about Linear Algebra libraries,
+followed by a brief overview on the current situation of other distributions.
+Some simple experiment will be conducted to illustrate the effectiveness
+of Debian's solution. At the end of this article, some pitfalls will
+be pointed out, and some suggestions will be provided to maintainers
+who have packages that depends on BLAS/LAPACK.
+
+Apart from that, If you are not familiar with Linear Algebra, \cite{gs-la}
+would be an excellent educational reference. \cite{dsohowto} is an
+advanced document on writing good shared libraries.
+
+\section{Background}
+
+In this section, we'll first discuss about some basics of BLAS and
+LAPACK. Several non-BLAS/LAPACK linear algebra libraries will be mentioned
+next but we'll not dig into them any further. In the end, the situation
+of several other linux distributions will be reviewed.
+
+\subsection{Basic Linear Algebra Subroutines (BLAS)}
+
+The standard BLAS reference implementation, netlib BLAS is written
+in Fortran. It's API could be grouped into 3 categories: vector-vector,
+matrix-vector and matrix-matrix subroutines, which are called level-\{1,2,3\}
+subroutines respectively. The Fortran API naming follows a simple
+rule: {\tt <type><op>\_}, where ``type'' could be one of ``s''
+(single precision float, aka float32), ``d'' (double, float64),
+``c'' (single complex) and ``z'' (double complex); ``op'' is
+the abbreviated operation name. For example, {\tt sdot\_} refers
+to Single precision DOT product (SDOT) between two vectors, which
+is a level-1 subroutine; {\tt dgemm\_} refers to Double precision
+GEneric Matrix Multiplication (DGEMM), which is a level-3 subroutine.
+
+Fortran's multi-dimentional arrays are stored in column-major\footnote{AFAIK, Fortran and Julia store arrays in column-major order internall.}
+order in memory, different from the C language which stores arrays
+in row-major order. So it's necessary to mention the BLAS interface
+for C language, namely CBLAS, because many modern language that support
+Foreign Function Interface (FFI) use the row-major ordering. Similar
+to the Fortran BLAS, the naming rule of CBLAS API is {\tt cblas\_<type><op>}
+. The C implementation is also provided by netlib BLAS. For more details
+such as a complete list of available subroutines please refer to the
+documentation of netlib BLAS.
+
+In the fortran code of standard implementation, ``INTEGER'' is used
+as the type of multi-dimensional array size and array pointer offsets.
+By default the ``INTEGER'' type is ``int32\_t'' on the x86-64
+architecture. Accordingly, the CBLAS implementation also use ``int''
+as the indexing type. It is obvious that int32\_t is not enough for
+extremely large arrays, which doesn't satisfy HPC users' needs. Although
+the Fortran code could be compiled to use 64-bit index via the ``-i8''
+compiler flag, which turns the default INTEGER type into 64-bit integer,
+the C compiler doesn't provide similar magic. Intel-MKL calls the
+32-bit index version as LP64 interface (long and pointer are 64bit
+wide), and the 64-bit index version as ILP64 interface (int, long
+and pointer are 64bit wide). However this term from Fortran may cause
+confusion in the C world because LP64/ILP64 could be ambiguous.
+
+\subsubsection{BLAS Implementations}
+
+The optimization of BLAS library involves battling against cache-misses,
+leveraging SIMD instructions and parallelization \cite{blas-opt}.
+Much endeavor in optimizing BLAS had been made by the industry since
+numerical linear algebra is performance critical especially for large
+scale problems. An optimized BLAS implementaion is often significantly
+faster than the netlib BLAS. To this end, many optimized implementations
+exist in the market. Here are some notable implementations:
+
+{\bf Netlib BLAS} is the standard implementation with low-performance
+due to the absense of any optimization, written in Fortran77. It provides
+the CBLAS interface, which is not a re-implementation in C, but just
+a C wrapper over the Fortran routines. This standard implementation
+doesn't support multi-threadding, and doesn't provide 64-bit indexing
+flavor for its CBLAS part.
+
+{\bf OpenBLAS} is probably the best free-software choice. It is able
+to automatically select the optimized code branch according to CPU
+capability at the runtime, and usually delivers promising performance.
+It provides both BLAS and CBLAS API/ABI. OpenBLAS supports both OpenMP
+and pthread multi-threadding, and the user could switch on 64-bit
+indexing with ``INTERFACE64=1''.
+
+{\bf BLIS} is a relatively new framework, targeted to advanced users.
+BLIS's performance is close to OpenBLAS, but it somtimes perform better
+than OpenBLAS or even MKL \cite{blis-perf}. BLIS provides standard
+BLAS and CBLAS API and ABI. Note that BLIS runs in single-thread mode
+by default \cite{blis-single}. BLIS supports both OpenMP and pthread
+multi-threading, and the user could switch on 64-bit indexing.
+
+{\bf Atlas} can be automatically tuned when compiled natively. However
+it doesn't provide runtime dispatching according to CPU functionality.
+On distributions that care about hardware compatibility it has to
+be compiled with the lowest ISA baseline, resulting in extremely poor
+performance. (I should ask sylvestre about the past of the package.)
+
+{\bf MKL} is probably the fastest implementation on x86 architecture
+featuring many black magics, yet non-free and might be specific to
+Intel CPUs. MKL is a huge collection of various math kernel functions,
+including but not limited to BLAS and CBLAS. Intel's MKL is more likely
+a collection of black magics and here we only talk about the Single
+Dynamic Library (SDL), i.e. \verb|libmkl_rt.so|. MKL supports a wide
+range of multi-threadding flavors, including Intel/LLVM OpenMP (iomp,
+default), GNU OpenMP (gomp), PGI OpenMP (pomp), TBB. 64-bit indexing
+is also supported and Intel calls it the ``ilp64'' model. The user
+could change MKL's configuration with environment variables. MKL provides
+elaborated documentations \cite{mkl}.
+
+{\bf nvBLAS} is a non-free nvidia-GPU-based partial implementation,
+i.e. it only implements the level-3 BLAS API. The user have to provide
+a configuration file specifying a fallback BLAS library when the target
+program is calling level-1 or -2 BLAS subroutines. For large scale
+problems, this implementation is usually several magnitude faster
+than the CPU-based implementation due to GPU's large scale parallel
+architecture. It's another story for tiny scale problems, because
+of the latency introduced by hardware interruption (transmitting data
+between CPU and GPU).
+
+\subsection{Linear Algebra Package (LAPACK)}
+
+BLAS is frequently called from LAPACK. And there are considerably
+complex call graphs for LAPACK subroutines, which implement higher
+level functionalities, such as solving systems of linear equations,
+linear least square problems, eigenvalue problems, and decomposing
+matrices (e.g. singular value decomposition). LAPACK's API naming
+schene is similar to BLAS's. For example, \verb|sgesvd_| refers to
+Single-precision GEneric Singular Value Decomposition. Please refer
+\cite{lapack} or netlib's documentation for complete description.
+
+The standard LAPACK is written in fortran. Due to the same reason
+for the existence of CBLAS, there is also a C language counterpart
+to LAPACK, named LAPACKE. The LAPACKE API naming rule spiritually
+resembles CBLAS'. For example, the \verb|sgesvd_| counterpart is
+\verb|LAPACKE_sgesvd|.
+
+\subsubsection{LAPACK Implementations}
+
+Here are some LAPACK implementations:
+
+{\bf Netlib LAPACK} is the standard implementation written in Fortran77.
+The C interface LAPACKE is provided by netlib LAPACK. However, different
+from CBLAS which is merely a wrapper around fortran subroutines, the
+LAPACKE is a native C implementation. The LAPACKE implementation supports
+both 32-bit and 64-bit indexing flavors. The Fortran LAPACK could
+be compiled to use 64-bit index with the ``-i8'' compiler option.
+
+{\bf OpenBLAS} provides optimized LAPACK and LAPACKE as well. Both
+32-bit and 64-bit indexing are supported.
+
+{\bf MKL} the collection of math kernel functions provides both LAPACK
+and LAPACKE API/ABI, of course. Intel MKL has strong relationship
+with Netlib because Netlib's LAPACKE is written by Intel.
+
+\subsection{Other Linear Algebra Libraries}
+
+The classical BLAS/LAPACK API doesn't meet some developers' or users'
+need. Thus, libraries with similar functionality but totally different
+APIs were written.
+
+{\bf Eigen}\cite{eigen} is a well-optimized header-only C++ library,
+without runtime dispatch according to CPU capability. It's performance
+is heavily impacted by the compiler flags, i.e. the ISA baseline.
+For example, the same matrix multiplication demo compiled under x86\_64
+generic ISA baseline runs many times slower than the one compiled
+under skylake (AVX2) ISA baseline. That means for linux distributions
+that focus on hardware compatibility must have to compile low-performance
+binary executables, and users will silently waste their modern machine's
+performance. SIMDebian \cite{simdebian}, a radical Debian partial
+fork with radical ISA baseline is proposed to mitigate the performance
+waste, because applications can be compiled with e.g. the Skylake
+baseline.
+
+{\bf FlexiBLAS} \cite{flexiblas,flexiblas-talk} is a BLAS wrapper
+library with runtime exchangable backends, which allows one to exchange
+the BLAS implementation at run-time via an environment variable. FlexiBLAS
+argues that both the update-alternatives and the LD\_LIBRARY\_PATH
+/ LD\_PRELOAD approaches are only applicable for single file implementations,\footnote{This is true. Debian has to deal with this issue by patching upstream
+build systems to squash symbols into a single dynamic shared object
+file. For example, the Atlas package's BLAS and CBLAS symbols are
+squashed in a single libblas.so.3 file, in order to resemble the netlib
+libblas.so.3 .}and update-alternatives also requires root permission. This project
+also points out deficiencies of static libraries, Gentoo eselect/pkg-config
+and BSD ports, in terms of the mess of BLAS/LAPACK linkage.
+
+Discussion about any of them is beyond the scope of this article.
+
+\subsection{Other Linux Distributions}
+
+Packaging for BLAS and LAPACK libraries and their reverse dependencies
+have not been gracefully done by other distributions. Or even worse,
+the packaging might be a mess.
+
+{\bf Archlinux} chooses to privide only two implementations \cite{arch-openblas-pkgbuild,arch-blas},
+the netlib BLAS and OpenBLAS, in order to keep everything simple.
+Particularly, the netlib BLAS and OpenBLAS cannot co-exist. The OpenBLAS
+package is compiled with OpenMP threading, 32-bit index and without
+LAPACK, LAPACKE, or CBLAS. Obviously, developers who write pthread
+program or need optimized serial BLAS library will have to compile
+BLAS library by themselves (incl. via AUR), and may possibly mess
+up the system eventually.
+
+{\bf Fedora} provides many possible configurations to the user, with
+different threading model and different indexing types \cite{fedora-openblas-spec}.
+For example, all the openblas variants have nearly the same functionality
+but they come along with different SONAMEs. The serial variant is
+so-named as libopenblas, the openmp variant as libopenblaso, the pthread
+variant as libopenblasp, the 64-bit serial variant as libopenblas64,
+the 64-bit openmp variant as libopenblaso64, the 64-bit pthread variant
+as libopenblasp64. Such design will not only confuse the user, but
+also confuse the reverse dependency maintainers.
+
+{\bf Gentoo} provides many implementations to the user. The user
+could change the underlying BLAS/LAPACK implementations with ``eselect
+switch'' (it switches pkgconfig files). However, there is a significant
+defect that every switch would trigger a rebuild of the whole reverse
+dependency tree.
+
+{\bf FreeBSD} , although not a Linux distribution, specifies specific
+BLAS/LAPACK implementation on a per-package basis, where the package
+maintainer decides which exact implementation to use. Apparently this
+doesn't satisfy diversed user demands.
+
+{\bf Ubuntu, Mint, Kali, Deepin, ...} belong to the Debian family.
+So a theory that holds on Debian could also be applied to them, as
+long as there is no significant discrepancy in the version of software
+stack. Note, this article is based on Debian Sid (April 2019), which
+is basically equivalent to Debian 10 (codenamed ``Buster'').
+
+\section{Debian's Approach}
+
+In this section, the alternatives mechanism will be reviewed first.
+In order to make the alternatives system meaningful, different BLAS
+and LAPACK implementations must be co-installable, hence the co-installbility
+problem is discussed next. Then the way to register different candidates
+in the mechanism will be described, followed by a simple usage guide.
+
+\subsection{Dpkg's update-alternatives mechanism}
+
+To be filled up in the future.
+
+\subsection{Co-existence of Various Implementations}
+
+To be filled up in the future.
+
+Including Threading Model \& Index Type Variants
+
+(Serial, OpenMP (GNU, Intel, PGI), Pthread, TBB)
+
+(int32, -i8 (int64))
+
+On Debian, netlib blas produces binary packages including: libblas3,
+liblapack3. Package libblas3 ships \$LIBDIR/blas/libblas.so.3 and
+provides libblas.so.3 .
+
+Felix Yan wants to know the difference between openblas-cblas and
+netlib-cblas, and the difference between openblas-lapack and netlib-lapack.
+He also wants to know what would happen when mixing cblas, blas and
+lapack from different vendors.
+
+\subsection{Registering Different Candidates}
+
+To be filled up in the future. Please read some debian packaging examples
+if you really want to know.
+
+\subsection{Switching Alternatives}
+
+There are two generic ways to switch the underlying libblas.so.3 or
+liblapack.so.3 implementation. The first way is via update-alternatives,
+which requires root permission. When you have no enough permission,
+the second way is to hint ld.so with environment variable LD\_LIBRARY\_PATH
+or LD\_PRELOAD.
+
+There are also measures to switch the backend for some specific software.
+For example, Numpy users could configure numpy in \verb|~/.numpy-site.cfg|
+\cite{numpy-site-cfg}. However, these non-generic tricks are beyond
+the scope of this document, hence will not be elaborated.
+
+\subsubsection{Via Update-alternatives}
+
+To be filled up in the future. See \cite{debian-wiki-lalib}
+
+\subsubsection{Via Hinting ld.so}
+
+To be filled up in the future. See \cite{debian-wiki-lalib}
+
+\subsection{Underlying Principles}
+
+To be filled up in the future.
+
+\subsection{Pitfalls \& Failure Cases}
+\begin{enumerate}
+\item The mixture of OpenMP and pthread (the GIMP trouble?)
+\item The mixture of GNU OpenMP (gomp) and Intel OpenMP (iomp) (silent and
+incorrect result from MKL)
+\item Some packages squashed BLAS and CBLAS ABI into a single shared object.
+(recent numpy change)
+\item mis-Use 32-bit blas as the 64-bit provider. \cite{archwiki-julia-arpack}
+BLAS implementations has to use 32-bit index to resemble the reference
+BLAS.
+\item Separated BLAS and CBLAS. Numpy bugs: On Debian Atlas provides BLAS
+and CBLAS as well, but it delivers BLAS and CBLAS ABIs in separate
+shared objects.
+\end{enumerate}
+When the application calls some non-standard BLAS routines such as
+``axpby''. When the application calls openblas\_set\_num\_threads
+somehow (julia). BLAS/LAPACK independence is importance if you wish
+the mechanism to work properly.
+
+\section{Experiments}
+
+\subsection{Numpy \& BLAS Alternation}
+
+To assess whether the mechanism used by Debian really works, we conduct
+a simple experiment with Numpy. I'm not going to exhaust myself, so
+extra experiments are postponed.
+
+Test platform: Debian Sid (April 2019) on Thinkpad T470p. Intel I5-7440HQ,
+Nvidia 940MX. Alternatives are switched with rover \cite{rover}.
+In every experiment where multi-threading could be enabled, I use
+4 threads via {\footnotesize{}MKL\_NUM\_THREADS, OPENBLAS\_NUM\_THREADS,
+BLIS\_NUM\_THREADS.}{\footnotesize\par}
+
+Numpy is built against BLAS \& LAPACK. \footnote{dpkg -s python3-numpy | rg blas}
+We test whether the alternative system is really affecting Numpy's
+matrix operation performance by the following simple experiment. The
+code will be run against different libblas.so.3 alternatives, and
+from the comprarison of elapsed time we could evaluate the validity.
+
+\begin{lstlisting}
+#!/usr/bin/python3.7
+import time
+import numpy as np
+TIMES, tm = 10, []
+a = np.random.rand(4096, 4096).astype(np.double)
+x = np.random.rand(4096, 4096).astype(np.double)
+for i in range(TIMES):
+    t_start = time.time()
+    y = np.matmul(a, x)
+    tm.append(time.time() - t_start)
+print(f'{np.mean(tm):.3f} pm {np.std(tm):.3f}')
+\end{lstlisting}
+
+Results:
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+{\small{}Candidate} & {\small{}Elapsed Time (seconds)}\tabularnewline
+\hline 
+\hline 
+{\small{}MKL (iomp)} & {\small{}1.025 pm 0.023}\tabularnewline
+\hline 
+{\small{}OpenBLAS (pthread)} & {\small{}1.071 pm 0.023}\tabularnewline
+\hline 
+{\small{}OpenBLAS-Pthread} & {\small{}WIP}\tabularnewline
+\hline 
+{\small{}OpenBLAS-OpenMP} & {\small{}WIP}\tabularnewline
+\hline 
+{\small{}OpenBLAS-Serial} & {\small{}WIP}\tabularnewline
+\hline 
+{\small{}BLIS-OpenMP} & {\small{}1.075 pm 0.037}\tabularnewline
+\hline 
+{\small{}BLIS-Pthread} & {\small{}1.153 pm 0.086}\tabularnewline
+\hline 
+{\small{}BLIS-Serial} & {\small{}3.494 pm 0.031}\tabularnewline
+\hline 
+{\small{}Atlas (serial, generic)} & {\small{}10.410 pm 0.408}\tabularnewline
+\hline 
+{\small{}Netlib} & {\small{}47.980 pm 1.122}\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+
+Obviously, the standard Netlib implementation is extremely slow and
+everyone should avoid actually using it. The experimental results
+illustrate that the underlying BLAS backend could be switched smoothly
+with the update-alternatives mechanism, and the performance of higher-level
+application would be influenced. In this context, no re-complition
+is required at all.
+
+\subsection{Messing Up Index Type}
+
+libfoo.c:
+
+{\tiny \begin{verbatim}
+#include <stddef.h>
+float sasum64(size_t N, const float *X, size_t incX)
+{
+    float asum = 0.;
+    for (size_t i = 0; i < N; i++) {
+        asum += (X[i*incX] > 0.) ? X[i*incX] : -X[i*incX];
+    }
+    return asum;
+}
+float sasum32(int N, const float *X, int incX)
+{
+    float asum = 0.;
+    for (int i = 0; i < N; i++) {
+        asum += (X[i*incX] > 0.) ? X[i*incX] : -X[i*incX];
+    }
+    return asum;
+}
+\end{verbatim} }
+
+app.c:
+
+{\tiny \begin{verbatim}
+#include <stdio.h>
+#include <stddef.h>
+float sasum64(int N, const float *X, int incX);
+float sasum32(size_t N, const float *X, size_t incX);
+
+int main(void)
+{
+    float a[] = {1., 2., -3.};
+    printf("%f, %f\n", sasum32(3, a, 1), sasum64(3, a, 1));
+    return 0;
+}
+\end{verbatim} }
+
+Objdump libfoo.so:
+
+{\tiny \begin{verbatim}
+diff -ru sasum32.asm sasum64.asm --color
+--- 32	2019-04-06 05:10:01.640688236 +0000
++++ 64	2019-04-06 05:10:15.645039520 +0000
+@@ -1,15 +1,15 @@
+ 55                   	push   %rbp
+ 48 89 e5             	mov    %rsp,%rbp
+-89 7d ec             	mov    %edi,-0x14(%rbp)
++48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+ 48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+-89 55 e8             	mov    %edx,-0x18(%rbp)
++48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+ 66 0f ef c0          	pxor   %xmm0,%xmm0
+ f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+-c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%rbp)
+-eb 7c                	jmp    1246 <sasum32+0x9c>
+-8b 45 f8             	mov    -0x8(%rbp),%eax
+-0f af 45 e8          	imul   -0x18(%rbp),%eax
+-48 98                	cltq   
++48 c7 45 f0 00 00 00 	movq   $0x0,-0x10(%rbp)
++00 
++eb 7d                	jmp    1195 <sasum64+0xa0>
++48 8b 45 f0          	mov    -0x10(%rbp),%rax
++48 0f af 45 d8       	imul   -0x28(%rbp),%rax
+ 48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+ 00 
+ 48 8b 45 e0          	mov    -0x20(%rbp),%rax
+@@ -17,34 +17,32 @@
+ f3 0f 10 00          	movss  (%rax),%xmm0
+ 66 0f ef c9          	pxor   %xmm1,%xmm1
+ 0f 2f c1             	comiss %xmm1,%xmm0
+-76 1e                	jbe    120d <sasum32+0x63>
+-8b 45 f8             	mov    -0x8(%rbp),%eax
+-0f af 45 e8          	imul   -0x18(%rbp),%eax
+-48 98                	cltq   
++76 1e                	jbe    115b <sasum64+0x66>
++48 8b 45 f0          	mov    -0x10(%rbp),%rax
++48 0f af 45 d8       	imul   -0x28(%rbp),%rax
+ 48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+ 00 
+ 48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 48 01 d0             	add    %rdx,%rax
+ f3 0f 10 00          	movss  (%rax),%xmm0
+-eb 27                	jmp    1234 <sasum32+0x8a>
+-8b 45 f8             	mov    -0x8(%rbp),%eax
+-0f af 45 e8          	imul   -0x18(%rbp),%eax
+-48 98                	cltq   
++eb 27                	jmp    1182 <sasum64+0x8d>
++48 8b 45 f0          	mov    -0x10(%rbp),%rax
++48 0f af 45 d8       	imul   -0x28(%rbp),%rax
+ 48 8d 14 85 00 00 00 	lea    0x0(,%rax,4),%rdx
+ 00 
+ 48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 48 01 d0             	add    %rdx,%rax
+ f3 0f 10 00          	movss  (%rax),%xmm0
+-f3 0f 10 0d cf 0d 00 	movss  0xdcf(%rip),%xmm1        # 2000 <_fini+0xda4>
++f3 0f 10 0d 81 0e 00 	movss  0xe81(%rip),%xmm1        # 2000 <_fini+0xda4>
+ 00 
+ 0f 57 c1             	xorps  %xmm1,%xmm0
+ f3 0f 10 4d fc       	movss  -0x4(%rbp),%xmm1
+ f3 0f 58 c1          	addss  %xmm1,%xmm0
+ f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+-83 45 f8 01          	addl   $0x1,-0x8(%rbp)
+-8b 45 f8             	mov    -0x8(%rbp),%eax
+-3b 45 ec             	cmp    -0x14(%rbp),%eax
+-0f 8c 78 ff ff ff    	jl     11ca <sasum32+0x20>
++48 83 45 f0 01       	addq   $0x1,-0x10(%rbp)
++48 8b 45 f0          	mov    -0x10(%rbp),%rax
++48 3b 45 e8          	cmp    -0x18(%rbp),%rax
++0f 82 75 ff ff ff    	jb     1118 <sasum64+0x23>
+ f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+ 5d                   	pop    %rbp
+ c3                   	retq   
+\end{verbatim} }
+
+Objdump app:
+
+{\tiny \begin{verbatim}
+    1184:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+    1188:	ba 01 00 00 00       	mov    $0x1,%edx
+    118d:	48 89 c6             	mov    %rax,%rsi
+    1190:	bf 03 00 00 00       	mov    $0x3,%edi
+    1195:	e8 a6 fe ff ff       	callq  1040 <sasum64@plt>
+    119a:	f3 0f 5a d0          	cvtss2sd %xmm0,%xmm2
+    119e:	f2 0f 11 55 e8       	movsd  %xmm2,-0x18(%rbp)
+    11a3:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+    11a7:	ba 01 00 00 00       	mov    $0x1,%edx
+    11ac:	48 89 c6             	mov    %rax,%rsi
+    11af:	bf 03 00 00 00       	mov    $0x3,%edi
+    11b4:	e8 97 fe ff ff       	callq  1050 <sasum32@plt>
+\end{verbatim} }
+
+Or maybe better analyze this with gcc -S?
+
+\section{Conclusion}
+
+Formal conclusion has been omitted. If I must draw some conclusions
+here, I would say: \emph{Debian is probably the best GNU/Linux distribution}.
+
+\appendix
+
+\section{To Debian Maintainers}
+
+\section{Porting the Mechanism to Other Distros}
+
+Archlinux: Nobody working on it. Fedora: Nobody.
+
+\subsection{Porting to Gentoo}
+
+Planned as a GSoC 2019 Project \cite{gentoo-gsoc}, initiated by Gentoo.
+``BLAS and LAPACK runtime switching''
+
+\subsubsection{Abstract}
+
+Classical numerical linear algebra libraries, \emph{BLAS} and \emph{LAPACK}
+play important roles in the scientific computing field. Varied demand
+on these libraries poses non-trivial challenge on system management
+and linux distribution development, from which some existing linux
+distributions suffer. However, by leveraging dpkg's update-alternatives
+mechanism which enables user to switch BLAS and LAPACK libraries smoothly
+and painlessly, the problems could be properly and decently addressed.
+This project aims at introducing the mechanism into Gentoo's BLAS
+and LAPACK package dependency tree, addressing multiple existing problems.
+
+\subsubsection{Rationale}
+
+{\bf BLAS} (Basic Linear Algebra Subroutines)\cite{blas} and {\bf LAPACK}
+(Linear Algebra PACKage)\cite{lapack} are important mathematical
+APIs/ABIs/libraries to performance-critical programs that manipulate
+dense and contiguous numerical arrays. BLAS provides low-level and
+frequently used linear algebra routines for vector and matrix operations;
+LAPACK provides higher-level functionality based on complex call graph
+over BLAS, hence BLAS is the most performance-critical part. These
+libnear algebra libraries are widely used in the scientific computing
+and many other areas, for example: Numpy, Scipy, Julia, Octave, R,
+Sagemath, Matlab, Mathematica and LINPACK \cite{linpack} \footnote{High performance linpack is used to benchmark and rank supercomputers
+for the TOP500 list.}.
+
+In practice, \emph{different} users need \emph{different} BLAS/LAPACK
+implementations with \emph{different} configurations (e.g. threading
+model or index type variants) under \emph{different} scenarios. Such
+extremely diversed and varied BLAS/LAPACK library requirement poses
+a non-trivial challenge to linux distribution developers: No single
+configuration satisfies all user's demand, e.g. when only the OpenMP
+version of OpenBLAS is provided\footnote{This is basically what Archlinux does.},
+people who write pthread programs would complain; It leads to confusion
+and chaos if many alternative libraries co-exists with different SONAMEs,
+e.g. libopenblas, libopenblasp, libopenblaso\footnote{This is actually what Fedora does.};
+It is still not the optimal solution to provide the build-time switch,
+that would result in a rebuild of the whole reverse dependency tree
+when switching \footnote{This is what Gentoo eselect/pkg-config does.};
+Forcing distribution packages to use a specific implemtation on a
+per-package basis, clearly doesn't satisfy the divsersed user demand
+\footnote{This is what BSD/Port does.}.
+
+Taking advantage from the update-alternatives mechanism of dpkg, Debian
+is able to address the aforementioned challenge in a decent way. Such
+that Debian users could switch the underlying BLAS/LAPACK implementations
+without recompiling their applications. At the meantime, many BLAS
+implementations with different configurations could co-exist on the
+system without confliction. As the outcome, users could easily profile
+and benchmark different implementations efficiently, and painlessly
+switch the underlying implementation for different programs under
+different scenarios.
+
+The solution of ``BLAS and LAPACK runtime switching'' is to mimic
+Debian. The Netlib BLAS and LAPACK packages are mandatory when one
+needs to build any application on top of BLAS/LAPACK. The netlib implementation
+functions as the last fallback implementation, a linkder stub, the
+standard header provider, and most importantly the fallback alternative
+for libblas.so.3 and liblapack.so.3. All packages depend on BLAS and
+LAPACK should link against libblas.so.3 or liblapack.so.3, which could
+be provided by various BLAS and LAPACK implementations. The recommended
+header used to build reverse dependencies is the one from netlib.
+All other BLAS and LAPACK implementations should register themselves
+as alternatives to the netlib implementation, where each implementation
+provides two groups of candidates: development files, and shared objects.
+
+\subsubsection{Objective}
+\begin{enumerate}
+\item Integrate update-alternatives mechanism into Gentoo's reference blas,
+i.e. netlib blas' packaging. Or update the eslect-blas integration.
+\item Package BLIS for Gentoo, and register it as another netlib blas alternative.
+\item Update the packaging of a BLAS/LAPACK reverse dependency to validate
+the efficacy of the mechanism on Gentoo. Specifically, the package
+will be compiled against BLIS's libblas.so.3 and netlib's libblas.so.3
+respectively, and always use the netlib headers.
+\item Modify the packaging for OpenBLAS to register libopenblas.so as an
+alternative to netlib blas. Header are not exposed in public include
+directory.
+\item Update packaging for BLAS and LAPACK reverse dependencies, and enforce
+linkage against libblas.so.3 (any BLAS implementation could provide
+this).
+\item Update gentoo wiki or documentations, describing related changes.
+\item Optionally, write an eselect-to-update-alternatives bridge, if the
+implementation used u-a in the end.
+\end{enumerate}
+
+\subsubsection{Deliverables}
+\begin{enumerate}
+\item Updated/NEW gentoo packaging for at least Netlib, OpenBLAS and BLIS.
+\item Updated BLAS/LAPACK reverse dependency packaging for at least the
+most important ones.
+\item Documentation/wiki updates regarding the updates.
+\item Optionally an eselect-to-update-alternatives bridge.
+\end{enumerate}
+
+\subsubsection{Timeline}
+
+The official GSoC time frame is May 27, 2019 - August 19, 2019. The
+following timeline stick to the official time frame. However, in order
+to avoid confliction with my other activities, I may start the project
+early.
+
+May 27 - June 10 (2 weeks): Get familiar with Gentoo development and
+update packaging for blas-reference, cblas-reference.
+
+June 10 - June 17 (1 week): Package BLIS for Gentoo, and register
+it as netlib alternative.
+
+June 17 - June 24 (1 week): Update the packaging for Numpy and Octave,
+and conduct sanity tests regarding the mechanism.
+
+June 24 - July 1 (1 week): Modify the OpenBLAS packaging and register
+it in the mechanism. Of course, sanity tests should be conducted.
+
+July 1 - July 15 (2 weeks): Update packaging for several other important
+BLAS and LAPACK reverse dependencies.
+
+July 15 - July 22 (1 week): Write documentation regarding to the changes,
+and suggestion to BLAS/LAPACK reverse dependency package maintainers.
+
+July 22 - Aug 5 (2 weeks): Try to implement an eselect-to-update-alternatives
+bridge.
+
+Aug 5 - Aug 19 (2 weeks): Update as many BLAS / LAPACK reverse dependency
+packages as possible.
+
+\section*{Acknowledgement}
+
+The development is funded by myself, and I'm writting this article
+as an excercise.
+
+Coping \& Pasting software from the internet to the archive, such
+repetitive pattern will eventually burn out one's interest in Debian
+development. Only by doing works that make difference can I feel that
+I'm really ``developing'' Debian, despite the increased difficulty.
+
+This work could not have been done without my fellow developers' historical
+works: Sébastien Villemot, Sylvestre Ledru, and the DPKG developers.
+
+Thanks to Felix Yan for everything related to Archlinux; Benda Xu
+for everything related to Gentoo.
+\begin{thebibliography}{10}
+\bibitem{gs-la} Gilbert Strang, Introduction to Linear Algebra, \url{http://math.mit.edu/~gs/linearalgebra/}
+
+\bibitem{eigen} Eigen3, http://eigen.tuxfamily.org
+
+\bibitem{simdebian} SIMDebian, https://github.com/SIMDebian/SIMDebian
+
+\bibitem{fedora-openblas-spec} https://src.fedoraproject.org/cgit/rpms/openblas.git/
+tree/openblas.spec
+
+\bibitem{arch-openblas-pkgbuild}https://git.archlinux.org/svntogit/community.git/
+tree/trunk/PKGBUILD?h=packages/openblas
+
+\bibitem{blis-single} https://github.com/flame/blis/issues/292
+
+\bibitem{rover} Rover: https://salsa.debian.org/debian/rover
+
+\bibitem{numpy-site-cfg} https://github.com/numpy/numpy/blob/master/site.cfg.example
+
+\bibitem{blas-opt} https://github.com/flame/how-to-optimize-gemm
+
+\bibitem{gentoo-gsoc} https://wiki.gentoo.org/wiki/Google\_Summer\_of\_Code/2019/
+Ideas\#BLAS\_and\_LAPACK\_runtime\_switching
+
+\bibitem{archwiki-julia-arpack} https://wiki.archlinux.org/index.php/Julia\#Arpack
+
+\bibitem{openblas-64bit-default} https://github.com/xianyi/OpenBLAS/issues/1763
+
+\bibitem{dsohowto} Ulrich Drepper, How To Write Shared Libraries
+
+\bibitem{mkl} https://software.intel.com/en-us/mkl
+
+\bibitem{blas} https://en.wikipedia.org/wiki/Basic\_Linear\_Algebra\_Subprograms
+
+\bibitem{lapack} https://en.wikipedia.org/wiki/LAPACK
+
+\bibitem{linpack} https://en.wikipedia.org/wiki/LINPACK
+
+\bibitem{debian-wiki-lalib} https://wiki.debian.org/DebianScience/LinearAlgebraLibraries
+
+\bibitem{blis-perf} https://github.com/flame/blis/blob/master/docs/Performance.md
+
+\bibitem{flexiblas} https://www.mpi-magdeburg.mpg.de/projects/flexiblas
+
+\bibitem{flexiblas-talk} https://www2.mpi-magdeburg.mpg.de/mpcsc/software/flexiblas/2018\_talk\_fin\_flexiblas.pdf
+
+\bibitem{arch-blas} https://www.archlinux.org/packages/extra/x86\_64/blas/
+\end{thebibliography}
+
+\end{document}
