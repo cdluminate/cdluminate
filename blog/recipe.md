@@ -220,6 +220,13 @@ Roasting Steak: https://gist.github.com/cdluminate/1df56a1c9d0b85e52fbe55847a2c5
 
 苹果派
 
+Beef Brisket: 表面涂抹Mustard，作为其他调料的binder。干料可以用盐，黑胡椒，香菜籽粉（coriander seed powder）涂抹，大蒜粉等到表面。腌制时间随意。
+放入烤盘盖上锡纸，烤箱375F三个小时之后去掉锡纸再烤30～60分钟。
+其他的变式可以加入比如番茄酱（tomato sause）覆盖牛肉本体。
+
+Beef Back Ribs：表面涂抹mustard作为干料的binder，均匀涂抹到表面。干料只放海盐，黑胡椒粉，蒜粉三种，均匀涂抹到表面。
+锡纸完全包裹，烤箱375F 3.5小时之后去掉锡纸再烤30分钟。
+
 # IV. 日式, 韩式 / Japanese, Korean
 
 不想做刺身，不过日式料理的熟食想试试。
