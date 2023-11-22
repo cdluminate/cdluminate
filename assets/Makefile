@@ -1,6 +1,7 @@
 main:
 	pdflatex cv.tex
 	-evince cv.pdf
+	-open -a Preview cv.pdf
 	-$(MAKE) clean
 
 quiet:
