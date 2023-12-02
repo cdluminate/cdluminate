@@ -227,6 +227,8 @@ Beef Brisket: 表面涂抹Mustard，作为其他调料的binder。干料可以�
 Beef Back Ribs：表面涂抹mustard作为干料的binder，均匀涂抹到表面。干料只放海盐，黑胡椒粉，蒜粉三种，均匀涂抹到表面。
 锡纸完全包裹，烤箱375F 3.5小时之后去掉锡纸再烤30分钟。
 
+参考资料： https://www.youtube.com/watch?v=7kGdsU8HLW0
+
 # IV. 日式, 韩式 / Japanese, Korean
 
 不想做刺身，不过日式料理的熟食想试试。
