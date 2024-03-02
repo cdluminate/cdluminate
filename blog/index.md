@@ -1,15 +1,5 @@
-个人杂谈 / My Miscellaneous Articles
+Misc Collection
 ===
-
-我这个人真的非常懒，满足于Github的markdown渲染当作静态博客用。
-相应的，这样能够更加聚焦于内容写作而非前端代码。
-有些材料因为和国内和国际友人均有分享所以会混合中文和英文。
-
-I'm too lazy to setup a static blog, being satisfied with the markdown
-rendering of Github. As a result, I can better focus on writing the
-content instead of writing some front-end code. Some materials are
-written in the mixture of Chinese and English because they are shared
-to both Chinese and non-Chinese friends.
 
 ## 经历感想与评价 / Experience, Thoughts, and Reviews
 
