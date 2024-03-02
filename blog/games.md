@@ -55,6 +55,7 @@ Range [7/10, 8/10)
 
 Range [6/10, 7/10)
 
+* 塞尔达传说：王国之泪 | Zelda: Tears of the kingdom -- 游戏设计相比上一代很有新意，但是糟糕的机能已经无法满足本世代的游戏体验。结果就是我新买的实体游戏卡和游戏机在我手上不到三个月就卖掉了。游戏很好，但是我给硬件打零分。 | The game design feels very novel compared to the last generation. But the terrible console hardware performance is far behind the average standard in this decade. As a result, I sold my newly bought game card as well as the console within three months. Game is good, but I score the hardware a clear zero.
 
 Range [0/10, 6/10) 不及格
 
