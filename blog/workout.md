@@ -2,7 +2,25 @@
 
 Weightlifting (want to try)
 
-# 预备姿势
+# 深蹲
+
+## 训练计划
+
+https://www.bilibili.com/video/BV1VM411Q7CG/?spm_id_from=333.788&vd_source=f1093581bac2731386f8f961a31e769f
+
+初学阶段：<1.5倍体重。在动作变形的临界点做组（3RM左右），尽量不要借助牵张反射
+
+入门阶段：1.5倍体重~2.0倍体重。用最大重量的80%做5RMx5，然后做一个100%的1RM，或者用60%的重量做8RMx2的半蹲。
+
+练习后一定要拉伸。
+
+# 硬拉
+
+
+
+# 举重
+
+## 举重预备姿势
 
 https://www.bilibili.com/cheese/play/ss2669?csource=common_myclass_purchasedlecture_null&spm_id_from=333.874.selfDef.mine_paid_list
 
