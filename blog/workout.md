@@ -1,6 +1,6 @@
 ## Workout
 
-Weightlifting (want to try)
+Strength evaluation: https://strengthlevel.com
 
 # 深蹲
 
