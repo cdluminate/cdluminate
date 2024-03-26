@@ -1,10 +1,12 @@
-## Workout
+# Workout
 
 Strength evaluation: https://strengthlevel.com
 
-# 深蹲
+# 动作库 / 术语表
 
-## 训练计划
+## 深蹲 Squat
+
+**深蹲训练计划**
 
 https://www.bilibili.com/video/BV1VM411Q7CG/?spm_id_from=333.788&vd_source=f1093581bac2731386f8f961a31e769f
 
@@ -14,9 +16,29 @@ https://www.bilibili.com/video/BV1VM411Q7CG/?spm_id_from=333.788&vd_source=f1093
 
 练习后一定要拉伸。
 
-# 硬拉
+## 硬拉 Deadlift
+
+## 奥举硬拉 Clean Pull
+
+奥举硬拉 Clean Pull，相比标准硬拉，行程更长，拉到顶点三关节伸展并且耸肩（手肘不要弯曲），以股四头主导（对腰背负荷小，动作不易变形，更不容易受伤），但需要更好的协调能力。
+标准硬拉变奥举硬拉的方法：（1）肩胛下沉（2）抬头（3）膝盖打开（4）压低臀位。一段拉（地面到膝关节上沿）起身的时候背部倾斜角与髋部夹角不要有太大变化。二段啦伸髋，膝关节角度不变。三段三关节同时蹬展的同时耸肩。
+
+## 悬垂翻 Hang Clean
+
+悬挂在膝盖上沿，起始位置不是地面。
+
+## 高翻 Power Clean
+
+没有下蹲动作，或者顶多只有1/4下蹲。
+
+## 下蹲翻 Clean (also Full Clean, Squat Clean)
 
 
+## 上挺
+
+## 实力推 Military Press
+
+## 宽速拉
 
 # 举重
 
