@@ -33,12 +33,11 @@ https://www.bilibili.com/video/BV1VM411Q7CG/?spm_id_from=333.788&vd_source=f1093
 
 ## 下蹲翻 Clean (also Full Clean, Squat Clean)
 
-
-## 上挺
+## 上挺 Jerk
 
 ## 实力推 Military Press
 
-## 宽速拉
+## 宽速拉 Panda Pull (a.k.a. Speed Pull)
 
 # 举重
 
