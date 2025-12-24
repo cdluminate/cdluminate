@@ -9,6 +9,7 @@
 \usepackage{multirow}
 \usepackage{makecell}
 \usepackage{graphicx}
+\usepackage{float}
 
 \definecolor{intjpurple}{HTML}{88619A}
 %\definecolor{intjpurple}{HTML}{4A148C}
@@ -16,9 +17,8 @@
 
 \begin{document}
 
-\section{MBTI/荣格八维认知功能表}
-
 \begin{table}[h!]
+    \caption{MBTI - 荣格八维映射表}
     \centering
     \begin{tabular}{cccc}
         \toprule
@@ -37,16 +37,16 @@
     \end{tabular}
 \end{table}
 
-\section{认知功能的角色表}
 
 \begin{table}[h!]
+    \caption{认知功能的角色表}
     \centering
     \begin{tabular}{cccc}
     \toprule
     序号 & 位置 & 角色名称 & 典型表现\tabularnewline
     \midrule
         1 & 主导 (Dom) & 英雄(Hero) & 核心力量\tabularnewline
-        2 & 辅助 & 家长(Parent) & 辅助工具\tabularnewline
+        2 & 辅助 (Auxiliary) & 家长(Parent) & 辅助工具\tabularnewline
         3 & 第三 (Tert) & 孩子(Child) & 舒适区\tabularnewline
         4 & 劣势 (Inferior) & 阿尼玛(Anima) & 压力源泉/理想\tabularnewline
     \midrule
@@ -58,9 +58,9 @@
 \end{tabular}
 \end{table}
 
-\section{认知功能的正常表现}
 
 \begin{table}[h!]
+    \caption{认知功能的正常表现}
     \centering
 \begin{tabular}{cccc}
 \toprule
@@ -79,10 +79,46 @@ Fi & Introverted Feeling & 本心，真实，价值 & 忠于自我，情感内�
 
 \end{table}
 
-\section{认知功能的防御机制/长期内耗循环（Loop）}
+
+%\section{认知功能的批判家长(Critical Parents)表现: 如何打压别人和自己}
+
 
 
 \begin{table}[h!]
+    \caption{认知功能的盲点(Trickster)表现}
+    \centering
+\begin{tabular}{ccc}
+\toprule
+盲点功能 & 核心特征 & 盲点表现\tabularnewline
+\midrule
+Fe (INTJ, ISTJ) & 社交迟钝 & 视社交礼仪为虚伪和操纵，善意说真话说真话却成冒犯，情感处理生硬且滞后\tabularnewline
+Fi (ENTP, ESTP) & 道德相对主义 & 不知道自己感受，情感逻辑化，无意间践踏别人价值观\tabularnewline
+Se (INTP, INFP) & 现实锻联 & 物理笨拙平地摔，忽视环境，活在云端缺乏行动力\tabularnewline
+Si (ENTJ, ENFJ) & 肉体忽视 & 不仅是记性差，透支身体，厌恶怀旧\tabularnewline
+Ne (ISTP, ISFP) & 缺乏联想 & 极度字面化，不理解暗示，讨厌猜测，一条路走到黑\tabularnewline
+Ni (ESTJ, ESFJ) & 缺乏远见 & 短期主义，只要确定的而不要直觉和愿景，瞎操心\tabularnewline
+Te (INFJ, ISFJ) & 逻辑混沌 & 无法通过思考做决定，资源管理困难，维护人际或信仰甚至反智\tabularnewline
+Ti (ENFP, ESFP) & 逻辑疏松 & 差不多就行，讨厌理论辩论，逻辑自相矛盾却不自知\tabularnewline
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+%\section{认知功能的恶魔(Demon)表现： 彻底崩溃时的毁灭打击}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[h!]
+\caption{认知功能的防御机制/长期内耗循环（Loop）}
     \centering
 \begin{tabular}{cccc}
 \toprule 
@@ -120,9 +156,9 @@ Loop名称 & 状态描述 & 涉及类型 & 典型表现\tabularnewline
 \end{table}
 
 
-\section{长期内耗循环的解药}
 
 \begin{table}[h!]
+\caption{长期内耗循环的解药。核心逻辑：通过强制调用辅助功能（第二）来打破循环。}
     \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{cccc}
@@ -161,11 +197,17 @@ Loop名称 & 状态描述 & 涉及类型 & 典型表现\tabularnewline
 \end{table}
 
 
-\section{认知功能的极端压力表现}
 
-注意：功能发育不成熟，或者日常的防御机制(loop)不同于极端压力/抓取状态（grip）
+
+
+
+
+
+
 
 \begin{table}[h!]
+\caption{认知功能的极端压力表现。
+    注意：功能发育不成熟，或者日常的防御机制(loop)不同于极端压力/抓取状态（grip）}
     \centering
 \begin{tabular}{ccc}
 \toprule
@@ -183,35 +225,6 @@ Fi (ENTJ, ESTJ) & 权威被挑战，计划失败，感到孤独 & 情感泛滥�
 \end{tabular}
 
 \end{table}
-
-\section{认知功能的批判家长(Critical Parents)表现: 如何打压别人和自己}
-
-TODO
-
-\section{认知功能的盲点(Trickster)表现}
-
-\begin{table}[h!]
-    \centering
-\begin{tabular}{ccc}
-\toprule
-盲点功能 & 核心特征 & 盲点表现\tabularnewline
-\midrule
-Fe (INTJ, ISTJ) & 社交迟钝 & 视社交礼仪为虚伪和操纵，善意说真话说真话却成冒犯，情感处理生硬且滞后\tabularnewline
-Fi (ENTP, ESTP) & 道德相对主义 & 不知道自己感受，情感逻辑化，无意间践踏别人价值观\tabularnewline
-Se (INTP, INFP) & 现实锻联 & 物理笨拙平地摔，忽视环境，活在云端缺乏行动力\tabularnewline
-Si (ENTJ, ENFJ) & 肉体忽视 & 不仅是记性差，透支身体，厌恶怀旧\tabularnewline
-Ne (ISTP, ISFP) & 缺乏联想 & 极度字面化，不理解暗示，讨厌猜测，一条路走到黑\tabularnewline
-Ni (ESTJ, ESFJ) & 缺乏远见 & 短期主义，只要确定的而不要直觉和愿景，瞎操心\tabularnewline
-Te (INFJ, ISFJ) & 逻辑混沌 & 无法通过思考做决定，资源管理困难，维护人际或信仰甚至反智\tabularnewline
-Ti (ENFP, ESFP) & 逻辑疏松 & 差不多就行，讨厌理论辩论，逻辑自相矛盾却不自知\tabularnewline
-\bottomrule
-\end{tabular}
-
-\end{table}
-
-\section{认知功能的恶魔(Demon)表现： 彻底崩溃时的毁灭打击}
-
-TODO
 
 
 
