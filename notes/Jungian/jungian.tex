@@ -10,6 +10,7 @@
 \usepackage{makecell}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{hyperref}
 
 \definecolor{intjpurple}{HTML}{88619A}
 %\definecolor{intjpurple}{HTML}{4A148C}
@@ -18,7 +19,32 @@
 \begin{document}
 
 \begin{table}[h!]
+    \caption{Cheatsheet索引表}
+    \centering
+    \begin{tabular}{cl}
+        \toprule
+        链接 & 表格名称 \\
+        \midrule
+        \ref{tab:mbti-jung} & MBTI - 荣格八维映射表  \\
+        \ref{tab:cog-function-roles} & 认知功能的角色表（含标准定义符合度） \\
+        \ref{tab:cog-function-normal} & 认知功能的正常表现 \\
+        \ref{tab:cog-function-child} & 认知功能的3*永恒之子(Child)表现 \\
+        \ref{tab:cog-function-inferior} & 认知功能的4*阿尼玛(Inferior)表现 \\
+        \ref{tab:cog-function-inferior-remedy} & 极端压力/抓取状态(Grip)的解药 \\
+        \ref{tab:cog-function-critical} & 认知功能的6*批判家长(Critical Parents)表现 \\
+        \ref{tab:cog-function-trickster} & 认知功能的7*盲点(Trickster)表现 \\
+        \ref{tab:cog-function-demon} & 认知功能的8*恶魔(Demon)表现 \\
+        \ref{tab:cog-function-demon-redemption} & 认知功能的8*恶魔(Demon)整合 \\
+        \ref{tab:cog-function-loop} & 认知功能的防御机制/长期内耗循环(Loop) \\
+        \ref{tab:cog-function-loop-remedy} & 长期内耗循环(Loop)的解药 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
     \caption{MBTI - 荣格八维映射表}
+    \label{tab:mbti-jung}
     \centering
     \begin{tabular}{cccc}
         \toprule
@@ -40,6 +66,7 @@
 
 \begin{table}[h!]
     \caption{认知功能的角色表（含标准定义符合度）}
+    \label{tab:cog-function-roles}
     \centering
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{ccccc}
@@ -62,6 +89,7 @@
 
 \begin{table}[h!]
     \caption{认知功能的正常表现。功能处于1*主导功能或者2*辅助功能的健康状态。会被个体有意识地，熟练地，且健康地使用。如果该功能被高阶性格有意识地发展，则会表现得近似主导或者辅助功能。也就是说，即便该功能原本处于劣势功能，通过有意识的联系和发展，也可以与本表格靠拢，这就是个体化(Individualization)的核心目标。不过此时，主导功能和辅助功能依然是充电器，训练过的功能仍然是耗电器。}
+    \label{tab:cog-function-normal}
     \centering
 \begin{tabular}{cccc}
 \toprule
@@ -83,6 +111,7 @@ Fi & Introverted Feeling & 本心，真实，价值 & 忠于自我，情感内�
 
 \begin{table}[h!]
 \caption{认知功能的3*永恒之子(Child)表现： 治愈、游戏与任性。这是人格的“游乐场”与退行区。表现形式：天真单纯的创造力(Playfulness)，或是压力下像被宠坏的孩子般无理取闹(Immaturity)。}
+    \label{tab:cog-function-child}
     \centering
     \resizebox{\textwidth}{!}{
 \begin{tabular}{ccccc}
@@ -109,6 +138,7 @@ Se  & ENTJ, ENFJ & 我全都要！ & 报复享乐，追求奢华，感官盛宴 
 
 \begin{table}[h!]
 \caption{认知功能的4*阿尼玛(Inferior)表现： 渴望与劫持(The Grip)。这是人格的“阿喀琉斯之踵”，也是通往潜意识的桥梁。表现形式：平时极度崇拜拥有此功能的人(Aspiration)，但在极度压力或疲惫下，则会变成拙劣的模仿者或暴君，导致毁灭性的抓取状态。}
+    \label{tab:cog-function-inferior}
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{ccccc}
@@ -135,6 +165,7 @@ Fi & ENTJ, ESTJ & 内心平和与真实 & 权威挑战，计划失败 & 情感�
 
 \begin{table}[h!]
 \caption{极端压力/抓取状态(Grip)的解药。当主导功能枯竭时，切忌（用主导功能）硬抗，此时唯一的解药是安抚劣势功能，顺应其最原始的需求。}
+    \label{tab:cog-function-inferior-remedy}
     \centering
     \resizebox{\textwidth}{!}{
 \begin{tabular}{ccccc}
@@ -161,6 +192,7 @@ Fi Inferior & ENTJ, ESTJ & \textbf{允许脆弱} & 停止压抑分析，停止�
 
 \begin{table}
 \caption{认知功能的6*批判家长(Critical Parents)表现: 如何打压别人和自己}
+    \label{tab:cog-function-critical}
     \resizebox{\textwidth}{!}{
 \begin{tabular}{ccccc}
 \toprule
@@ -189,6 +221,7 @@ Se Critical 批判现实 & ESTJ, ESFJ & 真难看 & 外貌/品味攻击，苛刻
 
 \begin{table}[h!]
     \caption{认知功能的7*盲点(Trickster)表现}
+    \label{tab:cog-function-trickster}
     \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{ccc}
@@ -213,6 +246,8 @@ Ti (ENFP, ESFP) & 逻辑疏松 & 差不多就行，讨厌理论辩论，逻辑�
 \caption{认知功能的8*恶魔(Demon)表现： 彻底崩溃时的毁灭打击。这是人格结构中最深层，最黑暗，也是最原始的部分。触发条件：自尊彻底崩溃，核心界限被严重侵犯，或者感受到极度绝望。表现形式：毁灭一切，不在乎输赢，只想让一切归零
 -- “既然你毁了我的世界，那我就把整个宇宙都炸了陪葬”。转化潜力：如果能整合，它也能带来涅槃重生的力量(The Daemonic
 vs. The Demonic)。}
+    \label{tab:cog-function-demon}
+    \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{cccc}
 \toprule
@@ -239,6 +274,8 @@ Fe Demon & ENTJ, ESTJ & 名誉屠杀 | Character Assassination & 情感操纵与
 \begin{table}
 
 \caption{认知功能的8*恶魔(Demon)整合：涅槃重生后的救赎之力(The Daemonic)。当恶魔功能被意识整合，它不再是毁灭者，而变成了通往完整人格的守门人。这种力量通常带有一种“非个人”的、超越小我的神性或宿命感。表现形式：大智若愚、绝地反击、或是对他人的深刻救赎。}
+    \label{tab:cog-function-demon-redemption}
+    \centering
 
 \resizebox{\textwidth}{!}{
 \begin{tabular}{cccc}
@@ -273,6 +310,7 @@ Fe Demon & ENTJ, ESTJ & 仁慈领袖 | Benevolent Ruler & 放下权力的傲慢�
 
 \begin{table}[h!]
 \caption{认知功能的防御机制/长期内耗循环(Loop)。不同于瞬间压力的Grip，Loop是一种长期的、病态的舒适区，个体切断了辅助功能(第二功能)的平衡作用，只在第一和第三功能之间死循环。}
+    \label{tab:cog-function-loop}
     \centering
     \resizebox{\textwidth}{!}{
 \begin{tabular}{cccc}
@@ -314,6 +352,7 @@ Loop组合 & 状态名称 & 涉及类型 & 典型表现 (Manifestation)\tabularn
 
 \begin{table}[h!]
 \caption{长期内耗循环(Loop)的解药。核心逻辑：Loop 是因为忽略了辅助功能（家长），导致第一与第三功能恶性循环。解药是\textbf{强制调用第二功能}。}
+    \label{tab:cog-function-loop-remedy}
     \centering
     \resizebox{\textwidth}{!}{
 \begin{tabular}{cccc}
