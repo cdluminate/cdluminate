@@ -19,26 +19,22 @@
 \begin{document}
 
 \begin{table}[h!]
-    \caption{Cheatsheet索引表}
+    \caption{Cheatsheet 索引表}
     \centering
-    \begin{tabular}{cl}
+    \resizebox{\textwidth}{!}{% 自动缩放以适应页面宽度
+    \begin{tabular}{cl@{\hspace{1.5cm}}cl} % 中间增加 1.5cm 间距
         \toprule
-        链接 & 表格名称 \\
+        链接 & 表格名称 & 链接 & 表格名称 \\
         \midrule
-        \ref{tab:mbti-jung} & MBTI - 荣格八维映射表 (Function Stacks)  \\
-        \ref{tab:cog-function-roles} & 认知功能的角色表（含标准定义符合度） \\
-        \ref{tab:cog-function-normal} & 认知功能的正常表现 \\
-        \ref{tab:cog-function-child} & 认知功能的3*永恒之子(Child)表现 \\
-        \ref{tab:cog-function-inferior} & 认知功能的4*阿尼玛(Inferior)表现 \\
-        \ref{tab:cog-function-inferior-remedy} & 极端压力/抓取状态(Grip)的解药 \\
-        \ref{tab:cog-function-critical} & 认知功能的6*批判家长(Critical Parents)表现 \\
-        \ref{tab:cog-function-trickster} & 认知功能的7*盲点(Trickster)表现 \\
-        \ref{tab:cog-function-demon} & 认知功能的8*恶魔(Demon)表现 \\
-        \ref{tab:cog-function-demon-redemption} & 认知功能的8*恶魔(Demon)整合 \\
-        \ref{tab:cog-function-loop} & 认知功能的防御机制/长期内耗循环(Loop) \\
-        \ref{tab:cog-function-loop-remedy} & 长期内耗循环(Loop)的解药 \\
+        \ref{tab:mbti-jung} & MBTI - 荣格八维映射表 (Function Stacks) & \ref{tab:cog-function-critical} & 认知功能的6*批判家长(Critical Parents)表现 \\
+        \ref{tab:cog-function-roles} & 认知功能的角色表（含标准定义符合度） & \ref{tab:cog-function-trickster} & 认知功能的7*盲点(Trickster)表现 \\
+        \ref{tab:cog-function-normal} & 认知功能的正常表现 & \ref{tab:cog-function-demon} & 认知功能的8*恶魔(Demon)表现 \\
+        \ref{tab:cog-function-child} & 认知功能的3*永恒之子(Child)表现 & \ref{tab:cog-function-demon-redemption} & 认知功能的8*恶魔(Demon)整合 \\
+        \ref{tab:cog-function-inferior} & 认知功能的4*阿尼玛(Inferior)表现 & \ref{tab:cog-function-loop} & 认知功能的防御机制/长期内耗循环(Loop) \\
+        \ref{tab:cog-function-inferior-remedy} & 极端压力/抓取状态(Grip)的解药 & \ref{tab:cog-function-loop-remedy} & 长期内耗循环(Loop)的解药 \\
+        \ref{tab:cog-function-opposing} & 认知功能的5*反向作用(Opposing/Nemesis)表现 & & \\
         \bottomrule
-    \end{tabular}
+    \end{tabular}}
 \end{table}
 
 
@@ -193,6 +189,34 @@ Fi & ENTJ, ESTJ & \textbf{允许脆弱} & 停止压抑分析，停止强撑坚�
 \end{table}
 
 
+\begin{table}[h!]
+\caption{认知功能的5*反向作用(Opposing/Nemesis)表现：防御与质疑。
+这是进入潜意识的第一道防线。当我们的主导功能(Hero)受到挑战时，第5功能会跳出来“抬杠”。表现形式：固执、怀疑论、被动攻击，或者对他人的该功能表现感到莫名的厌烦。}
+    \label{tab:cog-function-opposing}
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ccccc}
+\toprule
+反向功能 & 涉及类型 & 核心潜台词 & 防御表现 (Stubbornness) & 投射怀疑 (Paranoia)\tabularnewline
+\midrule
+\multicolumn{5}{c}{感知型反向：拒绝接受信息}\tabularnewline
+\midrule
+Ne & INTJ, INFJ & “别扯那些没用的” & \textbf{厌恶变数}：固执地坚持原计划，拒绝听取其他可能性，认为那是干扰 & \textbf{怀疑意图}：总觉得别人背信弃义，或者怀疑别人的忠诚度\tabularnewline
+Ni & ENTP, ENFP & “你想控制我？” & \textbf{抗拒定论}：讨厌被“贴标签”或被限制未来，故意反其道而行之 & \textbf{怀疑操控}：认为别人的愿景是洗脑，怀疑背后有阴谋\tabularnewline
+Se & ISTJ, ISFJ & “我不想看/听” & \textbf{感官屏蔽}：对外界的新体验表现出排斥，固守熟悉的物理环境 & \textbf{怀疑现实}：认为别人的衣着/表现是肤浅的作秀\tabularnewline
+Si & ESTP, ESFP & “别拿过去压我” & \textbf{轻视经验}：极度讨厌“老规矩”或繁琐的流程，故意打破常规 & \textbf{怀疑动机}：认为别人拿过去的数据是在限制自己的自由\tabularnewline
+\midrule
+\multicolumn{5}{c}{判断型反向：拒绝接受逻辑/价值}\tabularnewline
+\midrule
+Ti & ENTJ, ESTJ & “这没意义” & \textbf{傲慢驳斥}：若是不能马上应用，就拒绝深入思考逻辑细节，认为那是浪费时间 & \textbf{怀疑智商}：认为别人的精细逻辑是“书呆子气”，试图用权威压倒道理\tabularnewline
+Te & INTP, ISTP & “你在教我做事？” & \textbf{抗拒指挥}：极度厌恶被别人安排或催促，故意拖延以示反抗 & \textbf{怀疑能力}：认为别人的证书/头衔都是虚的，质疑权威的有效性\tabularnewline
+Fi & ENFJ, ESFJ & “你太自私了” & \textbf{否定个体}：为了群体和谐而压抑个人感受，也看不惯别人的特立独行 & \textbf{怀疑人品}：认为那些坚持自我价值的人是“破坏团结”的坏人\tabularnewline
+Fe & INFP, ISFP & “别以此绑架我” & \textbf{拒绝从众}：极度反感社交压力和“必须做的事”，故意表现得冷漠 & \textbf{怀疑虚伪}：认为别人的客套和热情都是有目的的操纵\tabularnewline
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
 \begin{table}
 \caption{认知功能的6*批判家长(Critical Parents)表现: 如何打压别人和自己}
     \label{tab:cog-function-critical}
@@ -284,6 +308,8 @@ Fe Demon & ENTJ, ESTJ & 名誉屠杀 | Character Assassination & 情感操纵与
 \bottomrule
 \end{tabular}}
 \end{table}
+
+
 
 
 \begin{table}
