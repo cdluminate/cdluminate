@@ -1,6 +1,6 @@
 main:
 	pdflatex cv.tex
-	-evince cv.pdf
+	-papers cv.pdf
 	-open -a Preview cv.pdf
 	-$(MAKE) clean
 
