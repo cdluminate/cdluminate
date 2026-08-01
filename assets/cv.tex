@@ -14,6 +14,10 @@
 \usepackage[colorlinks=true,urlcolor=WildStrawberry]{hyperref}
 
 % new commands
+\makeatletter
+\newcommand*{\twodigits}[1]{\two@digits{\value{#1}}}
+\AddEnumerateCounter{\twodigits}{\twodigits}{00}
+\makeatother
 \newcommand{\email}[1]{\href{mailto:#1}{\tt #1}}
 
 %\topmargin .5in
@@ -205,7 +209,7 @@ United States             & Website: {\small\href{https://cdluminate.github.io/}
 
 {\sc Journal Articles:} \hfill(2 TPAMI, 2 TMLR, 1 TMM)\\
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[J0{\arabic*}]}, ref={[J0{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[J\twodigits*]}, ref={[J\twodigits*]}]
 
 \item \label{pub:refface}\underline{Mo Zhou}, Keren Ye, Viraj Shah, Kangfu Mei, Mauricio Delbracio,
 \reversemarginpar\marginpar{\hspace{-9.5em}
@@ -258,7 +262,7 @@ IEEE Transactions on Multimedia (TMM), 2021.
     {\sc Conference Papers:}\hfill
     (3 CVPR, 3 ICCV, 1 ECCV, 1 NeurIPS, 1 ICLR, 1 AAAI)\\
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[C{\arabic*}]}, ref={[C{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[C\twodigits*]}, ref={[C\twodigits*]}]
 
 \item Mucong Ding, Bang An, Tahseen Rabbani, Chenghao Deng, Anirudh Satheesh,
 \reversemarginpar\marginpar{\hspace{-9.5em}
@@ -375,7 +379,7 @@ in Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2016.
 
     {\sc Preprint / Under-Review Papers:}\\
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[X0{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[X\twodigits*]}]
 
 %\item \underline{Mo Zhou}, Vishal M. Patel,
 %\textit{``(double-blind submission),''}
@@ -393,7 +397,7 @@ in Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2016.
 
 \section{\sc Patents}
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[P0{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[P\twodigits*]}]
 
 %\item google patent 2
 
