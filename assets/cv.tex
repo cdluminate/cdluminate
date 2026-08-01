@@ -73,24 +73,30 @@ United States             & Website: {\small\href{https://cdluminate.github.io/}
 \begin{itemize}[leftmargin=*]
     \item \includegraphics[height=1.2\fontcharht\font`\B]{amazon.png}
         Amazon.com Services LLC, Ring AI\hfill Bellevue, WA 98004\\
-        Applied Scientist (Vision Language Model)\hfill 01/2026 - Current
+        Applied Scientist (Vision Language Model)\hfill 01/2026 - Current\\
+        \textcolor{gray}{\footnotesize\it Worked-on: Video Understanding, VLM Evaluation Metric}
     \item \includegraphics[height=1.2\fontcharht\font`\B]{g.png}
         Google Research, Computational Imaging Team\hfill Mountain View, CA 94043\\
         Student Researcher (Computer Vision) \hfill 05/2024 - 10/2025\\
-        \textcolor{gray}{\small\it Mentor: Hossein Talebi, Keren Ye, Mauricio Delbracio, Peyman Milanfar}
+        \textcolor{gray}{\footnotesize\it Worked-on: Image Restoration~\ref{pub:unires}, Face Restoration~\ref{pub:refface}, and Infinite Zoom}\\
+        \textcolor{gray}{\footnotesize\it Mentor: Hossein Talebi, Keren Ye, Mauricio Delbracio, Peyman Milanfar}
     \item \includegraphics[height=1.2\fontcharht\font`\B]{msft.png}
         Microsoft Research, Applied Sciences Group\hfill Redmond, WA 98052\\
         Research Intern (Deep Learning)\hfill 05/2023 - 08/2023\\
-        \textcolor{gray}{\small\it Mentor: Kazuhito Koishida, Saeed Amizadeh}
+        \textcolor{gray}{\footnotesize\it Worked-on: Image Generation + LLM}\\
+        \textcolor{gray}{\footnotesize\it Mentor: Kazuhito Koishida, Saeed Amizadeh}
     \item \includegraphics[height=1.2\fontcharht\font`\B]{wormpex.pdf}
         Wormpex AI Research LLC \hfill Bellevue, WA 98004\\
         Research Intern (Computer Vision) \hfill 05/2022 - 08/2022\\
-        \textcolor{gray}{\small\it Mentor: Haoxiang Li, Yiding Yang, Gang Hua}
+        \textcolor{gray}{\footnotesize\it Mentor: Haoxiang Li, Yiding Yang, Gang Hua} \\
+        \textcolor{gray}{\footnotesize\it Worked-on: Re-biasable Object Detection~\ref{pub:rebiasdet}}
     \item \includegraphics[height=1.2\fontcharht\font`\B]{xjtu.jpeg}
         Xi'an Jiaotong University \hfill Xi'an, Shaanxi 710049\\
         Institute of Artificial Intelligence and Robotics (IAIR) \\
         Research Assistant (Computer Vision) \hfill 07/2020 - 06/2021\\
-        \textcolor{gray}{\small\it Supervisor: Le Wang, Sanping Zhou}
+        Research Intern (Computer Vision) \hfill 05/2022 - 08/2022\\
+        \textcolor{gray}{\footnotesize\it Worked-on: Adversarial Order Attack~\ref{pub:advorder}, Adversarial Ranking Defense~\ref{pub:robrank}}\\
+        \textcolor{gray}{\footnotesize\it Supervisor: Le Wang, Sanping Zhou}
 \end{itemize}
 
 \section{\sc Education}
@@ -199,9 +205,9 @@ United States             & Website: {\small\href{https://cdluminate.github.io/}
 
 {\sc Journal Articles:} \hfill(2 TPAMI, 2 TMLR, 1 TMM)\\
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[J0{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[J0{\arabic*}]}, ref={[J0{\arabic*}]}]
 
-\item \underline{Mo Zhou}, Keren Ye, Viraj Shah, Kangfu Mei, Mauricio Delbracio,
+\item \label{pub:refface}\underline{Mo Zhou}, Keren Ye, Viraj Shah, Kangfu Mei, Mauricio Delbracio,
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://openreview.net/forum?id=g9YzUDnUUS}{[OpenReview]}
 \href{https://arxiv.org/abs/2505.21905}{[arXiv]}
@@ -210,7 +216,7 @@ Peyman Milanfar, Vishal M. Patel, Hossein Talebi,
 \textit{``Reference-Guided Identity Preserving Face Restoration,''}
 Transactions on Machine Learning Research (TMLR), 2026.
 
-\item \underline{Mo Zhou}, Yiding Yang, Haoxiang Li, Vishal M. Patel, Gang Hua,
+\item \label{pub:rebiasdet}\underline{Mo Zhou}, Yiding Yang, Haoxiang Li, Vishal M. Patel, Gang Hua,
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://ieeexplore.ieee.org/document/11410103}{[PDF]}
 \href{https://arxiv.org/abs/2402.17207}{[arXiv]}
@@ -227,7 +233,7 @@ IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026.
 \textit{``MixedNUTS: Training-Free Accuracy-Robustness Balance via Nonlinearly Mixed Classifiers,''}
 Transactions on Machine Learning Research (TMLR), 2024.
 
-\item \underline{Mo Zhou},
+\item \label{pub:robrank}\underline{Mo Zhou},
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://ieeexplore.ieee.org/document/10433769}{[PDF]}
 \href{https://arxiv.org/abs/2106.03614}{[arXiv]}
@@ -252,7 +258,7 @@ IEEE Transactions on Multimedia (TMM), 2021.
     {\sc Conference Papers:}\hfill
     (3 CVPR, 3 ICCV, 1 ECCV, 1 NeurIPS, 1 ICLR, 1 AAAI)\\
 
-\begin{enumerate}[noitemsep, leftmargin=*, label={[C{\arabic*}]}]
+\begin{enumerate}[noitemsep, leftmargin=*, label={[C{\arabic*}]}, ref={[C{\arabic*}]}]
 
 \item Mucong Ding, Bang An, Tahseen Rabbani, Chenghao Deng, Anirudh Satheesh,
 \reversemarginpar\marginpar{\hspace{-9.5em}
@@ -265,14 +271,14 @@ IEEE Transactions on Multimedia (TMM), 2021.
 \textit{``A Technical Report on ``Erasing the Invisible'': The 2024 NeurIPS Competition on Stress Testing Image Watermarks''}
 in NeurIPS 2025 Datasets and Benchmarks Track, 2025.
 
-\item \underline{Mo Zhou}, Keren Ye, Mauricio Delbracio, Peyman Milanfar,
+\item \label{pub:unires}\underline{Mo Zhou}, Keren Ye, Mauricio Delbracio, Peyman Milanfar,
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://openaccess.thecvf.com/content/ICCV2025/html/Zhou_UniRes_Universal_Image_Restoration_for_Complex_Degradations_ICCV_2025_paper.html}{[PDF]}
 \href{https://arxiv.org/abs/2506.05599}{[arXiv]}
 }
 Vishal M. Patel, Hossein Talebi,
 \textit{``UniRes: Universal Image Restoration for Complex Degradations,''}
-in Proc. IEEE International Conf. on Computer Vision (ICCV), 2025.
+in Proc. IEEE International Conf. on Computer Vision (ICCV), 2025. 
 
 \item Kangfu Mei, \underline{Mo Zhou}, Vishal M. Patel,
 \reversemarginpar\marginpar{\hspace{-9.5em}
@@ -282,7 +288,7 @@ in Proc. IEEE International Conf. on Computer Vision (ICCV), 2025.
 \textit{``Field-DiT: Diffusion Transformer on Unified Video, 3D, and Game Field Generation,''}
 in Proc. International Conference on Learning Representations (ICLR), 2025.
 
-\item \underline{Mo Zhou}, Vishal M. Patel,
+\item \label{pub:advtrace}\underline{Mo Zhou}, Vishal M. Patel,
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://doi.org/10.1007/978-3-031-78122-3_6}{[PDF]}
 \href{https://arxiv.org/abs/2205.09586}{[arXiv]}
@@ -299,7 +305,7 @@ in Proc. International Conference on Pattern Recognition (ICPR), 2024.
 \textit{``Resource-Adaptive Federated Learning with All-In-One Neural Composition,''}
 Advances in Neural Information Processing Systems (NeurIPS), 2022.
 
-\item \underline{Mo Zhou}, Vishal M. Patel,
+\item \label{pub:robdml}\underline{Mo Zhou}, Vishal M. Patel,
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://openaccess.thecvf.com/content/CVPR2022/html/Zhou_Enhancing_Adversarial_Robustness_for_Deep_Metric_Learning_CVPR_2022_paper.html}{[PDF]}
 \href{https://arxiv.org/abs/2203.01439}{[arXiv]}
@@ -308,7 +314,7 @@ Advances in Neural Information Processing Systems (NeurIPS), 2022.
 \textit{``Enhancing Adversarial Robustness for Deep Metric Learning,''}
 in Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2022.
 
-\item \underline{Mo Zhou},
+\item \label{pub:advorder}\underline{Mo Zhou},
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://openaccess.thecvf.com/content/ICCV2021/html/Zhou_Practical_Relative_Order_Attack_in_Deep_Ranking_ICCV_2021_paper.html}{[PDF]}
 \href{https://arxiv.org/abs/2103.05248}{[arXiv]}
@@ -328,7 +334,7 @@ Chengjiang Long, Sanping Zhou, \underline{Mo Zhou}, Zhenxing Niu, Gang Hua,
 \textit{``SGCN: Sparse Graph Convolution for Pedestrian Trajectory Prediction'',}
 In Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2021.
 
-\item \underline{Mo Zhou},
+\item \label{pub:advrank}\underline{Mo Zhou},
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://link.springer.com/chapter/10.1007/978-3-030-58568-6_46}{[PDF]}
 \href{https://arxiv.org/abs/2002.11293}{[arXiv]}
@@ -338,7 +344,7 @@ Zhenxing Niu, Le Wang, Qilin Zhang, Gang Hua,
 \textit{``Adversarial Ranking Attack and Defense,''}
 in Proc. European Conf. on Computer Vision (ECCV), 2020.
 
-\item  \underline{Mo Zhou},
+\item \label{pub:ladder}\underline{Mo Zhou},
 \reversemarginpar\marginpar{\hspace{-9.5em}
 \href{https://ojs.aaai.org//index.php/AAAI/article/view/7006}{[PDF]}
 \href{https://arxiv.org/abs/1911.07528}{[arXiv]}
